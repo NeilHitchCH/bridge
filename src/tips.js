@@ -85,7 +85,8 @@ function signalMeaning(K) {
 function playTip(board, seat) {
   if (board.phase !== 'play' || board.trickComplete) return null;
   const turn = board.turn;
-  const ctrl = turn === E.partnerOf(board.contract.declarer) ? board.contract.declarer : turn;
+  const decl = board.contract.declarer, dummy = E.partnerOf(decl);
+  const ctrl = turn === decl || turn === dummy ? (board.declCtrl === dummy ? dummy : decl) : turn;
   if (ctrl !== seat) return null;
   const card = P.chooseCard(board, turn);
   const K = P.knowledge(board, turn);
@@ -97,7 +98,8 @@ function playTip(board, seat) {
   } else {
     const sig = signalMeaning(K); if (sig) lines.push(sig);
   }
-  const who = turn !== seat ? ' from dummy' : '';
+  const SEATN = { N: 'North', E: 'East', S: 'South', W: 'West' };
+  const who = turn === seat ? '' : turn === dummy ? ` from dummy (${SEATN[turn]})` : ` from declarer's hand (${SEATN[turn]})`;
   return { card, text: `Suggested${who}: ${cardTxt(card)}${why ? ' (' + why + ')' : ''}.`, notes: lines };
 }
 

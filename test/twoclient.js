@@ -28,8 +28,8 @@ function checkPrivacy(c) {
   const b = c.view && c.view.board; if (!b) return;
   const shown = Object.keys(b.hands);
   if (b.phase !== 'done') {
-    for (const s of shown) if (s !== c.seat && !(b.exposed && s === b.dummy)) throw new Error(`${c.label} can see ${s}'s hand`);
-    if (b.phase === 'play' && !b.exposed && shown.some((s) => s !== c.seat)) throw new Error('dummy shown before the opening lead');
+    for (const s of shown) if (s !== c.seat && !(b.exposed && s === b.dummy) && !(b.youPlay || []).includes(s)) throw new Error(`${c.label} can see ${s}'s hand`);
+    if (b.phase === 'play' && !b.exposed && shown.some((s) => s !== c.seat && !(b.youPlay || []).includes(s))) throw new Error('dummy shown before the opening lead');
   }
   if (b.suggestion && !(b.phase === 'auction' && b.turn === c.seat)) throw new Error('suggestion leaked to the wrong seat');
 }

@@ -341,7 +341,7 @@ function decide(ev, ctx) {
 function openingBid(ev, ctx) {
   const { hcp, len } = ev;
   const seatPos = ctx.auction.length; // 0 = first seat
-  const opens = hcp >= 13 || (hcp >= 11 && ev.rule20 >= 20) || (SY.precision && hcp >= 11 && ev.rule20 >= 19);
+  const opens = hcp >= 12 || (hcp >= 11 && ev.rule20 >= 20) || (SY.precision && hcp >= 11 && ev.rule20 >= 19);
   if (SY.precision) {
     if (hcp >= 16) return ev.balanced && hcp >= SY.nt2[0] && hcp <= SY.nt2[1] ? '2N' : '1C';
     if (ev.balanced && hcp >= ntLo() && hcp <= ntHi() && len.S < 5 && len.H < 5) return '1N';

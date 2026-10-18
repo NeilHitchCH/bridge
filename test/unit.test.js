@@ -78,7 +78,8 @@ test('vulnerability and dealer rotation', () => {
 // ---------- SAYC ----------
 test('SAYC openings', () => {
   assert.equal(bid('sayc', 'AQ3.KJ4.Q943.K32'), '1N'); // 16 balanced
-  assert.equal(bid('sayc', 'AQ3.KJ4.Q943.432'), 'P'); // 12 HCP, Rule of 20 = 19: pass
+  assert.equal(bid('sayc', 'AQ3.KJ4.Q943.432'), '1D'); // 12 HCP balanced: opens (system card: 12-21)
+  assert.equal(bid('sayc', 'Q93.KJ4.Q943.432'), 'P'); // 10 HCP, Rule of 20 = 17: pass
   assert.equal(bid('sayc', 'AQ3.KJ4.K943.432'), '1D'); // 13
   assert.equal(bid('sayc', 'AKJ54.K32.Q3.432'), '1S');
   assert.equal(bid('sayc', 'AK54.K32.Q3.J432'), '1C'); // no 5-card major, longer minor clubs
@@ -235,4 +236,130 @@ test('per-system simulation: auctions legal and terminate', () => {
       }
     }
   }
+});
+
+// ---------- card play & tips ----------
+const G = require('../src/game');
+const P = require('../src/play');
+const T = require('../src/tips');
+const { RoomManager } = require('../src/room');
+// play position: hands by seat (as H()), contract, trick so far [[seat, card], ...]
+function position({ hands, contract, declarer, trick = [], auction }) {
+  const b = G.newBoard(1);
+  for (const s of E.SEATS) b.hands[s] = E.sortHand(H(hands[s]));
+  b.original = JSON.parse(JSON.stringify(b.hands));
+  b.auction = auction || [];
+  b.phase = 'play';
+  b.contract = { level: +contract[0], strain: contract[1], doubled: 0, declarer };
+  for (const [seat, card] of trick) { b.trick.push({ seat, card }); b.hands[seat].splice(b.hands[seat].indexOf(card), 1); }
+  b.turn = trick.length ? E.nextSeat(trick[trick.length - 1][0]) : E.nextSeat(declarer);
+  return b;
+}
+
+test('third hand high plays a card that really beats dummy, not a "cheaper equivalent" below it', () => {
+  // 3NT by E (dummy W). South leads the 3 of clubs, dummy plays the singleton queen.
+  // North's K wins; the old code offered the 10 (treating the queen on the table as already gone).
+  const b = position({
+    hands: { N: 'J732.K97.6.KJT86', E: 'AKQ.AQ64.QT75.74', S: 'T8.T53.K42.A9532', W: '9654.J82.AJ983.Q' },
+    contract: '3N', declarer: 'E', trick: [['S', 'C3'], ['W', 'CQ']],
+  });
+  assert.equal(P.chooseCard(b, 'N'), 'CK');
+  assert.equal(T.playTip(b, 'N').card, 'CK');
+});
+test('second hand low: never "signal" with an honour from honours-only holdings', () => {
+  // 4H by E. Declarer leads a low trump; South holds AJ doubleton and must not rise with the ace.
+  const b = position({
+    hands: { N: 'T974.7.9852.A952', E: 'K.Q965432.AJ7.K6', S: 'AQJ53.AJ.63.QJT3', W: '862.KT8.KQT4.874' },
+    contract: '4H', declarer: 'E', trick: [['E', 'H2']],
+  });
+  assert.equal(P.chooseCard(b, 'S'), 'HJ');
+});
+test("third hand does not overtake partner's 10 when the jack gains nothing", () => {
+  // 1NT by W (dummy E). North leads the 10 of hearts, dummy plays low; South with J874 encourages/discourages with a spot.
+  const b = position({
+    hands: { N: 'A64.QT93.J84.J63', E: 'QJT5.K5.QT2.9854', S: 'K87.J874.K653.KT', W: '932.A62.A97.AQ72' },
+    contract: '1N', declarer: 'W', trick: [['N', 'HT'], ['E', 'H5']],
+  });
+  const c = P.chooseCard(b, 'S');
+  assert.notEqual(c, 'HJ');
+  assert.equal(c[0], 'H');
+});
+test('play tips name the hand being played (dummy vs own) and match the suggested card', () => {
+  const b = position({
+    hands: { N: 'AK32.K32.A32.432', E: 'QJT9.QJT.QJT.QJT', S: '8765.A54.K54.AK5', W: '4.9876.9876.9876' },
+    contract: '4S', declarer: 'S', trick: [['W', 'H9']],
+  });
+  const tip = T.playTip(b, 'S'); // N (dummy) to play, South controls it
+  assert.ok(b.hands.N.includes(tip.card));
+  assert.match(tip.text, /from dummy/);
+  assert.ok(tip.text.includes(T.cardTxt(tip.card)));
+  assert.equal(T.playTip(b, 'N'), null); // the dummy seat itself gets no tip
+});
+test('random positions: every suggested card is legal and follows basic play principles', () => {
+  let x = 4242; const rng = () => { x = (x * 1103515245 + 12345) % 2147483648; return x / 2147483648; };
+  const beats = (c, w, tr) => (c[0] === w[0] ? E.rankOf(c) > E.rankOf(w) : tr !== 'N' && c[0] === tr && w[0] !== tr);
+  let checked = 0;
+  for (let k = 1; k <= 120; k++) {
+    const b = G.newBoard(k, rng);
+    while (b.phase !== 'done') {
+      if (b.trickComplete) { G.collectTrick(b); continue; }
+      const a = G.botAction(b);
+      if (b.phase === 'play') {
+        const tip = T.playTip(b, G.controllerOf(b, b.turn));
+        const legal = E.legalCards(b.hands[b.turn], b.trick);
+        assert.ok(legal.includes(tip.card), 'illegal tip ' + tip.card);
+        assert.ok(tip.text.includes(T.cardTxt(tip.card)), 'text/card mismatch: ' + tip.text);
+        assert.equal(tip.card, a.value, 'tip and computer choice differ');
+        const t = b.trick, tr = b.contract.strain;
+        if (t.length === 3 && legal.length > 1) {
+          const w = E.trickWinner(t, tr), wc = t.find((q) => q.seat === w).card;
+          const ours = E.sameSide(w, b.turn);
+          if (ours && legal.some((q) => !beats(q, wc, tr))) assert.ok(!beats(tip.card, wc, tr), "4th hand overtook/ruffed partner's winner");
+          const holdup = tr === 'N' && E.sameSide(b.turn, b.contract.declarer);
+          if (!ours && !holdup && legal.some((q) => beats(q, wc, tr))) assert.ok(beats(tip.card, wc, tr), '4th hand failed to win');
+        }
+        if (t.length === 2 && legal.length > 1) {
+          // when third hand plays to beat the current card, the card chosen must really beat it
+          const w = E.trickWinner(t, tr), wc = t.find((q) => q.seat === w).card;
+          if (!E.sameSide(w, b.turn) && legal.some((q) => q[0] === t[0].card[0] && beats(q, wc, tr)) && tip.card[0] === t[0].card[0] && E.rankOf(tip.card) >= 10)
+            assert.ok(beats(tip.card, wc, tr), 'third hand played a high card that loses');
+        }
+        checked++;
+      }
+      a.type === 'call' ? G.applyCall(b, a.actor, a.value) : G.applyCard(b, a.actor, a.value);
+    }
+  }
+  assert.ok(checked > 3000);
+});
+test('declarer control: the human runs both hands of their side, the computer never plays dummy for a human', () => {
+  const mgr = new RoomManager({ botDelay: 1, bidDelay: 1, trickPause: 1 });
+  const { room } = mgr.create({ name: 'Neil', seat: 'S', partner: 'bot' });
+  clearTimeout(room.timer); room.timer = null;
+  const b = room.board;
+  // computer partner (N) declares: South (human dummy) plays both N and S
+  b.phase = 'play'; b.contract = { level: 4, strain: 'S', doubled: 0, declarer: 'N' }; b.turn = 'N'; b.trick = [];
+  mgr.syncControl(room);
+  assert.equal(G.controllerOf(b, 'N'), 'S');
+  assert.equal(G.controllerOf(b, 'S'), 'S');
+  assert.equal(G.controllerOf(b, 'E'), 'E');
+  mgr.schedule(room);
+  assert.equal(room.timer, null, 'no computer move scheduled for the human side');
+  const v = mgr.view(room, 'S');
+  assert.deepEqual(v.board.youPlay, ['S', 'N']);
+  assert.ok(v.board.hands.N && v.board.legalCards.length > 0);
+  assert.throws(() => G.applyCard(b, 'N', b.hands.N[0]), /Not your turn/);
+  // human declarer: plays dummy's cards too
+  b.contract.declarer = 'S'; b.turn = 'N';
+  mgr.syncControl(room);
+  assert.equal(G.controllerOf(b, 'N'), 'S');
+  // two humans: North declares, South is dummy and cannot play
+  room.seats.N = { type: 'human', name: 'P', token: 'x', connected: true };
+  b.contract.declarer = 'N'; b.turn = 'S';
+  mgr.syncControl(room);
+  assert.equal(G.controllerOf(b, 'S'), 'N');
+  const vs = mgr.view(room, 'S');
+  assert.equal(vs.board.legalCards.length, 0);
+  assert.deepEqual(vs.board.youPlay, []);
+  assert.ok(mgr.view(room, 'N').board.legalCards.length > 0);
+  clearTimeout(room.timer);
 });

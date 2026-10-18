@@ -34,31 +34,49 @@
     const ws = new WebSocket(wsUrl());
     st.ws = ws;
     ws.onopen = () => {
-      st.connected = true; st.retry = 0; $('conn').classList.remove('show');
+      st.connected = true; st.retry = 0; st.lastMsg = Date.now(); $('conn').classList.remove('show');
       if (st.code) send({ t: 'join', code: st.code, token: store.tokens[st.code] });
     };
     ws.onmessage = (ev) => {
       let m; try { m = JSON.parse(ev.data); } catch { return; }
       if (m.t === 'state') onState(m.view);
       else if (m.t === 'joined') { st.code = m.code; store.setToken(m.code, m.token); setUrl(m.code); }
+      else if (m.t === 'pong') st.lastMsg = Date.now();
       else if (m.t === 'error') {
+        if (m.ref === 'play') { st.pendingPlay = null; clearTimeout(st.playTimer); for (const el of document.querySelectorAll('.hand .card.leaving')) el.classList.remove('leaving'); }
         toast(m.message);
         if (m.ref === 'join') { st.code = null; setUrl(null); show('home'); }
         render();
       }
     };
     ws.onclose = () => {
+      if (st.ws !== ws) return;
       st.connected = false;
       if (st.code) $('conn').classList.add('show');
       const d = Math.min(8000, 500 * Math.pow(1.7, st.retry++));
-      setTimeout(connect, d);
+      setTimeout(() => { if (st.ws === ws) connect(); }, d);
     };
   }
+  // Drop a socket that has gone quiet (iOS suspends pages in the background and the socket can look
+  // open while being dead) and reconnect; the server then sends a fresh view.
+  function forceReconnect() {
+    const ws = st.ws;
+    if (ws) { ws.onclose = null; try { ws.close(); } catch {} }
+    st.connected = false;
+    connect();
+  }
   function send(m) { if (st.ws && st.ws.readyState === 1) { st.ws.send(JSON.stringify(m)); return true; } toast('Connecting…'); return false; }
-  document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'visible' && st.ws && st.ws.readyState > 1) connect();
-  });
-  setInterval(() => { if (st.ws && st.ws.readyState === 1) st.ws.send('{"t":"ping"}'); }, 20000);
+  function checkAlive() {
+    if (!st.ws || st.ws.readyState > 1) { if (!st.ws || st.ws.readyState === 3) connect(); return; }
+    if (st.ws.readyState !== 1) return;
+    const sent = Date.now();
+    st.ws.send('{"t":"ping"}');
+    setTimeout(() => { if (document.visibilityState === 'visible' && (st.lastMsg || 0) < sent) forceReconnect(); }, 5000);
+  }
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') checkAlive(); });
+  window.addEventListener('pageshow', (e) => { if (e.persisted) checkAlive(); });
+  window.addEventListener('online', checkAlive);
+  setInterval(() => { if (document.visibilityState === 'visible') checkAlive(); }, 20000);
 
   function setUrl(code) {
     const u = code ? '/?r=' + code : '/';
@@ -75,6 +93,12 @@
   function onState(view) {
     const prev = st.view;
     st.view = view;
+    st.lastMsg = Date.now();
+    if (st.pendingPlay) {
+      const nb0 = view.board;
+      const key = nb0 ? nb0.number + ':' + nb0.trickNo + ':' + nb0.trick.length : '';
+      if (key !== st.pendingPlay.key || !nb0 || nb0.phase !== 'play') { st.pendingPlay = null; clearTimeout(st.playTimer); }
+    }
     // trick collection animation
     const pb = prev && prev.board, nb = view.board;
     if (pb && nb && pb.number === nb.number && pb.trick.length === 4 && nb.trick.length < 4 && nb.lastTrick) {
@@ -250,17 +274,22 @@
       return;
     }
 
-    // dummy
-    const showDummy = b.exposed && b.dummy !== you && b.hands[b.dummy] && b.phase === 'play';
-    felt.classList.toggle('with-dummy', !!showDummy);
+    // the second hand shown on the table: dummy once it is face up, or (when you run the declaring
+    // side for a computer partner) your partner's hand, which you play as well as your own
+    const youPlay = b.youPlay || [];
+    const otherMine = youPlay.length === 2 ? youPlay[1] : null;
+    const topSeat = b.phase === 'play' ? (otherMine && b.hands[otherMine] ? otherMine : (b.exposed && b.dummy !== you && b.hands[b.dummy] ? b.dummy : null)) : null;
+    felt.classList.toggle('with-dummy', !!topSeat);
     const da = $('dummyArea');
-    if (showDummy) {
-      const canPlay = b.turn === b.dummy && b.legalCards.length > 0;
-      da.innerHTML = `<div class="dummy-label">Dummy · ${SEAT_NAME[b.dummy]}</div>` + handHTML(b.hands[b.dummy], canPlay ? b.legalCards : null, true);
+    if (topSeat) {
+      const canPlay = b.turn === topSeat && !b.trickComplete && b.legalCards.length > 0;
+      const label = topSeat === b.dummy ? `Dummy · ${SEAT_NAME[topSeat]}` : `Declarer · ${SEAT_NAME[topSeat]}`;
+      const mineTxt = otherMine === topSeat ? ' · you play these cards' : '';
+      setHTML(da, `<div class="dummy-label">${label}${mineTxt}</div>` + handHTML(b.hands[topSeat], canPlay ? b.legalCards : null, true));
       da.classList.add('show');
-      sizeHand(da.querySelector('.hand'), b.hands[b.dummy].length, true);
-      if (canPlay) bindHand(da);
-    } else { da.classList.remove('show'); da.innerHTML = ''; }
+      da.classList.toggle('myturn', canPlay);
+      sizeHand(da.querySelector('.hand'), b.hands[topSeat].length, true);
+    } else { da.classList.remove('show', 'myturn'); setHTML(da, ''); }
 
     // center
     if (b.phase === 'auction') {
@@ -278,10 +307,12 @@
 
     // own hand
     const myHand = b.hands[you] || [];
-    const myTurnCards = b.phase === 'play' && b.turn === you && b.legalCards.length ? b.legalCards : null;
-    $('handArea').innerHTML = b.phase === 'done' ? '' : handHTML(myHand, myTurnCards, false);
+    const myTurnCards = b.phase === 'play' && b.turn === you && !b.trickComplete && b.legalCards.length ? b.legalCards : null;
+    const amDummy = b.phase === 'play' && b.dummy === you && youPlay.length === 0;
+    setHTML($('handArea'), b.phase === 'done' ? '' : (amDummy ? '<div class="dummy-note">Your partner is declarer — you are dummy this hand. Your partner plays your cards.</div>' : '') + handHTML(myHand, myTurnCards, false));
+    $('handArea').classList.toggle('myturn', !!myTurnCards);
     const he = $('handArea').querySelector('.hand');
-    if (he) { sizeHand(he, myHand.length, false); if (myTurnCards) bindHand($('handArea')); }
+    if (he) sizeHand(he, myHand.length, false);
 
     // bidding box + learning tips
     renderBidBox(b);
@@ -325,6 +356,7 @@
       if (a === 'fbx') st.fbDismissed = b.number + ':' + b.feedback.idx;
       renderTable();
     };
+    for (const c of document.querySelectorAll('.hand .card.hint')) c.classList.remove('hint');
     if (st.hintCard) for (const c of document.querySelectorAll(`.hand .card[data-card="${st.hintCard}"]`)) c.classList.add('hint');
   }
 
@@ -361,7 +393,11 @@
     if (b.phase === 'play') {
       if (b.trickComplete) return `Trick to ${esc(nameOrSeat(trickWinner(b.trick, b.contract.strain)))}`;
       const ctrl = b.controller;
-      if (ctrl === you) return b.turn === you ? '<span class="you">Your turn</span>' : `<span class="you">Play from dummy</span>`;
+      if (ctrl === you) {
+        if (b.turn === you) return '<span class="you">Your turn — play from your hand</span>';
+        return b.turn === b.dummy ? `<span class="you">Your turn — tap a card in dummy (${SEAT_NAME[b.turn]}) ▲</span>` : `<span class="you">Your turn — play from ${SEAT_NAME[b.turn]}'s hand ▲</span>`;
+      }
+      if (b.dummy === you && (b.turn === you || b.turn === b.contract.declarer)) return `You're dummy — ${esc(nameOrSeat(ctrl))} is playing${b.turn === you ? ' your cards' : ''}…`;
       if (b.turn === b.dummy) return `${esc(nameOrSeat(ctrl))} playing dummy…`;
       const x = seatInfo(b.turn);
       if (x.type === 'human' && !x.connected) return `Waiting for ${esc(x.name)} (offline)…`;
@@ -397,15 +433,24 @@
     step = Math.min(step, cw * (isDummy ? 0.72 : 0.68));
     el.style.setProperty('--ov', (step - cw).toFixed(1) + 'px');
   }
-  function bindHand(container) {
-    for (const el of container.querySelectorAll('.card.legal')) {
-      el.addEventListener('click', () => {
-        if (el.classList.contains('leaving')) return;
-        el.classList.add('leaving');
-        send({ t: 'play', card: el.dataset.card });
-      }, { once: true });
-    }
+  // Only touch the DOM when the markup really changes, so a state push (or an iOS toolbar resize)
+  // arriving mid-tap does not replace the card under the player's finger and swallow the tap.
+  function setHTML(el, html) { if (el._html !== html) { el.innerHTML = html; el._html = html; } }
+  // One delegated handler per hand container (they are never re-created), for taps on legal cards.
+  function onCardTap(e) {
+    const el = e.target.closest('.card');
+    if (!el || !el.classList.contains('legal') || !el.closest('.hand.myturn')) return;
+    const b = st.view && st.view.board;
+    if (!b || b.phase !== 'play' || !b.legalCards.includes(el.dataset.card) || st.pendingPlay) return;
+    if (!send({ t: 'play', card: el.dataset.card })) return;
+    st.pendingPlay = { card: el.dataset.card, at: Date.now(), key: b.number + ':' + b.trickNo + ':' + b.trick.length };
+    el.classList.add('leaving');
+    // if no answer arrives the connection is probably dead (phone was asleep): reconnect and resync
+    clearTimeout(st.playTimer);
+    st.playTimer = setTimeout(() => { if (st.pendingPlay) { st.pendingPlay = null; forceReconnect(); } }, 4000);
   }
+  $('handArea').addEventListener('click', onCardTap);
+  $('dummyArea').addEventListener('click', onCardTap);
 
   function renderTrick(b) {
     const el = $('trick');
@@ -652,7 +697,10 @@
   }
 
   $('menuBtn').onclick = openMenu;
-  window.addEventListener('resize', () => { if (st.view && st.view.you) renderTable(); });
+  window.addEventListener('resize', () => {
+    // just re-fit the cards; a full re-render here could swallow a tap on iOS (toolbar show/hide fires resize)
+    for (const [id, dummy] of [['handArea', false], ['dummyArea', true]]) { const h = $(id).querySelector('.hand'); if (h) sizeHand(h, h.children.length, dummy); }
+  });
 
   // ---------------------------------------------------------------- boot
   initHome();

@@ -63,6 +63,7 @@ class RoomManager {
     const t = newToken();
     room.seats[seat] = { type: 'human', name: clean(name) || 'Player', token: t, connected: false, ready: false };
     this.maybeStart(room);
+    this.schedule(room);
     this.changed(room);
     return { seat, token: t };
   }
@@ -75,6 +76,7 @@ class RoomManager {
     if (seat === bySeat) throw new Error('That is your seat');
     room.seats[seat] = mode === 'bot' ? { type: 'bot', name: botName(seat) } : { type: 'open', name: '' };
     this.maybeStart(room);
+    this.schedule(room); // a computer taking over mid-hand must act if it is its turn
     this.changed(room);
   }
 
@@ -132,6 +134,7 @@ class RoomManager {
   play(room, seat, card) {
     const b = room.board;
     if (!b) throw new Error('The game has not started');
+    this.syncControl(room);
     G.applyCard(b, seat, card);
     this.afterAction(room);
   }
@@ -164,7 +167,19 @@ class RoomManager {
     });
   }
 
+  // Who runs the declaring side's two hands. A human declarer plays both hands. If the computer
+  // partner of a human won the contract, the human plays both hands instead (as in most bridge apps):
+  // the computer never plays cards for a side that has a human on it. Two humans: standard rules.
+  syncControl(room) {
+    const b = room.board;
+    if (!b || b.phase !== 'play' || !b.contract) return;
+    const decl = b.contract.declarer, dummy = E.partnerOf(decl);
+    const human = (s) => room.seats[s] && room.seats[s].type === 'human';
+    b.declCtrl = !human(decl) && human(dummy) ? dummy : decl;
+  }
+
   schedule(room) {
+    this.syncControl(room);
     if (room.timer) return;
     const b = room.board;
     if (!b || b.phase === 'done') return;
@@ -206,13 +221,23 @@ class RoomManager {
       systemsList: SYSTEM_LIST, conventions: CONVENTIONS,
     };
     if (!b) return v;
+    this.syncControl(room);
     const dummy = G.dummyOf(b);
     const exposed = b.phase === 'play' && (b.tricks.length > 0 || b.trick.length > 0);
+    // seats whose cards this viewer chooses during the play
+    let youPlay = [];
+    if (seat && b.phase === 'play' && b.contract) {
+      const decl = b.contract.declarer;
+      if (seat === decl || seat === dummy) youPlay = G.controllerOf(b, decl) === seat ? [seat, seat === decl ? dummy : decl] : [];
+      else youPlay = [seat];
+    }
     const hands = {};
     if (b.phase === 'done') Object.assign(hands, b.original);
     else {
       if (seat) hands[seat] = b.hands[seat];
       if (exposed) hands[dummy] = b.hands[dummy];
+      // a human dummy who plays the hand for a computer declarer sees the declarer's cards
+      if (youPlay.length === 2 && youPlay[1] !== dummy) hands[youPlay[1]] = b.hands[youPlay[1]];
     }
     const counts = {};
     for (const s of E.SEATS) counts[s] = b.hands[s].length;
@@ -222,7 +247,8 @@ class RoomManager {
     v.board = {
       number: b.number, dealer: b.dealer, vul: b.vul, phase: b.phase,
       auction: b.auction.map((a, i) => ({ seat: a.seat, call: a.call, explain: B.explain(ann[i]) })),
-      contract: b.contract, dummy, exposed, turn: b.turn, controller: turnCtrl,
+      contract: b.contract, dummy, exposed, turn: b.turn, controller: turnCtrl, youPlay,
+      declCtrl: b.phase === 'play' && b.contract ? G.controllerOf(b, b.contract.declarer) : null,
       trick: b.trick, trickComplete: b.trickComplete, lastTrick, trickNo: b.tricks.length + (b.trick.length ? 1 : 0),
       tricksWon: G.tricksWon(b), hands, counts, result: b.result, resultText: G.resultText(b),
       legalCalls: b.phase === 'auction' && seat && b.turn === seat ? E.legalCalls(b.dealer, b.auction) : [],

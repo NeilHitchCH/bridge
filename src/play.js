@@ -58,7 +58,8 @@ function cheapestEquivalent(K, card, cards) {
   for (let r = R(card) - 1; r >= 2; r--) {
     const x = E.makeCard(S(card), r);
     if (cards.includes(x)) best = x;
-    else if (!K.gone.has(x)) break;
+    // a card still lying in the current trick is not "gone": dropping below it would lose to it
+    else if (!K.gone.has(x) || K.trick.some((t) => t.card === x)) break;
   }
   return best;
 }
@@ -148,10 +149,12 @@ function openingLead(K) {
 // Standard carding (bridgeplaybook): high spot = encourage / even count, low = discourage / odd
 function spotCards(cs) { const sp = cs.filter((c) => R(c) < 11); return sp.length ? sp : cs; }
 function attitudeCard(cs, like) {
+  if (!cs.some((c) => R(c) < 11)) return lowest(cs); // only honours: never signal with one, play the cheapest
   const sp = spotCards(cs).sort((a, b) => R(b) - R(a));
   return like ? sp[0] : sp[sp.length - 1];
 }
 function countCard(cs) {
+  if (!cs.some((c) => R(c) < 11)) return lowest(cs);
   const sp = spotCards(cs).sort((a, b) => R(b) - R(a));
   return cs.length % 2 === 0 ? sp[0] : sp[sp.length - 1];
 }
@@ -174,7 +177,7 @@ function defenderFollow(K, legal) {
   const dummyCards = K.visible[K.dummy] ? bySuit(K.visible[K.dummy], led) : [];
   const following = legal.some((c) => S(c) === led);
   const winners = legal.filter((c) => beats(c, win.card, led, K.trump));
-  const setting = K.theirTricks >= 0 && K.ourTricks + 1 >= K.need;
+  const setting = K.need <= 1; // K.need already counts the tricks we have won
 
   if (following) {
     const cs = bySuit(legal, led);
@@ -223,7 +226,8 @@ function defenderFollow(K, legal) {
           if (over.length && !dummyCanRuff) return cheapestEquivalent(K, lowest(over), cs);
           return attitudeCard(cs, likeSuit);
         }
-        if (isBoss(K, win.card) || R(win.card) >= 11) return attitudeCard(cs, likeSuit);
+        // partner's honour (10 or higher) is probably top of a sequence: don't overtake it
+        if (isBoss(K, win.card) || R(win.card) >= 10) return attitudeCard(cs, likeSuit);
       }
       if (dummyAfter && dummyCards.length) {
         const dTop = dummyCards[0];

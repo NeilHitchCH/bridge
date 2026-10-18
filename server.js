@@ -13,6 +13,8 @@ function startServer(opts = {}) {
   app.disable('x-powered-by');
   const { listSystems, CONVENTIONS } = require('./src/systems');
   app.get('/api/systems', (req, res) => res.json({ systems: listSystems(), conventions: CONVENTIONS }));
+  const VERSION = require('./package.json').version;
+  app.get('/version', (req, res) => res.json({ version: VERSION }));
   app.get('/healthz', (req, res) => res.json({ ok: true, rooms: mgr.rooms.size }));
   app.use(express.static(path.join(__dirname, 'public'), {
     setHeaders(res, p) {

@@ -15,9 +15,15 @@ function newBoard(number, rng, systems) {
 }
 
 const dummyOf = (b) => (b.contract ? E.partnerOf(b.contract.declarer) : null);
-// Seat that makes the decision for the hand whose turn it is
+// Seat that makes the decision for the hand whose turn it is.
+// During the play the declaring side's two hands are both run by one seat: normally the declarer,
+// but b.declCtrl (set by the room) can hand both to the dummy seat, e.g. a human whose computer
+// partner won the contract plays the hand themselves.
 function controllerOf(b, seat) {
-  if (b.phase === 'play' && seat === dummyOf(b)) return b.contract.declarer;
+  if (b.phase === 'play' && b.contract) {
+    const decl = b.contract.declarer, dummy = dummyOf(b);
+    if (seat === dummy || seat === decl) return b.declCtrl === dummy ? dummy : decl;
+  }
   return seat;
 }
 

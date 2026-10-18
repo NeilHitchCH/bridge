@@ -255,3 +255,10 @@ input{font-size:16px}
   .bidbox{max-width:520px;margin:0 auto;width:100%}
 }
 @media (max-height:700px){ .tipbar{font-size:12.5px;max-height:28vh}  :root{--cw:56px;--dcw:46px;--tcw:52px} .trick{height:170px} }
+
+/* declarer control cues */
+.dummy-area.myturn .dummy-label{color:#2a1e00;background:var(--gold);padding:1px 8px;border-radius:6px;font-weight:800;box-shadow:0 0 12px rgba(227,194,107,.8)}
+.dummy-area.myturn .hand{border-radius:12px;box-shadow:0 0 0 2px rgba(227,194,107,.85),0 0 22px rgba(227,194,107,.45);padding:4px 6px}
+.dummy-label{white-space:nowrap}
+.dummy-note{position:absolute;top:-16px;left:50%;transform:translateX(-50%);font-size:12px;font-weight:700;background:rgba(255,253,244,.95);color:var(--ink);padding:3px 10px;border-radius:8px;white-space:nowrap;z-index:2}
+.hand-area.myturn .hand{filter:drop-shadow(0 0 10px rgba(227,194,107,.6))}

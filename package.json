@@ -1,16 +1,17 @@
 {
   "name": "bridge",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "node --test test/unit.test.js && node test/simulate.js 500 && node test/twoclient.js && node test/declarer.js",
+    "test": "node --test test/unit.test.js && BRIDGE_PLAY=heuristic node test/simulate.js 500 && node test/simulate.js 30 sayc sayc sim && node test/twoclient.js && node test/declarer.js",
     "start": "node server.js",
     "sim": "node test/simulate.js",
-    "screens": "node tools/screens.js"
+    "screens": "node tools/screens.js",
+    "compare": "node tools/compare.js"
   },
   "keywords": [],
   "author": "",

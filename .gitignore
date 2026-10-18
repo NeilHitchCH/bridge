@@ -4,3 +4,4 @@ sources/
 screenshots/
 *.log
 data/rooms.json
+.render_deploy_hook

@@ -165,6 +165,17 @@ class RoomManager {
       contract: b.contract ? E.contractStr(b.contract) : 'Pass', declarer: b.contract ? b.contract.declarer : '',
       tricks: b.result.tricks, text: G.resultText(b), nsScore,
     });
+    // hand history for review: full deal, auction and play, last 50 boards per table
+    if (!room.boardLog) room.boardLog = [];
+    room.boardLog.push({
+      number: b.number, dealer: b.dealer, vul: b.vul, at: Date.now(), systems: b.systems,
+      seats: Object.fromEntries(E.SEATS.map((s) => [s, { type: room.seats[s].type, name: room.seats[s].type === 'open' ? '' : room.seats[s].name }])),
+      hands: b.original, auction: b.auction.map((a) => ({ seat: a.seat, call: a.call })),
+      contract: b.contract, declarer: b.contract ? b.contract.declarer : null,
+      tricks: b.tricks.map((t) => ({ leader: t.leader, cards: t.cards, winner: t.winner })),
+      result: b.result, text: G.resultText(b), nsScore,
+    });
+    if (room.boardLog.length > 50) room.boardLog.splice(0, room.boardLog.length - 50);
   }
 
   // Who runs the declaring side's two hands. A human declarer plays both hands. If the computer
@@ -208,7 +219,9 @@ class RoomManager {
   }
 
   // ---------- per-seat view (never leaks hidden cards)
-  view(room, seat) {
+  history(room) { return (room.boardLog || []).slice().reverse(); }
+
+  view(room, seat, opts = {}) {
     const b = room.board;
     const seats = E.SEATS.map((s) => {
       const st = room.seats[s];
@@ -219,9 +232,12 @@ class RoomManager {
       code: room.code, you: seat, seats, history: room.history, totals: room.totals, board: null,
       settings: room.settings, owner: ownerSeat, canChangeSystem: !!seat && (!ownerSeat || ownerSeat === seat),
       systemsList: SYSTEM_LIST, conventions: CONVENTIONS,
+      practiceAvailable: !!seat && room.seats[E.partnerOf(seat)].type === 'bot',
+      historyCount: (room.boardLog || []).length,
     };
     if (!b) return v;
     this.syncControl(room);
+    const practiceOn = !!(opts.practice && v.practiceAvailable);
     const dummy = G.dummyOf(b);
     const exposed = b.phase === 'play' && (b.tricks.length > 0 || b.trick.length > 0);
     // seats whose cards this viewer chooses during the play
@@ -238,6 +254,8 @@ class RoomManager {
       if (exposed) hands[dummy] = b.hands[dummy];
       // a human dummy who plays the hand for a computer declarer sees the declarer's cards
       if (youPlay.length === 2 && youPlay[1] !== dummy) hands[youPlay[1]] = b.hands[youPlay[1]];
+      // practice view: a COMPUTER partner's cards, only for a client that asked for it
+      if (practiceOn) hands[E.partnerOf(seat)] = b.hands[E.partnerOf(seat)];
     }
     const counts = {};
     for (const s of E.SEATS) counts[s] = b.hands[s].length;
@@ -253,7 +271,7 @@ class RoomManager {
       tricksWon: G.tricksWon(b), hands, counts, result: b.result, resultText: G.resultText(b),
       legalCalls: b.phase === 'auction' && seat && b.turn === seat ? E.legalCalls(b.dealer, b.auction) : [],
       legalCards: b.phase === 'play' && seat && !b.trickComplete && turnCtrl === seat ? E.legalCards(b.hands[b.turn], b.trick) : [],
-      systems: b.systems,
+      systems: b.systems, practice: practiceOn && b.phase !== 'done',
     };
     // learning mode (computed only for the viewer, from the viewer's own legitimate information)
     try {

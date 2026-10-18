@@ -29,6 +29,7 @@ function checkPrivacy(c) {
   const shown = Object.keys(b.hands);
   if (b.phase !== 'done') {
     for (const s of shown) if (s !== c.seat && !(b.exposed && s === b.dummy) && !(b.youPlay || []).includes(s)) throw new Error(`${c.label} can see ${s}'s hand`);
+    if (b.practice) throw new Error('practice view must not work with a human partner');
     if (b.phase === 'play' && !b.exposed && shown.some((s) => s !== c.seat && !(b.youPlay || []).includes(s))) throw new Error('dummy shown before the opening lead');
   }
   if (b.suggestion && !(b.phase === 'auction' && b.turn === c.seat)) throw new Error('suggestion leaked to the wrong seat');
@@ -38,11 +39,12 @@ async function main() {
   let url = process.argv[2], srv;
   if (!url) {
     const { startServer } = require('../server');
-    srv = await startServer({ port: 0, dataFile: null, botDelay: 5, bidDelay: 5, trickPause: 20 });
+    srv = await startServer({ port: 0, dataFile: null, botDelay: 5, bidDelay: 5, trickPause: 20, playMs: 60 });
     url = `ws://127.0.0.1:${srv.port}/ws`;
   } else if (!url.endsWith('/ws')) url = url.replace(/^http/, 'ws').replace(/\/$/, '') + '/ws';
   const A = client(url, 'South'), Bc = client(url, 'North');
   await Promise.all([A.open, Bc.open]);
+  A.send({ t: 'practice', on: true }); // asks for partner's cards: must be refused (partner is human)
   A.send({ t: 'create', name: 'Neil', seat: 'S', partner: 'open', system: 'acol', oppSystem: 'sayc' });
   if (!A.code) await A.wait((m) => m.t === 'joined');
   Bc.send({ t: 'join', code: A.code });
@@ -109,12 +111,21 @@ async function main() {
     stats.reconnect = { offlineSeenByPartner: vA && vA.connected === false };
     reconnectDone = true;
   }, 400);
-  const t = setTimeout(() => { console.error('TIMEOUT', JSON.stringify(stats), A.view && A.view.board && A.view.board.phase); process.exit(1); }, 120000);
+  const t = setTimeout(() => { console.error('TIMEOUT', JSON.stringify(stats), A.view && A.view.board && A.view.board.phase); process.exit(1); }, +process.env.TWOCLIENT_TIMEOUT || 300000);
   await finished;
   clearTimeout(t);
   if (!reconnectDone || Bc.seat !== 'N' || Bc.view.you !== 'N') throw new Error('reconnect did not resume North');
   stats.reconnect.resumedSeat = Bc.view.you;
-  stats.totals = A.view.totals; stats.history = A.view.history.map((h) => `${h.number}: ${h.contract} ${h.declarer} ${h.text}`);
+  // hand history over HTTP
+  const httpBase = url.replace(/^ws/, 'http').replace(/\/ws$/, '');
+  const hist = await (await fetch(httpBase + '/api/history?code=' + A.code)).json();
+  if (!hist.boards || hist.boards.length < BOARDS) throw new Error('history missing boards: ' + JSON.stringify(hist).slice(0, 200));
+  const hb = hist.boards[0];
+  if (!hb.hands || Object.values(hb.hands).flat().length !== 52) throw new Error('history board lacks the deal');
+  if (hb.contract && hb.tricks.length !== 13) throw new Error('history board lacks the play');
+  stats.history = hist.boards.length + ' boards in /api/history';
+  const ver = await (await fetch(httpBase + '/version')).json(); stats.version = ver.version;
+  stats.totals = A.view.totals; stats.results = A.view.history.map((h) => `${h.number}: ${h.contract} ${h.declarer} ${h.text}`);
   console.log('two-client test OK', JSON.stringify(stats, null, 1));
   A.ws.close(); Bc.ws.close();
   if (srv) await srv.close();

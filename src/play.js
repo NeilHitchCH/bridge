@@ -3,7 +3,9 @@
 // signalling guides (see STRATEGY.md). Uses only information a real player would have:
 // own hand, dummy once exposed, the auction and the cards played so far.
 const E = require('./engine');
-const { annotate } = require('./bidding');
+const { annotate, inferSeat } = require('./bidding');
+const DD = require('./dd');
+const { evalHand } = require('./hand');
 const R = E.rankOf, S = E.suitOf;
 
 const bySuit = (cards, s) => cards.filter((c) => S(c) === s).sort((a, b) => R(b) - R(a));
@@ -71,8 +73,33 @@ const outstanding = (K, s) => {
 const oppsOf = (seat) => [E.nextSeat(seat), E.nextSeat(seat, 3)];
 
 // ---------------------------------------------------------------- entry point
+// Engine settings: 'sim' = sample hidden hands consistent with what is known and solve each one
+// double-dummy (falls back to heuristics until the solver has loaded or when out of time).
+const config = { engine: process.env.BRIDGE_PLAY || 'sim', budgetMs: +process.env.PLAY_MS || 450, maxSamples: 24, minSamples: 4 };
+const cache = new WeakMap();
 function chooseCard(board, me) {
   const legal = E.legalCards(board.hands[me], board.trick);
+  if (legal.length === 1) return legal[0];
+  const key = me + ':' + board.tricks.length + ':' + board.trick.map((t) => t.card).join(',') + ':' + config.engine;
+  let m = cache.get(board); if (!m) { m = new Map(); cache.set(board, m); }
+  if (m.has(key)) return m.get(key);
+  const h = heuristicCard(board, me, legal);
+  let card = h;
+  if (config.engine === 'sim' && DD.isReady() && !(board.tricks.length === 0 && board.trick.length === 0)) {
+    try { const r = simulateCard(board, me, legal, h); card = r.card; if (r.samples > 1) m.set(key + ':info', r); } catch (e) { if (process.env.BRIDGE_DEBUG) throw e; card = h; }
+  }
+  m.set(key, card);
+  return card;
+}
+
+// details of the simulation behind the last choice for this position (for the learning tips)
+function choiceInfo(board, me) {
+  const m = cache.get(board); if (!m) return null;
+  const key = me + ':' + board.tricks.length + ':' + board.trick.map((t) => t.card).join(',') + ':' + config.engine;
+  return m.get(key + ':info') || null;
+}
+
+function heuristicCard(board, me, legal = E.legalCards(board.hands[me], board.trick)) {
   if (legal.length === 1) return legal[0];
   const K = knowledge(board, me);
   let card;
@@ -82,7 +109,114 @@ function chooseCard(board, me) {
     else card = K.trick.length === 0 ? defenderLead(K) : defenderFollow(K, legal);
   } catch (e) { card = null; if (process.env.BRIDGE_DEBUG) throw e; }
   if (!card || !legal.includes(card)) card = lowest(legal);
+  // Safety net for fourth hand: when the other side is winning and we can beat it, never let the
+  // trick go if it is the one we need (making/setting trick) or the hand is nearly over.
+  const must = mustWinFourth(K, legal);
+  if (must && !beatsWinner(K, card)) card = must;
   return card;
+}
+
+function beatsWinner(K, card) {
+  const t = K.trick; if (!t.length) return false;
+  const w = currentWinner(K);
+  return beats(card, w.card, S(t[0].card), K.trump);
+}
+function mustWinFourth(K, legal) {
+  const t = K.trick;
+  if (t.length !== 3) return null;
+  const w = currentWinner(K);
+  if (E.sameSide(w.seat, K.me)) return null;
+  const winners = legal.filter((c) => beatsWinner(K, c));
+  if (!winners.length) return null;
+  if (K.need > 1 && K.remaining > 4 && !lastStopper(K, winners)) return null;
+  const follow = winners.filter((c) => S(c) === S(t[0].card));
+  return lowest(follow.length ? follow : winners);
+}
+// our only winner in the led suit while the opponents still hold enough of it to cash out the rest
+function lastStopper(K, winners) {
+  const led = S(K.trick[0].card);
+  const ours = winners.filter((c) => S(c) === led);
+  if (ours.length !== 1) return false;
+  const left = outstanding(K, led);
+  return left >= K.remaining - K.need; // ducking could let them run enough tricks to beat us
+}
+
+// ---------------------------------------------------------------- simulation
+function seededRng(seed) { let x = seed >>> 0 || 1; return () => { x ^= x << 13; x >>>= 0; x ^= x >>> 17; x ^= x << 5; x >>>= 0; return x / 4294967296; }; }
+function hashStr(str) { let h = 2166136261; for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; }
+
+// Deal the unseen cards to the unseen hands: respect hand sizes and shown voids, and (when it can)
+// what the bidding showed: HCP range and minimum suit lengths of each hand's original holding.
+function sampleDeal(K, rng, strict) {
+  const board = K.board;
+  const hidden = E.SEATS.filter((s) => !K.visible[s]);
+  const known = new Set(K.played);
+  for (const s of Object.keys(K.visible)) for (const c of K.visible[s]) known.add(c);
+  const unknown = E.fullDeck().filter((c) => !known.has(c));
+  const playedBy = { N: [], E: [], S: [], W: [] };
+  for (const t of K.tricks.concat(K.trick.length ? [{ cards: K.trick }] : [])) for (const tc of t.cards) playedBy[tc.seat].push(tc.card);
+  const info = {};
+  for (const s of hidden) info[s] = inferSeat(K.ann, s);
+  for (let attempt = 0; attempt < (strict ? 40 : 200); attempt++) {
+    const deck = unknown.slice();
+    for (let i = deck.length - 1; i > 0; i--) { const j = Math.floor(rng() * (i + 1)); [deck[i], deck[j]] = [deck[j], deck[i]]; }
+    const need = {}; for (const s of hidden) need[s] = board.hands[s].length;
+    const out = {}; for (const s of hidden) out[s] = [];
+    let ok = true;
+    // most constrained cards first: suits some hidden hand is void in
+    deck.sort((a, b) => hidden.filter((s) => K.showedOut[s].has(S(b))).length - hidden.filter((s) => K.showedOut[s].has(S(a))).length);
+    for (const c of deck) {
+      const can = hidden.filter((s) => out[s].length < need[s] && !K.showedOut[s].has(S(c)));
+      if (!can.length) { ok = false; break; }
+      // weight by free space so hand sizes fill evenly
+      let tot = 0; for (const s of can) tot += need[s] - out[s].length;
+      let r = rng() * tot, pick = can[0];
+      for (const s of can) { r -= need[s] - out[s].length; if (r <= 0) { pick = s; break; } }
+      out[pick].push(c);
+    }
+    if (!ok) continue;
+    if (strict) {
+      for (const s of hidden) {
+        const orig = out[s].concat(playedBy[s]);
+        const ev = evalHand(orig), inf = info[s];
+        if (ev.hcp < inf.lo - 1 || ev.hcp > inf.hi + 1) { ok = false; break; }
+        for (const su of E.SUITS) if (ev.len[su] < inf.len[su]) { ok = false; break; }
+        if (!ok) break;
+      }
+      if (!ok) continue;
+    }
+    return out;
+  }
+  return null;
+}
+
+function simulateCard(board, me, legal, heuristic) {
+  const K = knowledge(board, me);
+  const t0 = Date.now();
+  const rng = seededRng(hashStr(board.number + ':' + JSON.stringify(board.original[me]) + ':' + board.tricks.length + ':' + board.trick.length + me));
+  const tot = {}, made = {}; for (const c of legal) { tot[c] = 0; made[c] = 0; }
+  const allVisible = E.SEATS.every((s) => K.visible[s]);
+  const target = K.need; // tricks our side still needs to make (declarer) or set (defence)
+  let n = 0;
+  const max = allVisible ? 1 : config.maxSamples;
+  while (n < max) {
+    if (n >= config.minSamples && Date.now() - t0 > config.budgetMs) break;
+    if (n >= 1 && Date.now() - t0 > config.budgetMs * 3) break;
+    const hid = allVisible ? {} : (sampleDeal(K, rng, true) || sampleDeal(K, rng, false));
+    if (!hid) break;
+    const hands = {};
+    for (const s of E.SEATS) hands[s] = K.visible[s] ? board.hands[s].slice() : hid[s];
+    const sc = DD.solve(hands, K.trump, board.trick, board.turn);
+    for (const c of legal) { const v = sc[c] ?? 0; tot[c] += v; if (v >= target) made[c]++; }
+    n++;
+  }
+  if (!n) return { card: heuristic, samples: 0 };
+  // value: chance of making/defeating the contract first, then average tricks (overtricks/undertricks)
+  const val = (c) => (2 * made[c] + tot[c]) / n;
+  let best = -1; for (const c of legal) best = Math.max(best, val(c));
+  const top = legal.filter((c) => val(c) >= best - 1e-9);
+  const card = top.includes(heuristic) ? heuristic : top.sort((a, b) => R(a) - R(b))[0];
+  return { card, samples: n, ms: Date.now() - t0, values: Object.fromEntries(legal.map((c) => [c, +(tot[c] / n).toFixed(2)])), make: Object.fromEntries(legal.map((c) => [c, +(made[c] / n).toFixed(2)])) };
 }
 
 // ---------------------------------------------------------------- opening lead
@@ -538,7 +672,13 @@ function declarerFollow(K, legal) {
       const roundsPlayed = K.tricks.filter((x) => S(x.cards[0].card) === led).length;
       const holdups = Math.min(2, 7 - comb);
       const affordable = K.remaining - K.need;
-      if (stoppers === 1 && roundsPlayed < holdups && affordable >= 2 && !ours.some((c) => R(c) === 13 && !isBoss(K, c))) {
+      // never hold up when we already have the tricks we need, near the end of the hand, or when the
+      // defenders still hold enough cards in the suit to beat us if we let them keep the lead
+      let sureNow = 0;
+      for (const s of E.SUITS) sureNow += sureTricks(K, s, K.visible[K.declarer], K.visible[K.dummy]);
+      const theirLen = outstanding(K, led);
+      const safe = sureNow < K.need && K.remaining > 5 && affordable >= 2 && theirLen < affordable;
+      if (safe && stoppers === 1 && roundsPlayed < holdups && affordable >= 2 && !ours.some((c) => R(c) === 13 && !isBoss(K, c))) {
         return lowest(cs);
       }
     }
@@ -602,4 +742,4 @@ function declarerFollow(K, legal) {
   return discard(K, nonTrump.length ? nonTrump : legal);
 }
 
-module.exports = { chooseCard, knowledge, leadCardFrom, sureTricks, bySuit };
+module.exports = { chooseCard, choiceInfo, heuristicCard, simulateCard, sampleDeal, knowledge, leadCardFrom, sureTricks, bySuit, config, ready: DD.ready };

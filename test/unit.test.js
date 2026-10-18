@@ -256,7 +256,9 @@ function position({ hands, contract, declarer, trick = [], auction }) {
   return b;
 }
 
-test('third hand high plays a card that really beats dummy, not a "cheaper equivalent" below it', () => {
+// classic (heuristic) engine tests: deterministic, independent of the double-dummy solver
+const htest = (name, fn) => test(name, () => { const e = P.config.engine; P.config.engine = 'heuristic'; try { return fn(); } finally { P.config.engine = e; } });
+htest('third hand high plays a card that really beats dummy, not a "cheaper equivalent" below it', () => {
   // 3NT by E (dummy W). South leads the 3 of clubs, dummy plays the singleton queen.
   // North's K wins; the old code offered the 10 (treating the queen on the table as already gone).
   const b = position({
@@ -266,7 +268,7 @@ test('third hand high plays a card that really beats dummy, not a "cheaper equiv
   assert.equal(P.chooseCard(b, 'N'), 'CK');
   assert.equal(T.playTip(b, 'N').card, 'CK');
 });
-test('second hand low: never "signal" with an honour from honours-only holdings', () => {
+htest('second hand low: never "signal" with an honour from honours-only holdings', () => {
   // 4H by E. Declarer leads a low trump; South holds AJ doubleton and must not rise with the ace.
   const b = position({
     hands: { N: 'T974.7.9852.A952', E: 'K.Q965432.AJ7.K6', S: 'AQJ53.AJ.63.QJT3', W: '862.KT8.KQT4.874' },
@@ -274,7 +276,7 @@ test('second hand low: never "signal" with an honour from honours-only holdings'
   });
   assert.equal(P.chooseCard(b, 'S'), 'HJ');
 });
-test("third hand does not overtake partner's 10 when the jack gains nothing", () => {
+htest("third hand does not overtake partner's 10 when the jack gains nothing", () => {
   // 1NT by W (dummy E). North leads the 10 of hearts, dummy plays low; South with J874 encourages/discourages with a spot.
   const b = position({
     hands: { N: 'A64.QT93.J84.J63', E: 'QJT5.K5.QT2.9854', S: 'K87.J874.K653.KT', W: '932.A62.A97.AQ72' },
@@ -284,7 +286,7 @@ test("third hand does not overtake partner's 10 when the jack gains nothing", ()
   assert.notEqual(c, 'HJ');
   assert.equal(c[0], 'H');
 });
-test('play tips name the hand being played (dummy vs own) and match the suggested card', () => {
+htest('play tips name the hand being played (dummy vs own) and match the suggested card', () => {
   const b = position({
     hands: { N: 'AK32.K32.A32.432', E: 'QJT9.QJT.QJT.QJT', S: '8765.A54.K54.AK5', W: '4.9876.9876.9876' },
     contract: '4S', declarer: 'S', trick: [['W', 'H9']],
@@ -295,7 +297,7 @@ test('play tips name the hand being played (dummy vs own) and match the suggeste
   assert.ok(tip.text.includes(T.cardTxt(tip.card)));
   assert.equal(T.playTip(b, 'N'), null); // the dummy seat itself gets no tip
 });
-test('random positions: every suggested card is legal and follows basic play principles', () => {
+htest('random positions: every suggested card is legal and follows basic play principles', () => {
   let x = 4242; const rng = () => { x = (x * 1103515245 + 12345) % 2147483648; return x / 2147483648; };
   const beats = (c, w, tr) => (c[0] === w[0] ? E.rankOf(c) > E.rankOf(w) : tr !== 'N' && c[0] === tr && w[0] !== tr);
   let checked = 0;
@@ -331,7 +333,7 @@ test('random positions: every suggested card is legal and follows basic play pri
   }
   assert.ok(checked > 3000);
 });
-test('declarer control: the human runs both hands of their side, the computer never plays dummy for a human', () => {
+htest('declarer control: the human runs both hands of their side, the computer never plays dummy for a human', () => {
   const mgr = new RoomManager({ botDelay: 1, bidDelay: 1, trickPause: 1 });
   const { room } = mgr.create({ name: 'Neil', seat: 'S', partner: 'bot' });
   clearTimeout(room.timer); room.timer = null;
@@ -362,4 +364,175 @@ test('declarer control: the human runs both hands of their side, the computer ne
   assert.deepEqual(vs.board.youPlay, []);
   assert.ok(mgr.view(room, 'N').board.legalCards.length > 0);
   clearTimeout(room.timer);
+});
+htest('fourth hand takes the ace when it already has the tricks it needs (no hold-up)', () => {
+  // 3NT by S with 11 top tricks. West leads the DK; South holds A32 and must win, not duck
+  // ("rule of 7" hold-up used to fire regardless of the trick count).
+  const b = position({
+    hands: { N: '5432.5432.54.432', E: '876.876.876.8765', S: 'AKQ.AKQ.A32.AKQJ', W: 'JT9.JT9.KQJT9.T9' },
+    contract: '3N', declarer: 'S', trick: [['W', 'DK'], ['N', 'D4'], ['E', 'D6']],
+  });
+  assert.equal(P.chooseCard(b, 'S'), 'DA');
+});
+htest('fourth hand never lets the making/setting trick or a late trick go when it can win it', () => {
+  let x = 777; const rng = () => { x = (x * 1103515245 + 12345) % 2147483648; return x / 2147483648; };
+  const beats = (c, w, tr) => (c[0] === w[0] ? E.rankOf(c) > E.rankOf(w) : tr !== 'N' && c[0] === tr && w[0] !== tr);
+  let checked = 0;
+  for (let k = 1; k <= 300; k++) {
+    const b = G.newBoard(k, rng);
+    while (b.phase !== 'done') {
+      if (b.trickComplete) { G.collectTrick(b); continue; }
+      if (b.phase === 'play' && b.trick.length === 3) {
+        const tr = b.contract.strain, w = E.trickWinner(b.trick, tr), wc = b.trick.find((q) => q.seat === w).card;
+        const legal = E.legalCards(b.hands[b.turn], b.trick);
+        const can = legal.filter((q) => beats(q, wc, tr));
+        const K = P.knowledge(b, b.turn);
+        if (!E.sameSide(w, b.turn) && can.length && (K.need <= 1 || K.remaining <= 4)) {
+          const c = P.chooseCard(b, b.turn);
+          assert.ok(beats(c, wc, tr), `fourth hand ducked a needed trick: ${b.trick.map((q) => q.seat + q.card).join(' ')} hand ${legal} -> ${c}`);
+          const cheapest = can.filter((q) => q[0] === c[0]).sort((p, q) => E.rankOf(p) - E.rankOf(q))[0];
+          assert.equal(E.rankOf(c) <= E.rankOf(cheapest) || c === cheapest, true);
+          checked++;
+        }
+      }
+      const a = G.botAction(b);
+      a.type === 'call' ? G.applyCall(b, a.actor, a.value) : G.applyCard(b, a.actor, a.value);
+    }
+  }
+  assert.ok(checked > 50, 'checked ' + checked);
+});
+
+// ---------- double-dummy simulation engine ----------
+// Build an ending: `remaining` = the cards still held (S.H.D.C strings, 1 spade + 1 heart + 5 diamonds
+// + 5 clubs in total across the four hands), after 10 tricks in which every seat followed suit,
+// N-S won `nsWon` of them and E-W the rest. `leader` is on lead to trick 11.
+function ending({ remaining, contract, declarer, nsWon, leader, trick = [] }) {
+  const b = G.newBoard(1);
+  b.phase = 'play'; b.auction = [];
+  b.contract = { level: +contract[0], strain: contract[1], doubled: 0, declarer };
+  const Hs = (str) => str.split('.').flatMap((part, i) => [...part.replace('-', '')].map((r) => ['S', 'H', 'D', 'C'][i] + r));
+  for (const s of E.SEATS) b.hands[s] = E.sortHand(Hs(remaining[s]));
+  const held = new Set(E.SEATS.flatMap((s) => b.hands[s]));
+  const per = { S: 3, H: 3, D: 2, C: 2 };
+  let won = 0;
+  b.tricks = [];
+  for (const su of ['S', 'H', 'D', 'C']) {
+    const gone = E.fullDeck().filter((c) => c[0] === su && !held.has(c)).sort((a, c) => E.rankOf(c) - E.rankOf(a));
+    assert.equal(gone.length, per[su] * 4, 'ending needs the right number of ' + su);
+    for (let t = 0; t < per[su]; t++) {
+      const four = gone.slice(t * 4, t * 4 + 4);
+      const winner = won < nsWon ? (won % 2 ? 'S' : 'N') : (won % 2 ? 'W' : 'E');
+      won++;
+      const order = [winner, ...E.SEATS.filter((s) => s !== winner)];
+      const cards = order.map((s, i) => ({ seat: s, card: four[i] }));
+      b.tricks.push({ leader: winner, cards, winner });
+    }
+  }
+  b.original = JSON.parse(JSON.stringify(b.hands));
+  for (const t of b.tricks) for (const c of t.cards) b.original[c.seat].push(c.card);
+  for (const [seat, card] of trick) { b.trick.push({ seat, card }); b.hands[seat].splice(b.hands[seat].indexOf(card), 1); }
+  b.turn = trick.length ? E.nextSeat(trick[trick.length - 1][0]) : leader;
+  return b;
+}
+const simCard = (b, seat) => { const e = P.config.engine; P.config.engine = process.env.SIMCHK || 'sim'; try { return P.chooseCard(b, seat); } finally { P.config.engine = e; } };
+
+test('solver: defender cashes the side-suit ace that beats the contract (last chance)', async () => {
+  assert.ok(await P.ready, 'double-dummy solver loaded');
+  // 3NT by S, declarer has 6 tricks, defence 4. West must cash the DA now; a club lets dummy run AKQ.
+  const b = ending({ remaining: { N: '-.-.-.AKQ', E: '-.-.987.-', S: 'A.A.2.-', W: '-.-.A.32' }, contract: '3N', declarer: 'S', nsWon: 6, leader: 'W' });
+  assert.equal(simCard(b, 'W'), 'DA');
+});
+test('solver: declarer cashes winners before giving up the lead', async () => {
+  await P.ready;
+  // 3NT by S with 7 tricks in: cash the two aces first; leading the diamond lets West run AKQ.
+  const b = ending({ remaining: { N: '-.-.-.432', E: '-.-.3.65', S: 'A.A.2.-', W: '-.-.AKQ.-' }, contract: '3N', declarer: 'S', nsWon: 7, leader: 'S' });
+  const c = simCard(b, 'S');
+  assert.ok(c === 'SA' || c === 'HA', 'cashed ' + c);
+});
+test('solver: fourth hand wins with the ace at the end of the hand instead of ducking', async () => {
+  await P.ready;
+  // 1NT by S: E-W need one more trick. S leads the DK, W and N low:
+  // East must take the DA now (it is the setting trick), not discard or duck.
+  const b = ending({ remaining: { N: '-.-.2.43', E: '-.-.A9.2', S: 'A.A.K.-', W: '-.-.8.65' }, contract: '1N', declarer: 'S', nsWon: 3, leader: 'S', trick: [['S', 'DK'], ['W', 'D8'], ['N', 'D2']] });
+  assert.equal(simCard(b, 'E'), 'DA');
+});
+test('solver engine: every card legal, fourth hand never gives away a trick it needs (random deals)', async () => {
+  await P.ready;
+  const save = { ...P.config }; Object.assign(P.config, { engine: 'sim', budgetMs: 20, maxSamples: 6, minSamples: 3 });
+  try {
+    let x = 31337; const rng = () => { x = (x * 1103515245 + 12345) % 2147483648; return x / 2147483648; };
+    const beats = (c, w, tr) => (c[0] === w[0] ? E.rankOf(c) > E.rankOf(w) : tr !== 'N' && c[0] === tr && w[0] !== tr);
+    let n = 0;
+    for (let k = 1; k <= 25; k++) {
+      const b = G.newBoard(k, rng);
+      while (b.phase !== 'done') {
+        if (b.trickComplete) { G.collectTrick(b); continue; }
+        const a = G.botAction(b);
+        if (b.phase === 'play') {
+          const legal = E.legalCards(b.hands[b.turn], b.trick);
+          assert.ok(legal.includes(a.value));
+          const tip = T.playTip(b, G.controllerOf(b, b.turn));
+          assert.equal(tip.card, a.value, 'tip and computer agree');
+          if (b.trick.length === 3) {
+            const tr = b.contract.strain, w = E.trickWinner(b.trick, tr), wc = b.trick.find((q) => q.seat === w).card;
+            const K = P.knowledge(b, b.turn);
+            if (!E.sameSide(w, b.turn) && legal.some((q) => beats(q, wc, tr)) && K.need <= 1 && K.need > 0) assert.ok(beats(a.value, wc, tr), 'fourth hand ducked the needed trick');
+          }
+          n++;
+        }
+        a.type === 'call' ? G.applyCall(b, a.actor, a.value) : G.applyCard(b, a.actor, a.value);
+      }
+    }
+    assert.ok(n > 400);
+  } finally { Object.assign(P.config, save); }
+});
+test('hand history and practice view', () => {
+  const mgr = new RoomManager({ botDelay: 1, bidDelay: 1, trickPause: 1 });
+  const { room } = mgr.create({ name: 'Neil', seat: 'S', partner: 'bot' });
+  clearTimeout(room.timer); room.timer = null;
+  const b = room.board;
+  // practice: computer partner's cards only when asked
+  assert.equal(mgr.view(room, 'S').board.hands.N, undefined);
+  const pv = mgr.view(room, 'S', { practice: true });
+  assert.deepEqual(pv.board.hands.N, b.hands.N);
+  assert.equal(pv.board.hands.E, undefined);
+  assert.equal(pv.practiceAvailable, true);
+  // never with a human partner
+  room.seats.N = { type: 'human', name: 'P', token: 't', connected: true };
+  const hv = mgr.view(room, 'S', { practice: true });
+  assert.equal(hv.board.hands.N, undefined);
+  assert.equal(hv.practiceAvailable, false);
+  room.seats.N = { type: 'bot', name: 'North (computer)' };
+  // play the board out with the computer for everyone, then check the log
+  room.seats.S = { type: 'bot', name: 'x' };
+  while (b.phase !== 'done') {
+    if (b.trickComplete) { G.collectTrick(b); continue; }
+    const a = G.botAction(b); a.type === 'call' ? G.applyCall(b, a.actor, a.value) : G.applyCard(b, a.actor, a.value);
+  }
+  mgr.record(room);
+  const h = mgr.history(room);
+  assert.equal(h.length, 1);
+  assert.equal(h[0].number, b.number);
+  assert.deepEqual(h[0].hands, b.original);
+  assert.equal(h[0].auction.length, b.auction.length);
+  if (b.contract) { assert.equal(h[0].tricks.length, 13); assert.equal(h[0].tricks.flatMap((t) => t.cards).length, 52); }
+  for (let i = 0; i < 60; i++) mgr.record(room);
+  assert.equal(room.boardLog.length, 50);
+});
+test('solver: real positions where the classic engine failed to cash an ace (fixtures)', async () => {
+  await P.ready;
+  const DD = require('../src/dd');
+  const fx = require('./fixtures/cash-ace.json');
+  const save = { ...P.config }; Object.assign(P.config, { engine: 'sim', budgetMs: 60000, maxSamples: 24, minSamples: 24 });
+  try {
+    for (const f of fx) {
+      const b = JSON.parse(JSON.stringify(f.board));
+      const legal = E.legalCards(b.hands[f.seat], b.trick);
+      const sc = DD.solve(b.hands, b.contract.strain, b.trick, b.turn);
+      const best = Math.max(...legal.map((c) => sc[c]));
+      const c = P.chooseCard(b, f.seat);
+      assert.equal(sc[c], best, `${f.cls} board ${b.number}: ${c} gives away a trick (best ${f.best})`);
+      assert.ok(sc[f.classic] < best, 'fixture still documents a classic-engine error');
+    }
+  } finally { Object.assign(P.config, save); }
 });

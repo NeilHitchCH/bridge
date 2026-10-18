@@ -20,6 +20,8 @@
     set tips(v) { localStorage.setItem('bridge.tips', v ? '1' : '0'); },
     get reveal() { return localStorage.getItem('bridge.reveal') === '1'; },
     set reveal(v) { localStorage.setItem('bridge.reveal', v ? '1' : '0'); },
+    get practice() { return localStorage.getItem('bridge.practice') === '1'; },
+    set practice(v) { localStorage.setItem('bridge.practice', v ? '1' : '0'); },
     get system() { return localStorage.getItem('bridge.system') || 'sayc'; },
     set system(v) { localStorage.setItem('bridge.system', v); },
   };
@@ -35,6 +37,7 @@
     st.ws = ws;
     ws.onopen = () => {
       st.connected = true; st.retry = 0; st.lastMsg = Date.now(); $('conn').classList.remove('show');
+      if (store.practice) send({ t: 'practice', on: true });
       if (st.code) send({ t: 'join', code: st.code, token: store.tokens[st.code] });
     };
     ws.onmessage = (ev) => {
@@ -104,7 +107,7 @@
     if (pb && nb && pb.number === nb.number && pb.trick.length === 4 && nb.trick.length < 4 && nb.lastTrick) {
       animateCollect(nb.lastTrick);
     }
-    if (nb && pb && pb.number !== nb.number) { st.selLevel = null; st.explainIdx = null; closeSheet(); }
+    if (nb && pb && pb.number !== nb.number) { st.selLevel = null; st.explainIdx = null; if (st.sheetKind !== 'review') closeSheet(); }
     render();
     if (nb && nb.phase === 'done' && st.resultShownFor !== nb.number && view.you) {
       st.resultShownFor = nb.number;
@@ -219,6 +222,9 @@
     if (x.type === 'open') return 'Open seat';
     return x.type === 'bot' ? SEAT_NAME[s] : x.name;
   }
+  // who is who from the viewer's chair: partner sits opposite, the two opponents left and right
+  function roleOf(s) { const you = st.view.you; return s === you ? 'you' : s === partnerOf(you) ? 'partner' : 'opp'; }
+  function roleWord(s) { return { you: '', partner: 'Partner', opp: 'Opp' }[roleOf(s)]; }
   const vulText = (v) => ({ None: 'None vul', NS: 'N-S vul', EW: 'E-W vul', Both: 'All vul' }[v]);
   const isVul = (vul, s) => vul === 'Both' || vul === sideOf(s);
 
@@ -257,7 +263,10 @@
       }
       const dot = x.type === 'bot' ? 'bot' : x.type === 'open' ? 'off' : x.connected ? '' : 'off';
       const cnt = b && b.phase === 'play' && s !== you && !(b.exposed && s === b.dummy) ? `<span class="cnt">${b.counts[s]}🂠</span>` : '';
-      p.innerHTML = `<span class="seat">${s}</span><span class="dot ${dot}" title="${x.type === 'bot' ? 'Computer' : x.connected ? 'Online' : 'Offline'}"></span><span class="nm">${esc(displayName(s))}</span>${badges.join('')}${cnt}`;
+      const rw = roleWord(s);
+      p.innerHTML = `<span class="seat">${s}</span><span class="dot ${dot}" title="${x.type === 'bot' ? 'Computer' : x.connected ? 'Online' : 'Offline'}"></span><span class="nm">${esc(displayName(s))}</span>${rw ? `<span class="role role-${roleOf(s)}">${rw}</span>` : ''}${badges.join('')}${cnt}`;
+      p.classList.toggle('ours', roleOf(s) !== 'opp');
+      p.classList.toggle('theirs', roleOf(s) === 'opp');
       p.classList.toggle('turn', !!(b && b.turn === s && b.phase !== 'done'));
       p.classList.toggle('vul', !!(b && isVul(b.vul, s)));
     }
@@ -265,6 +274,7 @@
     const felt = document.querySelector('.felt');
     const auctionEl = $('auction'), trickEl = $('trick'), statusEl = $('status');
     if (!b) {
+      $('practiceBar').classList.remove('show');
       auctionEl.classList.remove('show'); trickEl.classList.remove('show');
       $('dummyArea').classList.remove('show'); felt.classList.remove('with-dummy');
       statusEl.innerHTML = waitingHTML();
@@ -283,13 +293,21 @@
     const da = $('dummyArea');
     if (topSeat) {
       const canPlay = b.turn === topSeat && !b.trickComplete && b.legalCards.length > 0;
-      const label = topSeat === b.dummy ? `Dummy · ${SEAT_NAME[topSeat]}` : `Declarer · ${SEAT_NAME[topSeat]}`;
+      const label = (topSeat === b.dummy ? `Dummy · ${SEAT_NAME[topSeat]}` : `Declarer · ${SEAT_NAME[topSeat]}`) + ` (${roleOf(topSeat) === 'partner' ? 'your partner' : 'opponent'})`;
       const mineTxt = otherMine === topSeat ? ' · you play these cards' : '';
       setHTML(da, `<div class="dummy-label">${label}${mineTxt}</div>` + handHTML(b.hands[topSeat], canPlay ? b.legalCards : null, true));
       da.classList.add('show');
       da.classList.toggle('myturn', canPlay);
       sizeHand(da.querySelector('.hand'), b.hands[topSeat].length, true);
     } else { da.classList.remove('show', 'myturn'); setHTML(da, ''); }
+
+    // practice view: computer partner's cards, unless they are already on the table
+    const pb = $('practiceBar'), ps = partnerOf(you);
+    if (b.practice && b.hands[ps] && topSeat !== ps) {
+      const lines = ['S', 'H', 'D', 'C'].map((su) => `<span class="pl">${suitSpan(su)} ${b.hands[ps].filter((c) => c[0] === su).sort((a, c) => rankOf(c) - rankOf(a)).map((c) => (c[1] === 'T' ? '10' : c[1])).join(' ') || '—'}</span>`).join('');
+      setHTML(pb, `<span class="pt">Practice view · Partner (${SEAT_NAME[ps]})</span>${lines}`);
+      pb.classList.add('show');
+    } else { pb.classList.remove('show'); setHTML(pb, ''); }
 
     // center
     if (b.phase === 'auction') {
@@ -474,7 +492,7 @@
   // ---------------------------------------------------------------- auction
   function auctionHTML(b, interactive) {
     const order = ['W', 'N', 'E', 'S'];
-    const head = order.map((s) => `<th class="${isVul(b.vul, s) ? 'v' : ''}">${s}<span class="nm">${esc(s === st.view.you ? 'You' : displayName(s))}</span></th>`).join('');
+    const head = order.map((s) => `<th class="${isVul(b.vul, s) ? 'v' : ''} ${st.view.you && roleOf(s) !== 'opp' ? 'ours' : ''}">${s}<span class="nm">${esc(s === st.view.you ? 'You' : (roleOf(s) === 'partner' ? 'Partner' : 'Opp'))}</span></th>`).join('');
     const cells = [];
     const start = order.indexOf(b.dealer);
     for (let i = 0; i < start; i++) cells.push('<td></td>');
@@ -603,6 +621,8 @@
       <button class="btn" data-a="system">Bidding system &amp; conventions</button>
       <button class="btn" data-a="card">System card (quick reference)</button>
       <button class="btn" data-a="tips">Learning tips: ${store.tips ? 'On' : 'Off'}</button>
+      ${st.view.practiceAvailable ? `<button class="btn" data-a="practice">Show partner's hand (practice): ${store.practice ? 'On' : 'Off'}</button>` : `<button class="btn" disabled>Show partner's hand: only with a computer partner</button>`}
+      <button class="btn" data-a="review" ${st.view.historyCount ? '' : 'disabled'}>Hand review (last ${Math.min(50, st.view.historyCount || 0)} boards)</button>
       <button class="btn" data-a="seats">Seats &amp; players</button>
       <button class="btn danger" data-a="leave">Leave table</button>
     </div>`, (el) => {
@@ -615,6 +635,8 @@
         if (a === 'seats') openSeats();
         if (a === 'system') openSystem();
         if (a === 'card') openSystemCard();
+        if (a === 'practice') { store.practice = !store.practice; send({ t: 'practice', on: store.practice }); toast(store.practice ? "Partner's hand shown (practice)" : "Partner's hand hidden"); closeSheet(); }
+        if (a === 'review') openReview();
         if (a === 'tips') { store.tips = !store.tips; toast(store.tips ? 'Learning tips on' : 'Learning tips off'); closeSheet(); renderTable(); }
         if (a === 'leave') { if (confirm('Leave this table? Your seat will be opened for someone else.')) { send({ t: 'leave' }); closeSheet(); st.code = null; st.view = null; setUrl(null); show('home'); } }
       };
@@ -680,11 +702,38 @@
     openSheet('result', `<div class="result-head">${head}</div>
       <div class="deal-diagram">${['N', 'W', 'E', 'S'].map((s) => handDiagram(b.hands, s)).join('')}<div class="dd-c">Board ${b.number}<br>${vulText(b.vul)}<br>Dealer ${b.dealer}</div></div>
       <div class="auction show" style="box-shadow:none;border:1px solid #e6ebe8;margin-bottom:12px">${auctionHTML(b, false)}</div>
-      <div style="display:flex;gap:8px"><button class="btn primary big" style="flex:1" id="rNext" ${me.ready ? 'disabled' : ''}>${me.ready ? 'Waiting for partner…' : 'Next deal'}</button><button class="btn big" id="rScore">Scores</button></div>
+      <div style="display:flex;gap:8px"><button class="btn primary big" style="flex:1" id="rNext" ${me.ready ? 'disabled' : ''}>${me.ready ? 'Waiting for partner…' : 'Next deal'}</button><button class="btn big" id="rScore">Scores</button><button class="btn big" id="rReview">Review</button></div>
       <div class="ready-list">${readyTxt}</div>
       <div style="text-align:center;margin-top:8px;font-size:13px;color:#53625a">Running total · N-S ${v.totals.NS} · E-W ${v.totals.EW}</div>`, (el) => {
       el.querySelector('#rNext').onclick = () => { send({ t: 'ready' }); };
       el.querySelector('#rScore').onclick = openScore;
+      el.querySelector('#rReview').onclick = () => openReview();
+    });
+  }
+
+  // ---------------------------------------------------------------- hand review
+  async function openReview(idx = 0) {
+    let data;
+    try { data = await (await fetch('/api/history?code=' + encodeURIComponent(st.view.code))).json(); } catch { toast('Could not load the hand history'); return; }
+    const boards = data.boards || [];
+    if (!boards.length) { toast('No finished boards yet'); return; }
+    st.review = { boards, idx };
+    renderReview();
+  }
+  function renderReview() {
+    const { boards, idx } = st.review; const h = boards[idx];
+    const nav = `<div class="rv-nav"><button class="btn" id="rvPrev" ${idx >= boards.length - 1 ? 'disabled' : ''}>‹ Older</button><span>Board ${h.number} · ${idx === 0 ? 'last hand' : (idx + 1) + ' hands ago'}</span><button class="btn" id="rvNext" ${idx === 0 ? 'disabled' : ''}>Newer ›</button></div>`;
+    const res = h.result && h.result.passedOut ? 'Passed out' : `${contractHTML(h.contract)} by ${SEAT_NAME[h.declarer]} · ${h.result.tricks} tricks · ${esc(h.text.split(' ').pop())} · N-S ${h.nsScore > 0 ? '+' : ''}${h.nsScore}`;
+    const pseudo = { dealer: h.dealer, vul: h.vul, auction: h.auction, phase: 'done' };
+    const who = (s) => (s === st.view.you ? 'You' : roleOf(s) === 'partner' ? 'Partner' : SEAT_NAME[s]);
+    const rows = (h.tricks || []).map((t, i) => `<tr><td>${i + 1}</td>${SEATS.map((s) => { const c = t.cards.find((q) => q.seat === s); const lead = t.leader === s; return `<td class="${t.winner === s ? 'win' : ''} ${lead ? 'lead' : ''}">${c ? cardWords(c.card) : ''}</td>`; }).join('')}<td>${esc(who(t.winner))}</td></tr>`).join('');
+    openSheet('review', `<h2>Hand review</h2>${nav}<div class="result-head"><div class="big" style="font-size:18px">${res}</div></div>
+      <div class="deal-diagram">${['N', 'W', 'E', 'S'].map((s) => handDiagram(h.hands, s)).join('')}<div class="dd-c">Board ${h.number}<br>${vulText(h.vul)}<br>Dealer ${h.dealer}</div></div>
+      <div class="auction show" style="box-shadow:none;border:1px solid #e6ebe8;margin-bottom:12px">${auctionHTML(pseudo, false)}</div>
+      ${rows ? `<h3>Play, trick by trick</h3><p class="note">Underlined = led the trick, highlighted = won it.</p><table class="score-table rv-play"><thead><tr><th>#</th>${SEATS.map((s) => `<th>${s}<br><small>${esc(who(s))}</small></th>`).join('')}<th>Won by</th></tr></thead><tbody>${rows}</tbody></table>` : ''}`, (el) => {
+      const p = el.querySelector('#rvPrev'), n = el.querySelector('#rvNext');
+      if (p) p.onclick = () => { st.review.idx++; renderReview(); };
+      if (n) n.onclick = () => { st.review.idx--; renderReview(); };
     });
   }
 

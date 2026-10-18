@@ -40,6 +40,7 @@ async function run(url, { seats, partnerHuman }) {
   const owner = client(url, 'owner');
   await owner.open;
   const mySeat = seats[0];
+  owner.send({ t: 'practice', on: true }); // practice view on: only honoured with a computer partner
   owner.send({ t: 'create', name: 'Neil', seat: mySeat, partner: partnerHuman ? 'open' : 'bot', system: 'sayc' });
   await owner.wait((m) => m.t === 'joined');
   const cls = [owner];
@@ -58,6 +59,15 @@ async function run(url, { seats, partnerHuman }) {
     const timer = setTimeout(() => fail(new Error(`timeout ${JSON.stringify(facts)} seats=${seats} partnerHuman=${partnerHuman}`)), 150000);
     const act = (c) => {
       const v = c.view; const b = v && v.board; if (!b) return;
+      if (b.phase !== 'done') {
+        const p = E.partnerOf(c.seat);
+        for (const s of Object.keys(b.hands)) {
+          if (s === c.seat || (b.exposed && s === b.dummy) || (b.youPlay || []).includes(s)) continue;
+          if (s === p && !partnerHuman && c === owner && b.practice) { facts.practiceSeen = (facts.practiceSeen || 0) + 1; continue; }
+          return fail(new Error(`${c.label} (${c.seat}) can see ${s}'s hand`));
+        }
+        if (partnerHuman && b.practice) return fail(new Error('practice view granted with a human partner'));
+      }
       const strategy = b.number % 2 ? 'bid' : 'pass';
       // 1. audit every card that has been played by our side this board
       if (b.phase !== 'auction' && b.contract) {
@@ -124,13 +134,14 @@ async function main() {
   let url = process.argv[2], srv;
   if (!url) {
     const { startServer } = require('../server');
-    srv = await startServer({ port: 0, dataFile: null, botDelay: 2, bidDelay: 2, trickPause: 5 });
+    srv = await startServer({ port: 0, dataFile: null, botDelay: 2, bidDelay: 2, trickPause: 5, playEngine: 'heuristic' });
     url = `ws://127.0.0.1:${srv.port}/ws`;
   } else if (!url.endsWith('/ws')) url = url.replace(/^http/, 'ws').replace(/\/$/, '') + '/ws';
   const out = {};
   const seatsToTest = process.argv[3] ? process.argv[3].split(',') : ['S', 'N', 'E', 'W'];
   for (const s of seatsToTest) {
     const f = await run(url, { seats: [s], partnerHuman: false });
+    if (!f.practiceSeen) throw new Error('practice view never showed the computer partner');
     if (!f.selfDeclared || !f.partnerDeclared || !f.dummyTurnsPlayedByHuman || !f.declTurnsPlayedByDummyHuman) throw new Error(`solo ${s}: scenarios not all covered ${JSON.stringify(f)}`);
     out['solo-' + s] = f;
   }

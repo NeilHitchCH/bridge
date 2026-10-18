@@ -1,9 +1,13 @@
 // Headless simulation: all four seats computer-controlled, many full boards.
 const E = require('../src/engine');
 const G = require('../src/game');
+const P = require('../src/play');
 const N = +process.argv[2] || 1000;
+if (process.argv[5]) P.config.engine = process.argv[5];
+if (P.config.engine === 'sim') { P.config.budgetMs = 15; P.config.minSamples = 3; P.config.maxSamples = 6; }
 const SYS = process.argv[3] || 'sayc', OPP = process.argv[4] || SYS;
 const systems = { NS: { id: SYS }, EW: { id: OPP } };
+(async () => { if (P.config.engine === 'sim') await P.ready;
 let stats = { boards: 0, passedOut: 0, made: 0, down: 0, illegal: 0, stuck: 0, tricksTotal: 0, byLevel: {}, ms: 0 };
 const t0 = Date.now();
 for (let i = 1; i <= N; i++) {
@@ -41,3 +45,4 @@ for (let i = 1; i <= N; i++) {
 stats.ms = Date.now() - t0;
 console.log(SYS + ' vs ' + OPP + ': ' + JSON.stringify(stats));
 if (stats.illegal || stats.stuck || stats.boards !== N) process.exit(1);
+})();

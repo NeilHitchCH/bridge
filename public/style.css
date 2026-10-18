@@ -262,3 +262,21 @@ input{font-size:16px}
 .dummy-label{white-space:nowrap}
 .dummy-note{position:absolute;top:-16px;left:50%;transform:translateX(-50%);font-size:12px;font-weight:700;background:rgba(255,253,244,.95);color:var(--ink);padding:3px 10px;border-radius:8px;white-space:nowrap;z-index:2}
 .hand-area.myturn .hand{filter:drop-shadow(0 0 10px rgba(227,194,107,.6))}
+
+/* partner vs opponents */
+.plate .role{font-size:10px;font-weight:800;border-radius:5px;padding:1px 5px}
+.plate .role-partner{background:#59d18c;color:#06301c}
+.plate .role-opp{background:rgba(255,255,255,.16);color:#f2d6d6}
+.plate.ours{border-color:rgba(89,209,140,.75);background:rgba(20,90,55,.55)}
+.plate.theirs{border-color:rgba(230,120,120,.35)}
+.auction th.ours{background:#e2f5ea}
+/* practice view */
+.practicebar{display:none;margin:0 calc(var(--sar) + 8px) 4px calc(var(--sal) + 8px);background:rgba(255,255,255,.12);border:1px dashed rgba(255,255,255,.45);border-radius:10px;padding:4px 8px;font-size:13px;color:#e8f3ec;gap:10px;flex-wrap:wrap;align-items:center;opacity:.9}
+.practicebar.show{display:flex}
+.practicebar .pt{font-size:10px;letter-spacing:.6px;text-transform:uppercase;color:#cfe3d8;width:100%}
+.practicebar .pl span{filter:brightness(1.6)}
+/* hand review */
+.rv-nav{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px;font-weight:700}
+.rv-play td,.rv-play th{text-align:center}
+.rv-play td.win{background:#fbeec4;font-weight:800}
+.rv-play td.lead{text-decoration:underline}

@@ -100,6 +100,14 @@ function playTip(board, seat) {
   }
   const SEATN = { N: 'North', E: 'East', S: 'South', W: 'West' };
   const who = turn === seat ? '' : turn === dummy ? ` from dummy (${SEATN[turn]})` : ` from declarer's hand (${SEATN[turn]})`;
+  const info = P.choiceInfo(board, turn);
+  if (!why && info && info.make && info.make[card] !== undefined) {
+    const pct = Math.round(100 * info.make[card]);
+    const goal = K.role === 'declarer' ? 'makes the contract' : 'beats the contract';
+    why = `it ${goal} in ${pct}% of ${info.samples} likely layouts of the hidden cards`;
+    const alt = Object.keys(info.make).filter((c) => c !== card && info.make[c] < info.make[card] - 0.15);
+    if (alt.length && alt.length <= 3) why += `; ${alt.map(cardTxt).join(', ')} would do worse`;
+  }
   return { card, text: `Suggested${who}: ${cardTxt(card)}${why ? ' (' + why + ')' : ''}.`, notes: lines };
 }
 

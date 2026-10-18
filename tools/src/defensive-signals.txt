@@ -1,0 +1,170 @@
+
+  Defensive Signals in Bridge | BridgePlaybook
+      Choose language
+        English
+        Nederlands
+        Deutsch
+        Français
+    Learn Bridge ▼
+      Learn Bridge Hub
+      How to Play Bridge
+      Bridge Rules
+      Bridge Scoring
+      Bridge Terminology
+    Bidding ▼
+      Bidding Hub
+      Opening Bids
+      Stayman Convention
+      Blackwood Convention
+    Strategy ▼
+      Strategy Hub
+      Declarer Play Tips
+      Defensive Signals
+      How to Win More
+    Play Online ▼
+      Online Bridge Hub
+      BBO Review
+      Funbridge Review
+      RealBridge Review
+    Conventions ▼
+      All Conventions
+      Stayman
+      Jacoby Transfers
+      Blackwood
+      Roman Key Card Blackwood
+      Gerber
+      Takeout Doubles
+      Negative Doubles
+      Michaels Cuebid
+    Tools ▼
+      Tools & Resources Hub
+      Opening Bid Calculator
+      Bridge Glossary
+      Practice Hands
+      Scoring Chart
+  Defensive signals in one line: the spot card you play sends a message: a high card encourages or shows an even number (attitude / count), and in a suit you cannot want, a high card asks partner to switch to the higher-ranking side suit (suit preference).
+      9♥♥9♥
+      2♥♥2♥
+      →
+      HI–LOtells partner
+      Attitude · count · suit preference
+    Playing the nine then the two: a high-low: is how a defender says “I like this suit, keep going.”
+    Why Defenders Need a Code
+    Declarer can see twenty-six cards: their hand and dummy: and controls them as one unit. Each defender sees only thirteen and may not speak. Signals close that gap. The card you choose to play, when its rank is otherwise irrelevant, carries a message your partner can read. Three signals do almost all the work.
+      The three core signals
+      Attitude
+Do I like this suit? A high spot card encourages (I have something here); a low card discourages. The most common and important signal.
+      Count
+How many do I hold? High-then-low shows an even number; low-then-high shows odd. Lets partner work out declarer’s length.
+      Suit pref.
+Which suit next? In a suit you clearly don’t want continued, a high card asks for the higher side suit, a low card for the lower.
+    Only one signal applies at a time, and good defenders know which. As a rule of thumb: signal attitude when partner leads, give count when declarer leads a suit, and use suit preference only when attitude and count cannot apply.
+    A Worked Example: the Attitude Signal
+    Partner leads the ♥K against a spade contract (from a K-Q holding). Dummy has three small hearts. You hold:
+      You, on lead’s right: following to the ♥K
+      ♠73
+      ♥J92
+      ♦A854
+      ♣Q653
+    You hold the ♥J: a useful card. Play the nine, a clearly high spot, to encourage. Partner reads it as “keep playing hearts” and cashes the queen, then leads a third round for you to win or ruff. Drop the two instead and partner, fearing hearts are going nowhere, switches: and a trick vanishes. One spot card decides the defence.
+    Encourage with the highest card you can spare. A nine or eight screams “yes”; the two whispers “no.” The bigger the gap between your signal and the spots still out, the clearer the message.
+    Standard vs Upside-Down Signals
+    Partnerships choose one of two conventions and apply it consistently. Neither is better; what matters is that you and your partner agree.
+        Standard signals
+        High = encourage, high-low = even. The traditional method and the easiest to learn. A big card means “like it”; a small card means “don’t.”
+        Upside-down signals
+        Low = encourage, low-high = even. Popular with experienced pairs because it preserves your high spots as tricks. Same information, inverted.
+    Whichever you play, write it on your system card so opponents can ask. Signalling is information for your partner, never a secret from the table.
+    When Each Signal Applies
+        ✓ Signal clearly when
+          Partner leads and you can encourage or discourage
+          Declarer cashes a suit and you can show count
+          You are giving partner a ruff and must say which suit to return
+        ✗ Don't bother when
+          The card you’d “signal” with is needed as a trick
+          Following suit honestly already tells partner enough
+          Your signal would only help declarer read the hand
+    Common Signalling Mistakes
+      Signalling with a card you need. Never throw a winner just to send a message: the trick is worth more than the information.
+      Confusing the three signals. Decide first whether the situation calls for attitude, count or suit preference. Sending the wrong one misleads partner.
+      Forgetting partner is watching. Your spot cards are read every trick. Play the nine when you mean it and the two when you don’t: consistently.
+      Not agreeing a method. Standard and upside-down look identical at the table. Without an agreement, every signal is a guess.
+What Is an Attitude Signal and How Does It Work in Practice?
+An attitude signal tells your partner whether you like or dislike the suit they have led (or the suit being played). High card = like it, please continue. Low card = I have nothing useful here, switch to another suit.
+Here is a clear example. Partner leads the ♠K (top of a sequence: K-Q-J) against a notrump contract. You look at your hand and see ♠ A 6 2. You want partner to continue spades so you can win the ace and clear the suit. You play the ♠6, not the ♠2. That 6 is a relatively high card (in context), so it is an encouraging signal: "Yes, I like spades, please continue."
+Now suppose instead you hold ♠ 7 4 2. You have no spade honor and the suit is unlikely to run for the defense. You play the ♠2, your lowest card. That low card is a discouraging signal: "I have nothing useful in spades. Please switch to another suit."
+Attitude signals are most commonly given on partner’s opening lead and on any trick where partner leads a suit and you are following suit with no reason to give count. They are the first signal type every defender should learn, because they arise on virtually every hand and getting them right immediately improves your defense.
+What Is a Count Signal and When Does Your Partner Actually Need to Know?
+A count signal tells your partner how many cards you hold in a suit. The standard method: high-low shows an even number of cards (2 or 4), and low-high (playing your smallest card first) shows an odd number (1, 3, or 5).
+Here is when count signals matter most. Declarer is running a long suit from dummy and your partner needs to know when to throw a winner to control the suit. Suppose dummy has ♦ A K Q J 9 (five diamonds) and you hold ♦ 6 2. You high-low: play the ♦6 first, then the ♦2. This shows partner you started with exactly two diamonds. Partner now knows declarer will have to stop the suit after playing dummy’s five, because you have no more diamonds and dummy has no more either.
+Another situation: declarer plays a side suit trying to establish extra winners, and your partner needs to know whether to hold up their ace or take it immediately. If you high-low, showing two cards, partner knows the suit will be exhausted from your side after two rounds. That might be exactly the information they need to time their hold-up correctly.
+Count signals come with a cost: declarer can read them too. Only give count when the information is more useful to your partner than to declarer. When in doubt about which signal to give, attitude usually takes priority over count on the opening lead.
+What Is a Suit Preference Signal and How Do You Give One?
+Suit preference is the most specific of the three signal types. It applies when the question "should I continue this suit or switch?" is already settled, and the only remaining question is which of the other two suits your partner should play. High card = higher-ranking suit. Low card = lower-ranking suit.
+The clearest example of suit preference in action is when you are giving your partner a ruff. Suppose partner leads a suit you know is a singleton for them (you can tell from the lead and the auction). You win the trick and plan to lead the suit back for partner to ruff. The card you choose to lead back is your suit preference signal. Lead a high card if you want partner to return the higher-ranking of the remaining two suits after their ruff. Lead a low card if you want the lower-ranking suit.
+Here is a concrete example. The auction suggests hearts are trumps and you have the lead. You lead your singleton diamond (2). Partner wins the ♦A and wants to give you a ruff. Partner holds ♠ A 4 ♥ 3 ♣ K Q J 8 in the relevant suits. Partner leads back the ♦9 (a high card), which is a suit preference for spades (the higher of clubs and spades). You take the diamond ruff, then lead a spade to partner’s ace, and receive a second ruff. The two ruffs are the difference between setting the contract and letting declarer make it.
+Suit preference also shows up in discard situations. When you cannot follow suit and must throw a card, a high card in a suit you do not care about can point partner toward a different suit entirely.
+All Three Defensive Signals at a Glance
+Here is a quick reference for the three signal types and when each applies:
+      Signal type
+      High card means
+      Low card means
+      When used
+       | Attitude
+       | I like this suit, continue
+       | I dislike this suit, switch
+       | On partner’s lead; when following suit with choice
+       | Count
+       | Even number of cards (high-low = 2 or 4)
+       | Odd number of cards (low first = 1, 3, or 5)
+       | When declarer runs a suit; when partner needs to time their hold-up
+       | Suit preference
+       | Lead the higher-ranking of the two remaining suits
+       | Lead the lower-ranking of the two remaining suits
+       | When giving a ruff; when discarding from a suit you do not need
+The key to reading signals correctly is context. Attitude takes priority on the opening lead. Count takes priority when declarer is running a long suit from dummy. Suit preference takes priority when a ruff is clearly the plan and the only question is what to do next. When in doubt about which signal your partner is giving, think about what they actually need to know at that point in the hand.
+Can Declarer Use Your Signals Against You and How Do You Handle That?
+Yes, and this is the honest difficulty with defensive signalling. Every card you play is visible to all four players. When you signal count by playing high-low to show an even number, declarer reads that information exactly as partner does. When you encourage a suit, declarer learns that you hold an honor there.
+Count signals are especially risky against an attentive declarer. If you high-low in a side suit to show two cards, declarer now knows the exact distribution of that suit and can play to take advantage. For this reason, many experienced partnerships give count signals sparingly, only when the benefit to partner clearly outweighs the gift to declarer.
+A practical rule: when declarer already knows where all the important cards are from the auction or from dummy, signalling costs nothing because declarer has nothing to learn. But when declarer is genuinely guessing whether to play for a particular distribution, avoid giving count unnecessarily. Encourage or discourage attitude, which is harder for declarer to misuse, rather than giving away exact card combinations through count signals on every trick.
+The best defensive partnerships also discuss their signalling conventions before sitting down. Knowing exactly what your partner means when they play a 7 versus a 3 in a given situation is worth far more than any single clever signal played on impulse. Our page on card counting in bridge covers how to build the full picture of the hand using both signals and inference from the auction.
+What Is the Best Opening Lead Against a Suit Contract vs a Notrump Contract?
+Opening lead strategy differs meaningfully between suit and notrump contracts, and knowing the difference is as important as knowing the signals you will exchange after the lead.
+Against a notrump contract: Lead your longest suit, aiming to establish winners before declarer establishes theirs. If your longest suit was bid by declarer or dummy, switch to your next longest. The standard convention in most partnerships is to lead "fourth best" from a long suit: with ♠ K 8 6 4 2, lead the ♠4 (fourth from the top). This gives partner count information and helps them locate your honors using the "Rule of Eleven" (subtract the card led from 11 to find how many higher cards exist outside the leader’s hand).
+Against a suit contract: Be more careful. Establishing a long suit is less powerful because declarer can ruff once you have cleared their stoppers. Strong preferences for a suit contract opening lead include: leading the top of a touching sequence (K from KQJ or KQ10), leading a singleton hoping for a ruff, leading partner’s bid suit, or leading trumps to cut down declarer’s ruffing potential. Avoid leading away from an unsupported ace (Axxx) against a suit contract; that is usually the most dangerous lead of all.
+For a full guide to what to lead in different situations, see our page on defensive signals alongside our notes on how to win more at bridge, which covers the whole-hand picture of good defense.
+    Key Takeaways
+      Attitude (high = like it) is the workhorse signal: use it when partner leads.
+      Count (high-low = even) helps when declarer runs a suit.
+      Suit preference points to the higher or lower side suit when nothing else applies.
+      Agree standard or upside-down with your partner and note it on your card.
+      Never signal with a card you need as a trick.
+  Guide← Back to Bridge Strategy Guide
+  Put this into practice: The BridgePlaybook free tools let you apply what you have just read. Work through real deal scenarios with the Bridge Practice Hands, or check your hand assessments instantly with the Opening Bid Calculator.
+Related Guides
+  StrategyDeclarer Play Tips
+Understanding declarer's plan helps you choose the right defensive signal.
+StrategyCard Counting in Bridge
+Counting cards is the backbone of accurate defensive signaling.
+StrategyOpening Leads in Bridge
+Defense starts before the first signal. Choose the right opening lead and give yourself a head start.
+  Frequently Asked Questions
+  What are the three main defensive signals in bridge?+Attitude (a high card encourages the suit, a low card discourages), count (high-low shows an even number of cards, low-high shows odd) and suit preference (in a suit you don’t want continued, a high card asks for the higher side suit, a low card for the lower).
+When do I give an attitude signal versus a count signal?+Give attitude when partner leads a suit: you are telling them whether to keep playing it. Give count when declarer leads a suit: you are helping partner work out how the suit is divided. Suit preference is reserved for the cases where neither attitude nor count applies.
+What is the difference between standard and upside-down signals?+In standard carding a high card encourages and high-low shows an even count. Upside-down inverts both: a low card encourages and low-high shows even. The information is the same; upside-down simply preserves your high spot cards. Pick one and agree it with your partner.
+Is signalling against the rules?+No. Signalling through the cards you legally play is a core part of bridge. What is not allowed is conveying information by gesture, tone or hesitation. Your carding agreements must also be disclosed to opponents on request.
+Should I always signal?+No. Never play a card you need as a trick just to signal, and don’t signal when it would only help declarer. Signal when the message genuinely helps partner and costs you nothing.
+What is a suit-preference signal?+When you are clearly not asking partner to continue the current suit: for example when giving a ruff: the size of your card points elsewhere: a high card asks for the higher-ranking of the other two relevant suits, a low card for the lower-ranking one.
+      Free download
+      Get our free printable bridge cheat sheets
+      Enter your email to download our 1-page Bidding Cheat Sheet, Scoring Chart and First Online Game Checklist, plus occasional practical bridge tips in plain English. No spam, unsubscribe anytime.
+      Bidding cheat sheetScoring chartOnline game checklist
+        Get the free PDFs
+          Leave this field empty: 
+          Your email address
+          Get the free PDFs →
+        Free. No spam. Unsubscribe anytime.
+      Defence at BridgePlaybook
+        Defence wins as many matches as declarer play, yet most players neglect it. Start with the three signals here, then learn to combine them with a running count in card counting and to read the auction and play like a declarer in declarer play tips.
+        Find every improvement guide in the Bridge Strategy Hub, or brush up on table manners in bridge etiquette.
+

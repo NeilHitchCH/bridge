@@ -1,0 +1,218 @@
+
+    SAYC (Standard American Yellow Card) Bridge Bidding System
+    -->
+    -->
+                        Bidding
+                            Conventions A-Z
+                            Conventions by Category
+                            Bidding Principles
+                            Bidding Systems
+                        Declarer Play
+                        Defense
+                    Articles
+                        Players 
+-->
+                        Reference
+                            Famous Bridge Players 
+                            History of Bridge
+                            Rules of Play
+                            Ethics & Etiquette
+                            Links
+                            Search
+            SAYC (Standard American Yellow Card)
+                Home /
+                Bidding Systems /
+                SAYC (Standard American Yellow Card)
+ --->
+SAYC is a bidding system based on 5-card majors and a strong 1NT. It is prevalent in online bridge games and derives its origins from the ACBL.
+ACBL Publications
+ The ACBL SAYC Convention Card (PDF)
+ The ACBL SAYC System Booklet (PDF)
+General Approach
+The following is from the ACBL's treatise on SAYC:
+ Normally open five-card majors in all seats.
+ Open the higher of long suits of equal length: 5-5 or 6-6.
+ Normally open 1 with 4-4 in the minors.
+ Normally open 1 with 3-3 in the minors.
+ Notrump openings show a balanced hand and can be made with a five-card major
+suit or a five-card minor suit.
+ 1NT = 15-17
+ 2NT = 20-21
+ 3NT = 25-27
+ Strong conventional 2 opening.
+ Weak two-bids in diamonds, hearts and spades.
+Opening Bids
+Bid
+Description
+Related Conventions 
+ | 1 opening bid
+ | 3+ clubs, 13-22 points
+ | Limit Raises 
+ | 1 opening bid
+ | 3+ diamonds, 13-22 points
+ | Limit Raises 
+ | 1 opening bid
+ | 5+ hearts, 13-22 points
+ | 
+Limit Raises
+Jacoby 2NT
+Jordan 2NT
+ | 1 opening bid
+ | 5+ spades, 13-22 points
+ | 
+Limit Raises
+Jacoby 2NT
+Jordan 2NT
+ | 1NT opening bid
+ | Balanced, 15-17 HCP
+ | 
+Gerber
+Jacoby Transfers
+Stayman
+ | 2 opening bid
+ | 22+ HCP or 9+ tricks
+ | — 
+ | 2// opening bids
+ | 6-card suit, 5-11 HCP
+ | RONF 
+ | 2NT opening bid
+ | Balanced, 20-21 HCP
+ | 
+Gerber
+Jacoby Transfers
+Stayman
+ | 3/// opening bids
+ | 7-card suit, 5-11 HCP
+ | — 
+ | 3NT opening bid
+ | Balanced, 25-27 HCP
+ | 
+Jacoby Transfers
+Stayman
+ | 4/ opening bids
+ | 8-card suit, 5-11 HCP
+ | — 
+ | 4/ opening bids
+ | 7+ card suit, 7 tricks not vul. or 8 tricks vul.
+ | — 
+Doubles
+Bid
+Description
+Related Conventions 
+ | Takeout Doubles
+ | Takeout for the unbid suits, OR 17+ points
+ | — 
+ | Negative Doubles
+ | Through 2
+ | — 
+ | SOS Redoubles
+ | Redoubling for takeout after the opponents double for penalty
+ | — 
+Slam Bidding
+Bid
+Description
+Related Conventions 
+ | 4 Gerber
+ | Asks for aces in a no-trump contract
+ | 
+DOPI
+DEPO
+ROPI
+ | 4NT Blackwood
+ | Asks for aces in a trump contract
+ | 
+DOPI
+DEPO
+ROPI
+ | 5NT Grand Slam Force
+ | Invites a grand slam with 2 of 3 top trump honors
+ | — 
+Overcalls
+Bid
+Description
+Related Conventions 
+ | 1-level suit overcall
+ | 8-16 HCP, 4+ card suit
+ | — 
+ | 1NT
+ | Balanced, 15-18 HCP
+ | 
+Gerber
+Jacoby Transfers
+Stayman
+ | Michaels Cuebid
+ | 5-5 or longer in two suits
+ | — 
+ | Unusual 2NT
+ | 5-5 or longer in the lower two unbid suits
+ | — 
+ | Weak jump overcalls
+ | 6-card suit, 5-11 points
+ | RONF 
+Defensive Leads
+Vs. Suit
+Vs. Notrump
+Notes 
+ | xx
+ | xx
+ | Includes all doubletons, such as  KJ, QJ, J5, and 32. The only exception is AK - lead the king. 
+ | AKx
+ | AKx
+ | — 
+ | KQx
+ | KQx
+ | — 
+ | QJx
+ | QJx
+ | — 
+ | JTx
+ | JTx
+ | — 
+ | JT9x
+ | JT9x
+ | — 
+ | KJTx
+ | KJTx
+ | — 
+ | KT9x
+ | KT9x
+ | — 
+ | QT9x
+ | QT9x
+ | — 
+ | xxx
+ | xxx
+ | Low vs. suit contracts. Top of nothing vs. no-trumps. 
+ | xxxx
+ | xxxx
+ | 4th-best vs suit contracts. Second-highest vs. no-trumps (without holding an honor). 
+ | xxxxx
+ | xxxxx
+ | 4th-best vs suit contracts. Second-highest vs. no-trumps (without holding an honor). 
+Defensive Carding
+ Standard attitude signals. High encourages, low discourages.
+ Standard count signals. High-low shows an even # of cards, low-high shows odd.
+Origins
+SAYC is a bidding system created by the ACBL in the 1980s for tournament play. The intent was to offer "Yellow Card" events in which everyone played the same system, thereby avoiding alerts and misunderstandings. 
+When online duplicate bridge began in the late 1990's, SAYC filled the need for a default convention card. It gained traction on OKbridge and was later adopted by Bridge Base Online.  Ironically, SAYC is more popular today as the de  facto system in online pickup games than the carefully standardized sit-down events which the ACBL originally envisioned.
+Online adoption has led to grassroots modifications of the system, with some players defining "SAYC Basic" vs. "SAYC Full". Officially, the ACBL does not make this distinction.
+It is also worth noting that SAYC lacks several conventions and treatments that are popular in modern tournaments. Experienced players may consider filling some "holes" in the system, including (but not limited to):
+ Inverted Minors
+ Roman Key Card Blackwood
+ A defense to 1NT, such as Cappelletti or DONT
+1/ : 2NT as 10-12 HCP  instead of 13-15 HCP
+1/ : 3NT as 13-15 HCP instead of 15-17 HCP
+See also
+High Card Points
+The basic and original method for evaluating hand strength. 
+			    About
+				 Bridgebum began in 1999 and covers a large set of descriptions of bidding conventions, declarer play and defense, and more.
+				Latest Update
+				        Fast Arrival by Danny Kleinman
+				            Fast arrival is the theory that when a forcing bid is available below game, a jump to game denies, but a forcing bid implies, slam interest. 
+			    Contact
+			    See a typo, error or just want to comment?
+		                    Email:      jefftang AT gmail DOT com
+	             © Jeff Tang. All Rights Reserved. Privacy Policy | Terms of Service--->
+			--->
+	

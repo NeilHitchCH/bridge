@@ -1,0 +1,232 @@
+
+  Stayman Convention Cheat Sheet & Guide 2026 | BridgePlaybook
+      Choose language
+        English
+        Nederlands
+      Deutsch
+    Learn Bridge ▼
+      Learn Bridge Hub
+      How to Play Bridge
+      Bridge Rules
+      Bridge Scoring
+      Bridge Terminology
+    Bidding ▼
+      Bidding Hub
+      Opening Bids
+      Stayman Convention
+      Blackwood Convention
+    Strategy ▼
+      Strategy Hub
+      Declarer Play Tips
+      Defensive Signals
+      How to Win More
+    Play Online ▼
+      Online Bridge Hub
+      BBO Review
+      Funbridge Review
+      RealBridge Review
+    Conventions ▼
+      All Conventions
+      Stayman
+      Jacoby Transfers
+      Blackwood
+      Roman Key Card Blackwood
+      Gerber
+      Takeout Doubles
+      Negative Doubles
+      Michaels Cuebid
+    Tools ▼
+      Tools & Resources Hub
+      Opening Bid Calculator
+      Bridge Glossary
+      Practice Hands
+      Scoring Chart
+  Stayman in one sentence: After partner opens 1NT, bid 2♣ (Stayman) to ask “do you have a 4-card major?”: opener replies 2♦ (no major), 2♥ (4 hearts) or 2♠ (4 spades, denying hearts).
+      1NTPartner opens
+      →
+      2♣Stayman asks
+      →
+        K♠♠K♠
+        Q♥♥Q♥
+      Hunting the 4-4 major fit
+    Stayman hunts for the hidden 4-4 major fit that a 1NT opening keeps concealed.
+    What Stayman Is and Why It Works
+    When partner opens 1NT they promise a balanced hand with 15–17 high-card points. If your side also holds eight cards in a major suit, a major-suit game usually outscores 3NT: you have a trump suit, you can ruff losers, and you often need only ten tricks instead of nine.
+    The problem is that a 1NT opener hides four-card majors. Stayman solves it. The 2♣ response is completely artificial: it says nothing about clubs: and simply asks: “Partner, do you hold a four-card major?”
+    The convention is named after Sam Stayman, who published it in 1945, though his partner George Rapée and the Englishman Jack Marx developed the idea independently around the same time. Eighty years on it remains the single most widely played convention in the game, used by near-beginners and world champions alike.
+    Example auction:
+West
+North
+East
+South
+        1NT
+Pass
+2♣
+Pass
+        2♥
+Pass
+4♥
+Pass
+West opens 1NT. East bids 2♣ (Stayman). West shows four hearts with 2♥, and East raises to game in 4♥.
+    Opener’s Three Replies
+    Once you bid 2♣, opener answers with the cheapest bid that describes their majors. There are only three possible replies, and they are easy to learn because they climb the suits in order.
+      Responses to 2♣ Stayman
+      2♦
+No four-card major. Responder now places the contract on points alone.
+      2♥
+Four (or more) hearts. May also hold four spades: hearts are shown first.
+      2♠
+Four spades, denies four hearts. A clear, single-major answer.
+    Because opener always shows hearts first, a 2♥ reply can conceal four spades as well. If you were hunting for spades and hear 2♥, you can still describe your hand on the next round: more on that below.
+Stayman convention cheat sheet: opener’s three replies
+      Opener’s reply
+      Meaning
+      Responder’s next move
+       | 2♦
+       | No four-card major
+       | Place the contract in NT or a minor based on point count
+       | 2♥
+       | Four (or more) hearts. May also hold four spades
+       | Raise hearts, or bid 2♠ to check for a hidden spade fit
+       | 2♠
+       | Four spades, denies four hearts
+       | Raise spades, or sign off in NT with no spade fit
+    A Worked Example: Stayman in Action
+    Theory is easiest to follow with a hand in front of you. Partner opens 1NT and you, sitting opposite, pick up the cards below.
+      Responder holds: 9 HCP, invitational
+      ♠KJ74
+      ♥Q983
+      ♦K52
+      ♣86
+    You hold 9 high-card points and: crucially: both four-card majors. This is a textbook Stayman hand. You are worth an invitation to game, but only if you find a major fit; flat in no-trump this hand is worth no more than a quiet 2NT.
+    So you bid 2♣. If opener rebids 2♥ or 2♠, you have an eight-card major fit and invite with three of that suit: opener passes with a minimum 15 and bids game with 16–17. If opener rebids 2♦, no major fit exists and you simply invite in no-trump with 2NT. Either way, Stayman has steered you to the right strain.
+    Responder’s Second Bid
+    Stayman only asks the first question. Your rebid: the bid you make after hearing opener’s reply: is where you set the level and finish describing your hand. It splits neatly into two cases.
+    After 2♦: No Major Found
+    No 4-4 major fit exists, so the auction returns to no-trump. With an invitational hand (8–9 points) bid 2NT and let opener decide; with a game-going hand (10+ points) bid 3NT directly. You can also bid a four-card major now to show that you were interested in it: useful if opener happens to hold three.
+    After 2♥ or 2♠: A Major Shown
+    If opener’s major matches yours, you have found your fit. Raise to the three level to invite, or jump straight to game with enough strength.
+      Your rebid after a major fit
+      2NT
+Invitational, no fit in opener’s major. You had the other major.
+      3♥/3♠
+Invitational raise of opener’s major. Opener passes minimum, bids game maximum.
+      4♥/4♠
+Game, with a fit. Enough points to play game opposite a minimum 1NT.
+    When to Use Stayman: and When Not To
+        ✓ Use Stayman when
+          You hold at least one four-card major
+          You have 8+ HCP: enough to invite or bid game
+          You want to explore a 4-4 major fit before settling in no-trump
+        ✗ Avoid Stayman when
+          You hold a five-card major: use a Jacoby transfer instead
+          You have a weak hand with no plan for opener’s reply
+          You actually want to play in clubs (Stayman is not clubs)
+    The classic beginner error: using Stayman holding five cards in a major. With five hearts or five spades, transfer instead: it guarantees the fit and makes the strong hand declarer.
+    Stayman Variations Worth Knowing
+    Once standard Stayman is automatic, two common refinements are worth adding to your partnership notes. Both are widely played and easy to disclose to opponents.
+    Garbage (Weak) Stayman
+    With a weak hand short in clubs but holding length in the other three suits, you can bid 2♣ intending to pass whatever opener replies. Because you hold both majors and diamonds, any reply lands in a likely 4-3 or 4-4 fit: almost always a better spot than a flat 1NT. The one requirement is that you are short in clubs, so you are never left stranded in opener’s 2♦ reply with a misfit.
+    Forcing vs Non-Forcing Stayman
+    Over a 1NT opening Stayman is non-forcing: responder may pass opener’s reply on a weak hand. Over a 2NT opening, where responder is almost always strong enough for game, the 3♣ version is treated as game-forcing. Agree with your partner which 1NT range you play and whether you use the weak variation, so no reply ever takes you by surprise.
+    Common Stayman Mistakes to Avoid
+      Bidding Stayman with a five-card major. Transfer instead: Stayman only locates 4-4 fits and gives away that you have a major without guaranteeing one.
+      Forgetting you have a plan for every reply. Before you bid 2♣, know what you will do over 2♦, 2♥ and 2♠. If any answer leaves you stuck, Stayman was the wrong choice.
+      Treating 2♥ as denying spades. Opener bids the lower major first, so 2♥ can hide four spades. Bid on if spades is still your target.
+      Passing 2♦ with the wrong shape. Only pass opener’s replies if you are playing Garbage Stayman and are genuinely happy in any suit.
+How Strong Does Your Hand Need to Be to Use Stayman?
+The short answer is 8 high-card points (HCP) or more. That is the minimum you need because Stayman commits the partnership to reaching at least 2NT, and if opener bids a major that fits your hand the bidding will almost certainly continue to game. You need the values to support that journey.
+Here is how hand strength guides the auction after you bid 2♣:
+  8-9 HCP (game invitation): Use Stayman, then make an invitational rebid. You want to reach game only if opener has a maximum 1NT (15-16 HCP). Rebid 2NT over opener’s 2♦ to invite; raise a shown major to three with a fit.
+  10+ HCP (game-forcing): Use Stayman, then bid game. The combined 25-27 HCP is enough to make game in either a major or notrump.
+  Fewer than 8 HCP with a distributional hand: Consider Garbage Stayman (see the section below). With a balanced weak hand, simply pass 1NT and hope for the best.
+One mistake that trips up newer players: using Stayman with only 6 or 7 points and then finding themselves stuck in an awkward rebid. If opener bids a major that does not fit your hand, you will need to make a second bid without the values to support it. Save Stayman for hands with genuine game prospects.
+What Is Garbage Stayman and When Does It Make Sense?
+Garbage Stayman is a specific use of the 2♣ bid with a hand that has no game interest at all but is too short and unbalanced to play happily in 1NT. The name says it all: you are holding a hand full of "garbage" and trying to escape to a better trump suit at the two level.
+A perfect Garbage Stayman hand looks something like this. Partner opens 1NT and you are holding:
+♠ J 8 7 4    ♥ 9 6 5 3    ♦ 2    ♣ J 8 6 3     (5 HCP)
+You have no game interest and a singleton diamond. Playing 1NT could be a disaster. The answer is to bid 2♣ with the intention of passing whatever opener replies:
+  If opener bids 2♥: Pass. You have four hearts, so this is a reasonable spot.
+  If opener bids 2♠: Pass. You have four spades, equally good.
+  If opener bids 2♦ (no major): Bid 2♥. This is a sign-off. You do not have five hearts, but even a 4-1 or 3-2 fit in hearts is likely a more comfortable contract than 1NT with a singleton in one suit.
+Garbage Stayman is a partnership agreement, not a standard convention at every table. Before you try it, make sure your partner understands that a weak 2♣ followed by an unexpected pass or an odd rebid is part of the plan. At a duplicate club, check the convention card or alert accordingly.
+A Worked Hand: How Stayman Uncovers a Contract That Notrump Cannot
+The real value of Stayman becomes clear when you see it in action. Here is a pair of hands where finding the 4-4 spade fit through Stayman makes the difference between a comfortable make and a difficult battle in notrump.
+North (Opener), 15 HCP:
+♠ K Q 5 2    ♥ A J 4    ♦ 9 7 3    ♣ K Q 6
+South (Responder), 12 HCP:
+♠ A J 9 3    ♥ K Q 7 2    ♦ 6 5    ♣ Q 8 4
+The bidding without Stayman: North opens 1NT. South, not knowing about the spade fit, jumps to 3NT. The defenders lead diamonds and attack through North’s weak three-card holding. With only nine tricks needed in notrump and no way to ruff, the contract can be uncomfortable depending on the diamond split.
+The bidding with Stayman: North opens 1NT. South bids 2♣ (Stayman). North replies 2♠ (four spades). South bids 4♠ (game in spades, the final contract).
+In 4♠, North and South have eight spades between them as trumps. When the defenders cash two diamonds and lead a third, South ruffs with a small spade. That ruffing trick is simply not available in 3NT. The 4-4 spade fit gives declarer an extra resource that converts a tight contract into a comfortable make.
+This is exactly why bridge teachers say that a 4-4 major suit fit often plays better than 3NT on the same combined point count. The ruffing potential is worth extra tricks that high cards alone cannot produce.
+Stayman vs Jacoby Transfers: Which One Should You Use?
+Both Stayman and Jacoby Transfers are responses to a 1NT opening, and both are designed to find the best major-suit contract. The deciding factor between them comes down to one question: how many cards do you have in the major?
+      Your major suit holding
+      Convention to use
+      Reason
+       | Exactly 4 cards in a major, 8+ HCP
+       | Stayman (2♣)
+       | Ask whether opener has a matching four-card major
+       | 5 or more cards in a major, any strength
+       | Jacoby Transfer
+       | Force opener to declare in your suit; stronger hand stays hidden from opponents
+       | 4 spades and 5 hearts
+       | Stayman first
+       | Can explore both majors; if opener denies spades, you can still show hearts
+       | Very weak hand (under 8 HCP), distributional
+       | Garbage Stayman
+       | Escape from 1NT to a safer two-level contract
+       | Balanced hand, no 4-card major, 10+ HCP
+       | Bid 3NT directly
+       | No major fit possible; go straight to the best game
+A simple rule worth memorising: if you have four cards in a major, use Stayman and ask. If you have five or more cards in a major, use a Jacoby Transfer and tell. If you have both four spades and five hearts, start with Stayman. You can always show hearts on the next bid.
+For a full breakdown of how Transfers work alongside Stayman, see our guide to Jacoby Transfers explained.
+What Do You Bid When Opener Replies 2 Diamonds to Stayman?
+When opener bids 2♦ in reply to your Stayman 2♣, the message is clear: opener has no four-card major. That is useful information, but the auction is far from over. What you do next depends on your point count and whether you have a five-card suit to show.
+  With 8-9 HCP (inviting game): Rebid 2NT. You are saying to opener: "I have a game invitation but not enough to commit. Bid 3NT with a maximum 1NT; pass with a minimum."
+  With 10+ HCP (game-forcing): Bid 3NT directly. There is no major fit and you have game values. Notrump is the right contract.
+  With 10+ HCP and a five-card major: Bid your major at the three level (3♥ or 3♠). Opener can raise to game in your suit with three-card support, or retreat to 3NT otherwise.
+  Using Garbage Stayman: Bid 2♥. This is a sign-off. Even playing in a 4-1 heart fit is usually a better result than staying in 1NT with a weak, unbalanced hand.
+There is also a piece of negative information in the 2♦ reply that many players overlook. You now know opener does not hold four hearts or four spades. That can guide your decision about which game to aim for, and sometimes it confirms that 3NT is the safest destination even on an otherwise unclear auction.
+Our bridge bidding reference chart shows the full range of 1NT responses, including what to do over each Stayman reply, in a single easy-to-read table.
+Should I Use Stayman on This Hand? Three Questions to Ask
+When partner opens 1NT and you are looking at your cards, run through these three checks before reaching for the 2♣ bid.
+1. Do I have at least one four-card major? Stayman is only useful if you have a four-card heart or spade suit. Without one, you have nothing to match with opener even if opener has a major. If you have a five-card major, use a Jacoby Transfer instead.
+2. Do I have at least 8 HCP, or am I planning Garbage Stayman? Standard Stayman commits the partnership to at least 2NT. You need the values to support the follow-up auction. Under 8 HCP with a distributional hand, Garbage Stayman may be the right play. Under 8 HCP with a balanced hand, pass and play 1NT.
+3. Does my partner know this convention? Stayman is standard in virtually every form of duplicate bridge. If you are playing with a new partner or at a casual table, a quick check before the session avoids confusion. Garbage Stayman, in particular, is a specific agreement that not all players use.
+If your answer is yes to all three, bid 2♣ with confidence. You are on the right track. For a deeper look at how bidding fits together as a system, see our page on bridge bidding rules and principles.
+    Key Takeaways
+      2♣ over 1NT is artificial: it asks for a four-card major, not clubs.
+      Opener replies 2♦ (none), 2♥ (hearts) or 2♠ (spades, denying hearts).
+      Use it with 8+ points and a four-card major; with a five-card major, transfer instead.
+      Your rebid sets the level: invite at the three level, jump to game with extras.
+      Over a 2NT opening, the same idea becomes 3♣.
+  Guide← Back to Bridge Conventions Guide
+  Related Guides
+  ConventionJacoby Transfers
+The partner tool to Stayman, directing 1NT openers to your 5-card major.
+BiddingStayman in the Bidding System
+How Stayman fits into the full bidding framework alongside other 1NT responses.
+BiddingResponding to 1NT
+The complete response ladder so you always know when to use Stayman versus a transfer.
+  Frequently Asked Questions
+  Is Stayman always 2♣?+Yes: over a 1NT opening, Stayman is always 2♣, the cheapest club bid. Over a 2NT opening it becomes 3♣. It is never used over a suit opening.
+How many points do I need for Stayman?+Around 8 high-card points or more, so that you have a sensible bid ready whatever partner replies. With fewer points and a long major you should transfer instead.
+What if opener has both four-card majors?+Opener bids 2♥ first. If responder was looking for spades, they can bid 2♠ afterwards to locate the spade fit.
+Does Stayman promise a major fit?+No: it only asks the question. If opener replies 2 diamonds, no major fit exists and you simply choose between a no-trump invite or game.
+Can you use Stayman over a 2NT opening?+Yes. Over a 2NT opening, Stayman simply moves up a level to 3♣ and asks the same question. Because responder is usually strong enough for game opposite 2NT, this version is treated as game-forcing.
+What is Garbage Stayman?+Garbage (or Weak) Stayman is bidding 2♣ on a weak hand that is short in clubs but holds the other three suits, planning to pass any reply. It escapes a poor 1NT into a likelier-better trump partscore.
+      Free download
+      Get our free printable bridge cheat sheets
+      Enter your email to download our 1-page Bidding Cheat Sheet, Scoring Chart and First Online Game Checklist, plus occasional practical bridge tips in plain English. No spam, unsubscribe anytime.
+      Bidding cheat sheetScoring chartOnline game checklist
+        Get the free PDFs
+          Leave this field empty: 
+          Your email address
+          Get the free PDFs →
+        Free. No spam. Unsubscribe anytime.
+      Bridge Conventions at BridgePlaybook
+        Stayman is the cornerstone of no-trump bidding and the natural first step into conventional bidding. Once it feels automatic, Jacoby transfers and the slam conventions follow easily.
+        Browse every agreement in the Bridge Conventions Hub, or see how conventions fit the wider system in our Bridge Bidding Hub.
+

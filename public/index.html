@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#0b3d2e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Bridge">
+<meta name="application-name" content="Bridge">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="Contract bridge with a partner online, against computer opponents.">
+<title>Bridge Club</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="app">
+  <!-- Home -->
+  <section id="home" class="screen">
+    <div class="home-inner">
+      <div class="brand">
+        <div class="brand-mark"><span class="s">♠</span><span class="h">♥</span><span class="d">♦</span><span class="c">♣</span></div>
+        <h1>Bridge Club</h1>
+        <p class="tag">Duplicate bridge with your partner, online.</p>
+      </div>
+      <div class="panel">
+        <label class="field"><span>Your name</span><input id="nameInput" maxlength="20" autocomplete="nickname" placeholder="e.g. Neil"></label>
+        <div class="field"><span>Your seat</span>
+          <div class="seg" id="seatSeg">
+            <button data-v="S" class="on">South</button><button data-v="N">North</button><button data-v="E">East</button><button data-v="W">West</button>
+          </div>
+        </div>
+        <div class="field"><span>Partner</span>
+          <div class="seg" id="partnerSeg">
+            <button data-v="open" class="on">Invite a friend</button><button data-v="bot">Computer</button>
+          </div>
+        </div>
+        <label class="field"><span>Bidding system (your side)</span><select id="sysSel" class="sel"></select></label>
+        <label class="field"><span>Computer opponents play</span><select id="oppSel" class="sel"><option value="">Same as us</option></select></label>
+        <div class="field"><span>Learning tips</span>
+          <div class="seg" id="tipsSeg"><button data-v="1" class="on">On</button><button data-v="0">Off</button></div>
+        </div>
+        <p class="sys-sum" id="sysSum"></p>
+        <button id="createBtn" class="btn primary big">Create table</button>
+      </div>
+      <div class="panel">
+        <div class="field"><span>Join with a code</span>
+          <div class="row"><input id="codeInput" maxlength="5" autocapitalize="characters" autocomplete="off" placeholder="ABCDE"><button id="joinBtn" class="btn">Join</button></div>
+        </div>
+      </div>
+      <p class="fine">Empty seats are filled by computer players who bid in the chosen system. You can change systems between boards from the table menu.</p>
+    </div>
+  </section>
+
+  <!-- Seat picker -->
+  <section id="seatpick" class="screen">
+    <div class="home-inner">
+      <div class="brand small"><h1>Table <span id="spCode"></span></h1><p class="tag">Pick a seat to join the game</p></div>
+      <div class="panel">
+        <label class="field"><span>Your name</span><input id="spName" maxlength="20" autocomplete="nickname" placeholder="Your name"></label>
+        <div id="spSeats" class="seat-grid"></div>
+      </div>
+      <button id="spBack" class="btn ghost">Back</button>
+    </div>
+  </section>
+
+  <!-- Table -->
+  <section id="table" class="screen">
+    <header class="bar">
+      <div class="bar-left">
+        <div class="board-no"><small>Board</small><b id="hBoard">–</b></div>
+        <div class="vul-chip" id="hVul">–</div>
+      </div>
+      <div class="bar-mid" id="hContract"><span class="muted">Waiting…</span></div>
+      <div class="bar-right">
+        <div class="tricks" id="hTricks"></div>
+        <button class="icon-btn" id="menuBtn" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg></button>
+      </div>
+    </header>
+    <div class="felt">
+      <div class="plate pos-top" id="plate-top"></div>
+      <div class="plate pos-left" id="plate-left"></div>
+      <div class="plate pos-right" id="plate-right"></div>
+      <div class="dummy-area" id="dummyArea"></div>
+      <div class="center" id="center">
+        <div class="auction" id="auction"></div>
+        <div class="trick" id="trick"></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="plate pos-bottom" id="plate-bottom"></div>
+    </div>
+    <div class="tipbar" id="tipBar"></div>
+    <div class="hand-area" id="handArea"></div>
+    <div class="bidbox" id="bidbox"></div>
+  </section>
+
+  <!-- Overlays -->
+  <div class="sheet-wrap" id="sheetWrap"><div class="sheet" id="sheet"></div></div>
+  <div class="toast" id="toast"></div>
+  <div class="conn" id="conn">Reconnecting…</div>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

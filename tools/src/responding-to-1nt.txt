@@ -1,0 +1,242 @@
+
+  Responding to 1NT in Bridge | BridgePlaybook
+      Choose language
+        English
+        Nederlands
+      Deutsch
+        Français
+    Learn Bridge ▼
+      Learn Bridge Hub
+      How to Play Bridge
+      Bridge Rules
+      Bridge Scoring
+      Bridge Terminology
+    Bidding ▼
+      Bidding Hub
+      Opening Bids
+      Stayman Convention
+      Blackwood Convention
+    Strategy ▼
+      Strategy Hub
+      Declarer Play Tips
+      Defensive Signals
+      How to Win More
+    Play Online ▼
+      Online Bridge Hub
+      BBO Review
+      Funbridge Review
+      RealBridge Review
+    Conventions ▼
+      All Conventions
+      Stayman
+      Jacoby Transfers
+      Blackwood
+      Roman Key Card Blackwood
+      Gerber
+      Takeout Doubles
+      Negative Doubles
+      Michaels Cuebid
+    Tools ▼
+      Tools & Resources Hub
+      Opening Bid Calculator
+      Bridge Glossary
+      Practice Hands
+      Scoring Chart
+  Responding to 1NT in one sentence: Add your points to partner’s 15–17, then decide: pass with 0–7, invite with 8–9, bid game with 10+: using 2♣ Stayman to find a 4-card major fit or a Jacoby transfer to show a 5-card major.
+  Plain-English Summary: A 1NT opening bid shows a balanced hand with exactly 15–17 high-card points in Standard American bridge. Once partner opens 1NT, the responder becomes the captain and decides where the partnership plays. With 0–7 points you pass or sign off in a long suit; with 8–9 points you invite game; with 10 or more points you bid game directly. The Stayman convention (2♣) asks opener if they hold a 4-card major, while Jacoby transfers handle any hand with five or more cards in hearts or spades. You need roughly 25 combined high-card points to make game in notrump (3NT).
+      1NTPartner opens
+      →
+      ?You respond
+      Responder is the captain
+    When partner opens 1NT, the responder takes charge as the captain of the partnership.
+  For many newcomers, the moment that produces the most nervous looks is when partner opens 1NT for the first time. “What do I say now?” is the question on every face. The good news is that responding to 1NT is one of the most logical and learnable parts of the whole game.
+    What Does a 1NT Opening Bid Actually Tell You?
+    Before you can decide what to respond, it helps to know exactly what your partner has announced. A 1NT opening bid, in the Standard American system used by most clubs affiliated with the American Contract Bridge League (ACBL), shows:
+        Balanced Hand
+        No singletons, no voids. Distribution is typically 4–3–3–3, 4–4–3–2, or 5–3–3–2.
+        15–17 HCP
+        A remarkably narrow 3-point window. Most opening bids hide a much wider range of strengths.
+    That is a remarkably precise description. If you add your own points to that range, you can immediately work out whether the partnership belongs in a partscore, a game, or even a slam. That calculation is the heart of responding to 1NT.
+    How Many Points Do You Need to Respond to 1NT?
+    The key number to understand is 25 combined HCP for game in notrump (3NT). With a major-suit fit of eight cards or more, you can bid game in a major with slightly fewer points, but 25 is the reliable landmark.
+      Responder’s Point Ranges
+      0–7
+Weak hand. The combined total is at most 24, probably less. Game is out of reach. Your goal is simply to find the safest partscore contract.
+      8–9
+Invitational hand. You might have game if partner is near the top of the 15–17 range. Invite by making a bid that says “bid on if you have 16–17; pass if you have 15.”
+      10–15
+Game-going hand. Combined with partner’s 15–17, you have at least 25 points. Bid game confidently.
+      16+
+Slam interest. The partnership total reaches 31–33, and a small slam becomes realistic. You need to explore further.
+    What Are the Basic Responses to a 1NT Opening?
+    Here are the standard responses, which are well established in the ACBL’s published bidding guidelines:
+      Standard Responses to 1NT
+      Pass
+0–7 points, balanced hand. The safest place to play is often 1NT. Simply pass.
+      2♥ / 2♠
+0–7 points, 5-card or longer major. Signoff: you would rather play in your suit than in notrump. Partner must pass. (Most experienced players use Jacoby transfers for this instead.)
+      2NT
+8–9 points, no 4-card major. An invitational bid. Partner will bid 3NT with 16–17 points and pass with 15.
+      3NT
+10–15 points, no 4-card major. A confident game bid that ends the auction. Partner passes.
+      2♣
+8+ points, at least one 4-card major. Stayman convention: asks partner “Do you have a four-card major?”
+      2♦ / 2♥
+Any hand with 5+ cards in a major. Jacoby transfers: 2♦ asks partner to bid 2♥; 2♥ asks partner to bid 2♠.
+    What Should You Do With a Weak Hand After 1NT?
+    Weak hands can be surprisingly tricky. The temptation is to panic and bid something, but sometimes passing is exactly right.
+    If your hand is balanced and weak: say, six points spread across the four suits with no long suit: just pass. Partner’s 1NT is likely a fine contract.
+        ✓ Pass: balanced weak hand
+          ♠Q43
+          ♥J76
+          ♦854
+          ♣K932
+        5 points, nothing useful to say. 1NT is perfectly playable.
+        → Transfer to 2♠: long-suit weak hand
+          ♠KJ8642
+          ♥73
+          ♦952
+          ♣84
+        5 points, but six spades. Bid 2♥ (transfer to 2♠) and pass.
+    Don’t bid just because you feel you should. Pass is a completely valid call, and partner will not be disappointed. The one thing to avoid is bidding simply because you think you must “do something.”
+    How Do You Invite Game After Partner Opens 1NT?
+    An invitational hand has 8 or 9 points. You are in a grey area: the game might make, or it might not, depending on whether partner has 15 or 16–17.
+    The cleanest way to invite is 2NT. Partner now knows you have 8–9 balanced points and will accept (bid 3NT) or decline (pass) based on the strength of their hand.
+    If you have a 4-card major alongside your 8–9 points, start with 2♣ Stayman. If partner finds a fit, you can bid 3 of the agreed major (inviting game in the major). If no major fit exists, bid 2NT as your invitation.
+    If you have 5 or more cards in a major, a Jacoby transfer into your suit followed by 2NT shows exactly this hand type and invites partner to choose between 2NT, 3NT, or 3 of your major.
+    When Should You Bid Game Directly After 1NT?
+        ✓ Bid game directly when
+          You hold 10+ points and no 4-card major: bid 3NT
+          You have a 4-card major and 10+ points: start with 2♣ Stayman, then raise to 4 of the major if a fit is found
+          You have a 5+ card major and game values: transfer, then bid 3NT or 4 of the major
+        ✗ Only invite when
+          You have exactly 8–9 points
+          Your shape is flat with no source of extra tricks
+          You want partner to judge with a maximum
+    With 10 or more points and no 4-card major (or after confirming via Stayman that no major fit exists), bid 3NT. This is the most common game bid in bridge, and it ends the auction cleanly.
+    A Worked Example: Making the Right Response Decision
+    Let us walk through a real situation. Partner opens 1NT (15–17 points). You hold these cards:
+      Responder holds: 10 HCP, four spades
+      ♠K973
+      ♥Q85
+      ♦A62
+      ♣J74
+    Count your points: K=3, Q=2, A=4, J=1. Total: 10 HCP. Do you have a 4-card major? Yes: four spades. Combined total? At minimum 10 + 15 = 25. You have enough for game.
+    Step 1: Bid 2♣ (Stayman), asking partner if they have a 4-card major.
+      What Happens Next?
+      2♠
+Partner has four spades. You have four spades. Eight-card fit found. Bid 4♠: game in your major-suit fit.
+      2♥
+Partner has four hearts (and possibly four spades too). You do not have four hearts. Bid 3NT.
+      2♦
+Partner has no four-card major. Bid 3NT. You have the points for game, and notrump is the right home.
+    In every case, your bidding is purposeful and logical. Each response to Stayman leads to a clear next action.
+      Example auction: Stayman finds a spade fit:
+        PARTNER
+OPP
+YOU
+OPP
+        1NT
+Pass
+2♣
+Pass
+        2♠
+Pass
+4♠
+Pass
+        Pass
+Pass
+—
+—
+      Stayman finds the 4–4 spade fit, allowing the partnership to play in their best game contract.
+    What Are Jacoby Transfers and When Do You Use Them?
+    Once you have learned the basic responses, Jacoby transfers are the most important next step. They come into play whenever you have five or more cards in hearts or spades.
+    Instead of bidding your suit directly, you bid the suit just below it:
+      Transfer Bids
+      2♦
+Transfer to hearts. You have 5+ hearts. Opener must bid 2♥.
+      2♥
+Transfer to spades. You have 5+ spades. Opener must bid 2♠.
+    Opener must comply and bid the suit you have transferred to. This puts the strong hand as declarer, which is generally an advantage in bridge.
+    Transfers work with any strength hand. With a weak hand, you simply pass after the transfer. With an invitational hand, you bid 2NT after the transfer. With game values, you jump to 3NT (letting partner choose between notrump and the major) or bid game in the major directly.
+    The full mechanics and strategy behind this convention are covered on the Jacoby transfers page.
+    What Does 4NT Mean After Partner Opens 1NT?
+    You will sometimes hold a hand so strong that game is not enough. With 16–17 points, you and partner likely have 31–34 combined points, which puts a small slam (12 tricks, scored as 6NT) within reach.
+    The correct bid in this situation is 4NT, known as a quantitative raise. It is not Blackwood asking for aces: it is simply an invitation to 6NT. Opener accepts (bids 6NT) with a maximum 17 points and declines (passes) with a minimum 15.
+    With 18 or more points, you can jump to 6NT directly, since the combined total is already enough for slam without any input from partner.
+    Slam bidding is a bigger topic than this article covers in full, but if you are curious, the slam bidding guide explains when and how to push to the six and seven level.
+    What If an Opponent Overcalls or Doubles After 1NT?
+    Bridge does not always go smoothly. Sometimes an opponent will interfere after your partner’s 1NT opening. The most common interference is a double (showing strength) or a natural suit overcall.
+    When opponents intervene, the standard beginner approach is to treat the auction as if the interference was not there, whenever possible. If the overcall has taken away one of your usual responses, trust your point count and bid the closest equivalent.
+    For now, the principle is simple: do not let opponents intimidate you out of bidding game when you have the points for it.
+    Quick-Reference Table: Responding to a 1NT Opening (15–17 HCP)
+          Your PointsYour Hand TypeRecommended BidMeaning
+           | 0–7 | Balanced, no long suit | Pass | 1NT is your best spot
+           | 0–7 | 5+ hearts | 2♦ (transfer) | Sign off in 2♥
+           | 0–7 | 5+ spades | 2♥ (transfer) | Sign off in 2♠
+           | 8–9 | Balanced, no 4-card major | 2NT | Invite to 3NT
+           | 8–9 | One or two 4-card majors | 2♣ (Stayman) | Find major fit, then invite
+           | 8–9 | 5+ major | 2♦/2♥ then 2NT | Invite in major or NT
+           | 10–15 | Balanced, no 4-card major | 3NT | Bid game
+           | 10–15 | One or two 4-card majors | 2♣ then game | Find major fit, bid game
+           | 10–15 | 5+ major | 2♦/2♥ then 3NT | Let opener pick game
+           | 10–15 | 6+ major, game values | 2♦/2♥ then 4M | Game in major
+           | 16–17 | Any balanced | 4NT (quantitative) | Invite 6NT
+           | 18+ | Any | Investigate slam | Explore via Stayman/transfers then slam bid
+    Response structures consistent with ACBL Standard American Yellow Card (SAYC) bidding guidelines, as published by the American Contract Bridge League and referenced in the World Bridge Federation system notes.
+    Where Do You Go From Here?
+    Once you are comfortable with the basics of responding to 1NT, two conventions will make a huge difference to your results: Stayman and Jacoby transfers. You have already seen them mentioned throughout this article, and both are explained in full detail on their own pages.
+    You should also look at the bridge bidding cheat sheet for a one-page overview of the whole bidding system, and the opening bids page if you want to understand what 1NT means from the opener’s perspective. For the broader picture of how all these bids fit into the game, the bridge bidding hub has everything you need.
+    If you are playing at a club and encounter a 1NT opening for the first time, remember: check your points, decide whether you are weak, invitational, or game-going, and follow the table. You will make the right decision more often than you think.
+    Key Takeaways
+      A 1NT opening in Standard American bridge shows a balanced hand with 15–17 high-card points, one of the most precise and descriptive bids in the game.
+      The responder is the “captain” after a 1NT opening and is responsible for choosing the final contract.
+      With 0–7 points, either pass (balanced hand) or sign off in a suit with a transfer or natural bid (5+ cards in a major).
+      With 8–9 points, invite game with 2NT (balanced) or via Stayman (with a 4-card major).
+      With 10 or more points, the partnership has enough for game: bid 3NT, or use Stayman and Jacoby transfers to find the best game contract.
+      The Stayman convention (2♣) finds a 4–4 major fit; Jacoby transfers (2♦ or 2♥) handle hands with five or more cards in a major.
+      Game in notrump (3NT) requires roughly 25 combined HCP; game in a major suit (4♥ or 4♠) requires an 8-card fit and similar combined values.
+      Learning Stayman and Jacoby transfers after mastering the basic responses will significantly improve your results after a 1NT opening.
+  Guide← Back to Bridge Bidding Guide
+  Related Guides
+Complete 1NT Response Chart: What to Bid with Every Hand Type
+Your handBidWhy
+ | 0-7 HCP, no 5-card major, balanced | Pass | Combined 15-24 HCP; partscore at best
+ | Weak hand with 5-card major | 2♦ (transfer to hearts) or 2♥ (transfer to spades) | Play in your 5-card suit even with a weak hand
+ | Weak 4-4-4-1 or 5-4-3-1 with short suit | 2♣ (Garbage Stayman) | Convert to a suit contract; pass any major opener bids
+ | 8-9 HCP, no 4-card major, balanced | 2NT | Invitational; opener with 16-17 accepts
+ | 8-9 HCP, 4-card major | 2♣ (Stayman) then invite | Find major fit first; invite if no fit found
+ | 10+ HCP, no 4-card major, balanced | 3NT | Game in notrump; combined 25-27 HCP
+ | 10+ HCP with 4-card major | 2♣ (Stayman) then bid game | Find 4-4 major fit or play 3NT
+ | 10+ HCP with 5-card major | Transfer then bid game | Show 5-card suit first; bid 3NT or 4 of major
+ | 13-15 HCP, slam interest | Transfer then 3NT or 4NT (Quantitative) | Give opener room to show slam interest
+For the Stayman 2♣ response in full detail, see our Stayman convention guide. For transfers, see our Jacoby Transfers guide.
+What Happens When the Opponents Interfere After Partner's 1NT?
+When an opponent overcalls over partner's 1NT opening, your conventional responses (Stayman, Transfers) may no longer apply. Most partnerships play that after an opponent's overcall, a double shows values (roughly 9+ HCP and suggests defending for penalty), and suit bids are natural and non-forcing. Stayman and Transfers typically go off after interference.
+The most common agreement: a double of an overcall at the two-level shows 9+ HCP and interest in penalizing the opponents. Partner will pass with a good holding in the opponent's suit or run to a better spot if they have a minimum 1NT and poor holding in that suit. If you have a good hand and a long suit of your own, bid your suit naturally at the appropriate level.
+After interference, the bidding decisions become more about hand evaluation and less about convention. The key question is: with the interference, can we still make game? If yes, bid game. If it is uncertain, invite. If the opponents' overcall has pushed you too high, consider doubling for penalties if you have length and strength in their suit. Our bridge bidding rules guide covers competitive bidding principles that apply after 1NT interference.
+ConventionStayman Convention
+The 2 clubs response that asks whether opener holds a 4-card major.
+ConventionJacoby Transfers
+The transfer technique that makes the strong hand the declarer after 1NT.
+BiddingOpening Bids
+Understand the 1NT opening itself before mastering the responses to it.
+  Frequently Asked Questions
+    Should I always respond to my partner’s 1NT opening bid?+No. With 0–7 balanced points and no long suit, passing 1NT is the correct call. Partner has announced a strong, balanced hand, and 1NT is often a perfectly good contract. There is no obligation to bid simply because partner has opened.
+    What is the difference between a weak signoff and an invitational bid after 1NT?+A signoff (like bidding 2♠ with a weak hand) asks partner to pass: the auction ends. An invitational bid (like 2NT) asks partner to make a decision: accept with a maximum (16–17 points) or decline with a minimum (15 points). Partner has a choice in the second case but none in the first.
+    Why do bridge players use Jacoby transfers instead of just bidding their suit directly?+Jacoby transfers put the 1NT opener as declarer in the major suit, rather than the responder. This is an advantage because the stronger hand is hidden from the opponents when it is declarer. The opening lead also goes into the stronger hand, which often means extra tricks. Transfers are worth learning as soon as you are comfortable with the basic responses.
+    Can I bid 2NT after partner opens 1NT if I have a 4-card major?+You can, but it is usually better to check for a major-suit fit first by bidding 2♣ (Stayman). A 4–4 major fit almost always plays better than 3NT. If Stayman does not find a fit, you can still invite 3NT by bidding 2NT on your next turn.
+    How do I respond to 1NT if the opponents bid or double?+If an opponent overcalls after 1NT, try to make the bid you would have made without the interference if your bid is still available. A double of 1NT by an opponent usually shows strength, which means your partner’s hand may be in trouble: be cautious and aim for the safest contract. For beginners, trusting your point count and aiming for the most natural bid is the best approach.
+      Free download
+      Get our free printable bridge cheat sheets
+      Enter your email to download our 1-page Bidding Cheat Sheet, Scoring Chart and First Online Game Checklist, plus occasional practical bridge tips in plain English. No spam, unsubscribe anytime.
+      Bidding cheat sheetScoring chartOnline game checklist
+        Get the free PDFs
+          Leave this field empty: 
+          Your email address
+          Get the free PDFs →
+        Free. No spam. Unsubscribe anytime.
+      Responding to 1NT at BridgePlaybook
+        The 1NT response structure is the most rewarding bidding to master because the strong hand is so precisely defined. Once Stayman and transfers feel automatic, you will reach the right strain and level almost every time.
+        See how it fits the wider system in the Bridge Bidding Hub, and explore every agreement in the Bridge Conventions Hub.
+

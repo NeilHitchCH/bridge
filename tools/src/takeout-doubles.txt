@@ -1,0 +1,151 @@
+
+  Takeout Doubles in Bridge: Beginner Guide | BridgePlaybook
+      Choose language
+        English
+        Nederlands
+      Deutsch
+        Français
+    Learn Bridge ▼
+      Learn Bridge Hub
+      How to Play Bridge
+      Bridge Rules
+      Bridge Scoring
+      Bridge Terminology
+    Bidding ▼
+      Bidding Hub
+      Opening Bids
+      Stayman Convention
+      Blackwood Convention
+    Strategy ▼
+      Strategy Hub
+      Declarer Play Tips
+      Defensive Signals
+      How to Win More
+    Play Online ▼
+      Online Bridge Hub
+      BBO Review
+      Funbridge Review
+      RealBridge Review
+    Conventions ▼
+      All Conventions
+      Stayman
+      Jacoby Transfers
+      Blackwood
+      Roman Key Card Blackwood
+      Gerber
+      Takeout Doubles
+      Negative Doubles
+      Michaels Cuebid
+    Tools ▼
+      Tools & Resources Hub
+      Opening Bid Calculator
+      Bridge Glossary
+      Practice Hands
+      Scoring Chart
+  Takeout doubles in one sentence: When an opponent opens, say 1♥, a double at your first turn is for takeout: it shows about opening strength, shortage in their suit and support for the three unbid suits, and asks partner to pick one.
+      1♥They open
+      →
+      DblTakeout
+      →
+      ♠♦♣
+      Support the three unbid suits
+    A takeout double says “I am short in their suit and have the others: partner, choose a suit.”
+    What a Takeout Double Says
+    When the player on your right opens and you double at a low level, you are not trying to penalise them: you are asking partner to bid. A takeout double makes three promises at once:
+    Opening values (about 12+ points), a shortage in the suit they opened, and support for the unbid suits: at least three cards, ideally four, in each, with special emphasis on any unbid major. The picture-perfect shape is 4-4-4-1 short in their suit.
+    Example auction:
+West
+North
+East
+South
+        —
+1♥
+Dbl
+Pass
+        1♠
+Pass
+2♠
+Pass
+North opens 1♥. East doubles for takeout; West names the spade suit, and East raises: the partnership has found its fit.
+    How Partner Responds (the Advance)
+    Partner: the “advancer”: is obliged to answer unless the next opponent bids. The level of the reply shows the strength.
+      Advancing a takeout double
+      0–8
+Bid your longest unbid suit at the cheapest level: even with nothing.
+      9–11
+Jump in your best suit to show invitational values.
+      12+
+Cuebid the opener’s suit to force to game and ask for more.
+      Pass
+Convert to penalties: only with strong length in their suit.
+    Because partner must act, never make a takeout double on a hand that cannot stand any reply. If you have no support for a suit partner might name, you do not have a takeout double.
+    A Worked Example: A Textbook Double
+    The player on your right opens 1♥. You look down at:
+      Doubler holds: 15 HCP, singleton heart
+      ♠AJ74
+      ♥5
+      ♦KQ86
+      ♣AJ93
+    This is the takeout double in its purest form: 15 points, a singleton in their suit, and four cards in each of the three unbid suits. Whatever partner responds: spades, diamonds or clubs: you have a happy fit. You double.
+    Contrast that with a hand holding five good hearts of your own: there, a penalty pass or a natural bid is the answer, not a takeout double, because you have no support for the suits partner will bid.
+    Takeout or Penalty: and When to Double
+        ✓ Double for takeout when
+          You are short in the suit they opened
+          You have support for the unbid suits
+          You hold roughly opening values or more
+        ✗ Do not double for takeout when
+          You have a long suit of your own: overcall instead
+          You are weak with no clear plan for partner’s reply
+          You hold length in their suit: consider a penalty pass later
+    Double then bid: with a strong one-suiter (around 17+ points) you can double first and bid your suit on the next round: that sequence shows more than a simple overcall ever could.
+    Common Takeout-Double Mistakes to Avoid
+      Doubling with length in their suit. A takeout double promises shortage. With four or five of their cards, pass and consider penalties.
+      Doubling without support for the unbid suits. If you cannot stand partner’s likely reply, you do not have a double.
+      Passing partner’s double with a bust. Advancer must bid: pass only to convert to penalties with real trump length.
+      Treating every double as penalty. At a low level, before partner has bid, a double of the opponents’ suit is for takeout.
+What Does a Takeout Double Show and How Does Partner Respond?
+Doubler's handPartner (advancer) hasAdvancer's response
+ | 12-15 points, 4-4-4-1 shape short in their suit | 0-8 points | Bid cheapest suit at minimum level
+ | Same | 9-11 points | Jump in best suit (invitational)
+ | Same | 12+ points | Cue-bid opponent's suit (forcing to game)
+ | 17+ points (strong takeout double) | Any | Doubler bids again over partner's forced response
+ | Any strength | Has good length in opponent's suit | Pass (converts to penalty)
+The key rule about responding to a takeout double: unless you have a very good reason to pass, you must respond. Partner has asked you to name a suit and does not have a natural hand; they cannot support the suit the opponent bid. Even with zero high-card points, you bid your longest suit at the minimum level. Passing with a weak hand converts the takeout double to a penalty double, which is occasionally the right action but requires genuine length and strength in the opponent's suit.
+How Do You Know When to Use a Takeout Double vs. a Cuebid or Overcall?
+The takeout double is the right choice when your hand has support for any suit partner might name. The classic takeout double hand is 4-4-4-1 or 5-4-3-1 shape where the short suit is the one the opponent opened. If your hand has a good six-card suit, an overcall in that suit is usually cleaner because it tells partner immediately where your strength is concentrated.
+Use a cuebid (Michaels or otherwise) when you have a specific two-suited hand. A takeout double suggests support across the board. A cuebid describes a specific two-suit combination. These are different messages, and mixing them creates confusion for partner. The rule of thumb: takeout double for three-suited hands, cuebid for specific two-suiters, overcall for one strong suit.
+Takeout doubles and negative doubles work together as the two sides of the doubling coin in competitive bridge. The takeout double is used by the player who has NOT bid yet (the overcaller position), while the negative double is used by the responder after partner has opened and the opponent has overcalled. Understanding both helps you compete effectively in any auction. For the broader context of competitive bidding, see our bridge conventions guide and the bridge bidding hub.
+    Key Takeaways
+      A low-level double of the opponents’ suit is for takeout, not penalties.
+      It shows opening values, shortage in their suit and support for the unbid suits.
+      Partner must respond, bidding their longest unbid suit at the cheapest level.
+      Jump with 9–11, cuebid their suit with game values.
+      With a one-suiter, overcall; with length in their suit, consider a penalty pass.
+  Guide← Back to Bridge Conventions Guide
+  Related Guides
+  ConventionNegative Doubles
+The responder's answer to an opponent's overcall when you cannot bid a suit naturally.
+ConventionMichaels Cuebid
+A two-suited overcall to show both majors or a major and a minor.
+StrategyDefensive Signals
+How partner's signals complement your takeout double by showing suit preferences.
+  Frequently Asked Questions
+  Is a double always for takeout?+No. A double is for takeout only at a low level, when partner has not yet bid and the opponents have. Doubles of high contracts, or after partner has already acted, are usually for penalties: agree the boundary with your partner.
+How many points do you need for a takeout double?+About opening values, roughly 12 or more high-card points. You can shade that slightly with ideal shape: shortage in their suit and good support for the others.
+What shape does a takeout double promise?+Classically a shortage in the opener’s suit and at least three cards: ideally four: in every unbid suit, especially the unbid majors. The textbook shape is 4-4-4-1.
+Does partner have to respond to a takeout double?+Yes, unless the player to your right bids first. Even with no points, partner must bid their longest unbid suit at the cheapest level.
+Can you pass a takeout double for penalties?+Yes. Advancer may pass to convert the double to penalties when holding strong length in the opener’s suit: a powerful but rare action.
+Should I double or overcall?+Overcall with one good long suit; make a takeout double when you are short in their suit and can support the others. With a strong one-suiter, you can double first and bid your suit next.
+      Free download
+      Get our free printable bridge cheat sheets
+      Enter your email to download our 1-page Bidding Cheat Sheet, Scoring Chart and First Online Game Checklist, plus occasional practical bridge tips in plain English. No spam, unsubscribe anytime.
+      Bidding cheat sheetScoring chartOnline game checklist
+        Get the free PDFs
+          Leave this field empty: 
+          Your email address
+          Get the free PDFs →
+        Free. No spam. Unsubscribe anytime.
+      Bridge Conventions at BridgePlaybook
+        The takeout double is the first competitive tool every partnership should master. Pair it with its responder-side cousin, the negative double, and the two-suited Michaels cuebid to compete confidently on almost any auction.
+        Browse every agreement in the Bridge Conventions Hub, or see how conventions fit the wider system in our Bridge Bidding Hub.
+

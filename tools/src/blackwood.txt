@@ -1,0 +1,203 @@
+
+  Blackwood: Asking for Aces in Bridge | BridgePlaybook
+      Choose language
+        English
+        Nederlands
+      Deutsch
+    Learn Bridge ▼
+      Learn Bridge Hub
+      How to Play Bridge
+      Bridge Rules
+      Bridge Scoring
+      Bridge Terminology
+    Bidding ▼
+      Bidding Hub
+      Opening Bids
+      Stayman Convention
+      Blackwood Convention
+    Strategy ▼
+      Strategy Hub
+      Declarer Play Tips
+      Defensive Signals
+      How to Win More
+    Play Online ▼
+      Online Bridge Hub
+      BBO Review
+      Funbridge Review
+      RealBridge Review
+    Conventions ▼
+      All Conventions
+      Stayman
+      Jacoby Transfers
+      Blackwood
+      Roman Key Card Blackwood
+      Gerber
+      Takeout Doubles
+      Negative Doubles
+      Michaels Cuebid
+    Tools ▼
+      Tools & Resources Hub
+      Opening Bid Calculator
+      Bridge Glossary
+      Practice Hands
+      Scoring Chart
+  Blackwood in one sentence: Once a trump fit and slam interest are clear, bid 4NT to ask for aces; partner replies 5♣ (0 or 4), 5♦ (1), 5♥ (2) or 5♠ (3), and you then sign off or bid the slam.
+      4NTAce ask
+      →
+        A♠♠A♠
+        A♥♥A♥
+        A♦♦A♦
+        A♣♣A♣
+      Counting the four aces
+    A bid of 4NT asks one question: how many of the four aces does partner hold?
+    What Blackwood Asks
+    Slams score huge bonuses, but only if your side is not missing two top tricks. Blackwood is the safety check: after a trump fit is agreed and one partner senses slam, a bid of 4NT asks “how many aces do you have?”
+    It is artificial: 4NT here is not a natural offer to play no-trump. The reply lets you count the side’s aces and avoid the catastrophe of bidding six with two off the top. See how it fits the bigger picture in our slam bidding guide.
+    Example auction:
+West
+North
+East
+South
+        1♠
+Pass
+3♠
+Pass
+        4NT
+Pass
+5♥
+Pass
+        6♠
+Pass
+Pass
+Pass
+Spades are agreed. West bids 4NT; East shows two aces with 5♥. Holding the other two, West bids the small slam, 6♠.
+    Responses to 4NT (Standard Blackwood)
+    Partner answers up the ladder, one step per ace. The scale is fixed and easy to memorise: clubs, diamonds, hearts, spades for zero-or-four, one, two and three.
+      Showing your aces
+      5♣
+0 or 4 aces. The earlier auction makes clear which.
+      5♦
+1 ace.
+      5♥
+2 aces.
+      5♠
+3 aces.
+    Asking for kings: if all four aces are present and you are eyeing a grand slam, follow with 5NT to ask for kings on the same step-by-step scale.
+    A Worked Example: Blackwood in Action
+    Partner has just raised your 1♠ opening to 3♠, a limit raise promising four trumps and about 10–12 points. You pick your hand back up:
+      Opener holds: 20 HCP, three aces
+      ♠AKQ85
+      ♥AK4
+      ♦A73
+      ♣62
+    Spades are agreed and you hold a monster: 20 points and three aces. Slam is clearly live, but jumping to 6♠ could be a disaster if partner is missing the two aces you do not hold. So you bid 4NT.
+    Partner replies 5♦, showing one ace. That completes the set: your three plus partner’s one means all four aces are present and the opponents cannot cash two off the top. You bid 6♠ with confidence. Had partner shown zero aces with 5♣, you would have signed off in 5♠ and lived.
+    After the Reply: Signing Off or Driving On
+    Blackwood only counts aces; you still have to make the decision. Two follow-ups cover almost every situation.
+    Signing off below slam
+    If partner’s answer reveals the side is missing two aces, do not bid the slam. Return to the agreed trump suit at the five level: for example, 5♠ over a 5♦ reply: and partner must pass. The whole point of asking was to be able to stop.
+    The 5NT king-ask
+    When every ace is accounted for and a grand slam is in view, bid 5NT to ask for kings. Partner answers on the same scale: 6♣ for zero or four kings, 6♦ for one, and so on. Bidding 5NT also guarantees the partnership holds all four aces, so it doubles as a grand-slam try.
+    When Not to Use Blackwood
+        ✗ Blackwood is the wrong tool when
+          You hold a void: an ace-count alone can mislead you
+          You have a weak doubleton in a side suit (you may be off the A-K there)
+          You only want to be in game: never start an ace ask without slam values
+        ♠ Consider instead
+          Roman Key Card Blackwood: counts the trump king and queen too
+          Gerber (4♣): the ace-ask after a no-trump opening
+          Splinter bids: show a trump fit and a singleton before invoking Blackwood
+          Control-bidding (cue bids) when shape matters more than raw aces
+    The void trap: with a void, an ace you are missing may not matter at all, while one you hold could be worthless. When you are void in a suit, prefer key-card methods or cue-bidding over plain Blackwood.
+    Common Blackwood Mistakes to Avoid
+      Bidding 4NT with no trump fit agreed. Without an agreed suit, 4NT is natural and quantitative: not Blackwood. Set the trump suit first.
+      Asking when you cannot use the answer. If you will bid the slam regardless, or have no slam values at all, asking only tips off the defence.
+      Using Blackwood with a void. Ace-counting breaks down opposite shortage: switch to RKCB or cue-bidding.
+      Forgetting the 5♣ ambiguity. Always work out from the prior bidding whether 5♣ is zero or four before you act on it.
+How Do You Know When Your Side Has Enough Strength to Use Blackwood?
+Blackwood is an asking bid, not a strength-checking bid. Before you use it, you need to already know that a slam is likely. The convention only asks about aces once you are already confident the combined values are there.
+The rough benchmarks for slam are:
+  33 combined HCP: Small slam in notrump is reasonable. This is the standard threshold most textbooks quote.
+  30-32 combined HCP with a strong trump fit: A suit slam is possible if the hands fit well, with good distribution and controls. Shape matters more in suit slams than in notrump.
+  37 combined HCP: Grand slam territory. You can usually see 13 tricks without even counting them.
+The most common slam error is not a bidding mistake but a counting mistake. Players use Blackwood, find that all four aces are present, and bid 6NT, only to find that the combined hands have only 29 or 30 HCP and cannot produce 12 tricks. Blackwood told them the aces were there but did not check whether the overall strength was sufficient.
+A simple test before you bid 4NT: count the tricks you can see between the two hands, assuming aces are where you need them. If you can see 12 tricks even in a reasonable worst case, use Blackwood to confirm. If you cannot see 12 tricks in the best case, slam is the wrong destination and 4NT will only make things worse.
+A Worked Hand: How Blackwood Guides a Slam Decision
+Here is a pair of hands where Blackwood is exactly the right tool. The combined values are clearly in the slam range and both players can see it, but neither one knows how many aces the other holds.
+North (Opener), 20 HCP:
+♠ A K Q 7 4    ♥ A K J    ♦ K Q 8    ♣ 9 3
+South (Responder), 14 HCP:
+♠ J 9 5 3    ♥ Q 7 2    ♦ A J 5    ♣ A Q 8
+The auction:
+  North opens 1♠
+  South responds 3♠ (showing a limit raise with 4-card support and 10-12 HCP)
+  North bids 4NT (Blackwood, asking for aces)
+  South replies 5♦ (showing one ace)
+  North bids 6♠ (slam in spades, final contract)
+North can count 12 tricks: five spade tricks in hand plus length, three heart tricks, the diamond ace and king from combined holdings, plus the club ace from partner. With South showing one ace (the diamond ace, as North knows from the replies), North is confident that 6♠ is safe. There is no need for a grand slam because the second club winner is not certain.
+This auction shows Blackwood working exactly as intended: North had slam values, South confirmed them, and one precise question about aces resolved the only remaining uncertainty.
+What Do You Do If Blackwood Reveals a Missing Ace?
+Sometimes you bid 4NT and partner’s response shows fewer aces than you need for slam. The right action is to sign off in five of your agreed trump suit and play there, rather than pushing on to a doomed slam.
+For example: you and partner have agreed on hearts as trumps through the auction, and you bid 4NT hoping partner has two aces. Partner responds 5♣, showing zero or four aces. Unless partner has all four (which you can usually tell from context), you have discovered a critical gap. Simply bid 5♥ and your partner will pass. Playing 5♥ instead of a failing 6♥ is an excellent outcome.
+One important rule: once you have bid 4NT as Blackwood, you are committed to at least the five level. You cannot stop below 5 of your trump suit after using the convention. This is one reason experienced players are cautious about when they deploy Blackwood. If you are not prepared to play at the five level in the worst case, do not bid 4NT.
+It is also worth knowing that if partner shows the right number of aces for a small slam and you want to explore a grand slam (all 13 tricks), you can bid 5NT after the ace response. This asks for kings using the same step responses. This is sometimes called the Grand Slam Force variant of Blackwood, though it is most commonly built into Roman Key Card Blackwood.
+Why Does a Void in Your Hand Make Standard Blackwood Unreliable?
+A void (zero cards in a suit) creates a specific problem for standard Blackwood. Suppose you hold a void in clubs and use 4NT to ask for aces. Partner responds showing two aces. The trouble is: you do not know which two aces partner holds. If one of them is the ace of clubs, it is wasted from your point of view because you can ruff clubs in your void anyway.
+Here is a concrete case. You hold:
+♠ A K Q J 9 4    ♥ K Q J 8    ♦ A 9 5    ♣ (void) (void)
+You bid 4NT and partner shows two aces. Are they the ace of hearts and the ace of diamonds (in which case you can count 12 tricks safely)? Or is one of them the ace of clubs, meaning you are actually missing a critical ace in hearts or diamonds? Standard Blackwood cannot tell you.
+The solution is to avoid using Blackwood when you hold a void. Use cue-bids instead to show your partner where your controls are, suit by suit, and let partner cue-bid their own controls in response. Cue-bidding is a more precise tool for hands with unusual distribution. Many experienced players also use Roman Key Card Blackwood in this situation, which handles voids through a specific set of agreed responses. You can read more about that approach in our guide to Roman Key Card Blackwood.
+What Is the Difference Between Standard Blackwood and Roman Key Card Blackwood?
+Standard Blackwood counts only the four aces. Roman Key Card Blackwood (almost always called RKCB) counts five key cards: the four aces plus the king of the agreed trump suit. In a suit slam, the king of trumps is often just as important as a side suit ace, and RKCB captures that information.
+The responses to RKCB are also different. Over 4NT:
+      Response
+      Standard Blackwood
+      RKCB (1430 version)
+       | 5♣
+       | 0 or 4 aces
+       | 1 or 4 key cards
+       | 5♦
+       | 1 ace
+       | 0 or 3 key cards
+       | 5♥
+       | 2 aces
+       | 2 key cards, no trump queen
+       | 5♠
+       | 3 aces
+       | 2 key cards, with trump queen
+RKCB also includes a follow-up bid of 5NT to ask for kings, and the ability to ask specifically about the queen of trumps after the key card response. These additions make it much more precise for suit slams at the cost of being slightly more complex to learn.
+Today, RKCB is the standard version used in duplicate clubs and tournaments in most countries. If you are learning slam bidding now, you are better off learning RKCB from the start rather than standard Blackwood, since RKCB is what you will encounter at the table. Our full guide to Roman Key Card Blackwood explains the 1430 response system and walks through several worked examples.
+    Key Takeaways
+      4NT asks for aces: but only once a trump fit is agreed.
+      Replies climb the ladder: 5♣ (0/4), 5♦ (1), 5♥ (2), 5♠ (3).
+      Missing two aces? Sign off in five of the trump suit.
+      5NT asks for kings and promises all four aces: a grand-slam try.
+      With a void, prefer Roman Key Card Blackwood or cue-bidding.
+  Guide← Back to Bridge Conventions Guide
+  Related Guides
+  ConventionRoman Key Card Blackwood
+The modern upgrade that treats the trump king as a fifth key card.
+ConventionGerber Convention
+The clubs-based ace ask for no-trump auctions where 4NT would be quantitative.
+BiddingBlackwood in Bidding Context
+How Blackwood fits into slam auctions, including when 4NT is NOT Blackwood.
+  Frequently Asked Questions
+  Who invented Blackwood?+The convention was devised by American player Easley Blackwood in 1933 and has been a fixture of slam bidding ever since.
+Is 4NT always Blackwood?+No. 4NT is Blackwood only after a suit fit is agreed. A direct 4NT raise of a natural no-trump bid is usually quantitative: inviting 6NT: not an ace ask.
+What is the difference between Blackwood and Gerber?+Both ask for aces, but Gerber uses 4 clubs and is reserved for auctions that begin with a no-trump bid, where 4NT would be needed as a natural raise.
+What does the 5 clubs response mean: 0 or 4 aces?+5 clubs shows either zero or four aces. The earlier bidding almost always makes clear which it is: a partner who has limited a weak hand has none, while a strong hand has all four.
+Should beginners learn Blackwood or RKCB first?+Learn standard Blackwood first: it is simpler. Move to Roman Key Card Blackwood once counting aces feels automatic, because it adds the vital trump king and queen.
+What happens if an opponent bids over 4NT?+The common agreement is DOPI: a double shows 0 aces, pass shows 1, and the next two steps show 2 and 3. Agree it with your partner before you need it.
+      Free download
+      Get our free printable bridge cheat sheets
+      Enter your email to download our 1-page Bidding Cheat Sheet, Scoring Chart and First Online Game Checklist, plus occasional practical bridge tips in plain English. No spam, unsubscribe anytime.
+      Bidding cheat sheetScoring chartOnline game checklist
+        Get the free PDFs
+          Leave this field empty: 
+          Your email address
+          Get the free PDFs →
+        Free. No spam. Unsubscribe anytime.
+      Bridge Conventions at BridgePlaybook
+        Blackwood is the gateway to confident slam bidding. Pair it with Gerber for no-trump auctions and upgrade to Roman Key Card Blackwood as your partnership matures.
+        Browse every agreement in the Bridge Conventions Hub, or see how conventions fit the wider system in our Bridge Bidding Hub.
+

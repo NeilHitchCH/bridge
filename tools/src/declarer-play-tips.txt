@@ -1,0 +1,162 @@
+
+  Declarer Play Tips: Win More Bridge Hands | BridgePlaybook
+      Choose language
+        English
+        Nederlands
+        Deutsch
+        Français
+    Learn Bridge ▼
+      Learn Bridge Hub
+      How to Play Bridge
+      Bridge Rules
+      Bridge Scoring
+      Bridge Terminology
+    Bidding ▼
+      Bidding Hub
+      Opening Bids
+      Stayman Convention
+      Blackwood Convention
+    Strategy ▼
+      Strategy Hub
+      Declarer Play Tips
+      Defensive Signals
+      How to Win More
+    Play Online ▼
+      Online Bridge Hub
+      BBO Review
+      Funbridge Review
+      RealBridge Review
+    Conventions ▼
+      All Conventions
+      Stayman
+      Jacoby Transfers
+      Blackwood
+      Roman Key Card Blackwood
+      Gerber
+      Takeout Doubles
+      Negative Doubles
+      Michaels Cuebid
+    Tools ▼
+      Tools & Resources Hub
+      Opening Bid Calculator
+      Bridge Glossary
+      Practice Hands
+      Scoring Chart
+  The golden rule of declarer play: before playing to trick one, pause and plan. Count your winners (in no-trump) or your losers (in a suit contract), spot the danger, then choose a line that reaches your target. A good plan beats fast hands every time.
+        A♠♠A♠
+        K♠♠K♠
+        A♥♥A♥
+      →
+      PLANBefore trick 1
+      Count winners & losers first
+    Good declarer play starts before a single card is played: with a count and a plan.
+    The Planning Process: Before Trick One
+    The moment dummy appears, strong declarers do four things before playing a card. It takes thirty seconds and saves more contracts than any convention you will ever learn.
+      The four-step plan
+      1
+Count your target. Tricks needed = contract level + 6. In 4♠ you need ten tricks. Everything else flows from this number.
+      2
+Count winners or losers. In no-trump, count sure top tricks. In a suit contract, count losers from your hand. Are you there on top, or is there work to do?
+      3
+Spot the danger. Which suit can opponents attack? Are entries or trumps under threat? Name the thing that can go wrong.
+      4
+Form a line. Choose the best approach now. An imperfect plan beats no plan: you can refine it as the cards reveal themselves.
+    The most expensive mistake in bridge is playing to trick one on autopilot. Many contracts are fatally damaged at the very first trick: winning when you should duck, or playing from the wrong hand.
+    Counting Losers vs Counting Winners
+    Which you count depends on the contract. The two methods feel different but answer the same question: how do I bridge the gap between the tricks I have and the tricks I need?
+        Suit contracts: count losers
+        Look at each suit from your hand and count cards the opponents could win. In 4♠ you can afford three losers. If you count four, you need one plan to make a loser disappear: ruff it in dummy, discard it on a winner, or take a finesse.
+        No-trump: count winners
+        Count tricks you can cash immediately. In 3NT with seven on top you need two more. Decide which suit will grow them and how to set it up before the opponents establish theirs.
+    A Worked Example: Counting Winners in 3NT
+    You are declarer in 3NT and need nine tricks. Dummy holds three small diamonds and a couple of low cards in every suit. Your hand:
+      Declarer in 3NT: needs 9 tricks
+      ♠AK4
+      ♥AQ5
+      ♦KJ97
+      ♣A32
+    Top winners: two spades (A, K), one heart (A), one club (A): four on top. With dummy's diamonds opposite your K J 9 7, the diamond suit will furnish three or four more tricks once you knock out the ace, and the heart finesse offers a fifth. The plan writes itself: drive out the diamond ace first while your other suits still guard against a fast run, then take the heart finesse for the overtrick. Count first, and the line of play is obvious.
+    When to Draw Trumps: and When Not To
+    Knowing whether to draw trumps immediately is the most important decision in suit play. The default is to draw them; the exceptions are where contracts are won.
+        ✓ Draw trumps when
+          You have no ruffing value you still need in the short hand
+          Drawing them won't strand you without entries
+          You simply want to stop opponents ruffing your winners
+        ✗ Wait when
+          You must ruff losers in dummy first
+          Trumps are your only entry to a long suit
+          You need dummy's trumps to stop a side-suit run
+    Classic beginner reflex: drawing every trump the instant dummy hits the table. In many hands the first job is to ruff a loser in dummy before the defenders can lead trumps to remove dummy's ruffers.
+    Entries and the Finesse
+    Manage your entries
+    An entry is a card that lets you reach a particular hand. Most "unlucky" contracts are really entry failures. Win the first trick in the hand that keeps a later entry alive, never block your own long suit by cashing high cards from the wrong side, and sometimes duck a trick deliberately to preserve a link between the hands.
+    Take the finesse only when you must
+    A finesse bets on the position of a missing honour and works about half the time. Take it when you have no safer route to the tricks you need; avoid it when a guaranteed line exists. When in doubt, don't finesse: cash your certain winners and let the defenders solve your problems for you. As you improve, learn to count the hand (see our card counting guide) so you can replace a 50% finesse with a near-certain inference. For a full explanation of every finesse type and position, see our dedicated guide to the finesse in bridge.
+    Common Declarer-Play Mistakes
+      Playing to trick one without a plan. Pause every single hand. The thirty seconds you spend before card one is the highest-value time at the table.
+      Drawing trumps automatically. Ask first whether you need dummy's trumps for ruffing or as entries. If you do, that comes before pulling them.
+      Blocking your own suit. With A K opposite Q J x, unblock the high honours from the short hand so the long hand can run the suit.
+      Finessing into the danger. Never risk a finesse that could let the dangerous opponent through when a safe line guarantees the contract.
+What Should You Do Before Playing a Single Card as Declarer?
+Stop. Most bad declarers play the first card within seconds of dummy coming down. The best declarers pause for anywhere from thirty seconds to two minutes on complex hands, planning the entire play before touching a card. That pause is where the hand is won or lost.
+During your pause, ask three questions in this order. First: what is my target? (Making the contract, or maximizing tricks in a partscore, or making overtricks in a duplicate game?) Second: where are my potential losers and winners? Count them before you play. Third: which loser problems can be solved, and in what order do I need to address them?
+This pause is especially critical in suit contracts. In notrump, you can often recover from an early mistake if your entry situation allows. In a suit contract, a wrong play to trick one can be irreversible. If you ruff something you did not need to ruff, or pull trumps one round too early, those errors cannot be undone. The habit of pausing before playing to trick one is the single most impactful habit you can build as a declarer.
+Should You Draw Trumps Immediately or Delay Trump Draws?
+The default answer is yes: draw trumps as soon as possible. Leaving trumps outstanding is dangerous because opponents can ruff your winners. The exceptions are important, but the default is right far more often than most players honor it.
+The main reasons to delay drawing trumps: you need to ruff losers in the short hand (dummy in a standard contract) before trumps are drawn; you need to use entries in the trump suit that would otherwise disappear; or you are playing a crossruff where both hands will be ruffing throughout the hand. Outside these specific situations, draw trumps first.
+A clear rule: if drawing trumps does not cost you anything and leaves your side suit winners safe, draw them. If you are unsure whether to draw trumps, the question to ask is: "What happens if I draw trumps and then try my plan?" If the answer is "everything works," draw them. If the answer involves needing to ruff something before trumps are exhausted, handle that first. See the finesse section of our advanced bridge strategy guide for how this connects to squeeze and endplay positions.
+How Do You Choose Which Hand to Win the Trick In?
+Entry management is the skill that separates competent declarers from excellent ones. Every time you have a choice of which hand to win a trick in, you are making an entry decision that affects every subsequent trick in the hand. Playing without thought to entries is like spending without a budget: you run out at the worst moment.
+The principle is: win your trick in the hand that needs to lead next. If you are about to take a finesse through the left-hand opponent, you need to be in the hand to the right of that opponent. If your next play is to lead toward a broken honor holding, be in the opposite hand from those honors. Plan two or three tricks ahead, not just the next one.
+The most common entry error: winning an early trick in dummy when you have a long running suit there that you need dummy's entries to reach. If dummy has A-K-Q-J-x-x of a suit and no side entries, every trick you win in dummy with a side suit card is potentially losing access to that long suit. Count your dummy entries at the start of every hand and spend them deliberately.
+Declarer Play Decision Guide: What to Do in Common Situations
+SituationStandard approachCommon mistake
+ | No immediate losers, slow losers exist | Draw trumps, then eliminate slow losers | Rushing to handle slow losers before trumps drawn
+ | Need to ruff losers in dummy | Ruff first, draw trumps after | Drawing trumps first (removing ruffs from dummy)
+ | Missing K or Q in a suit | Take the finesse toward the missing honor | Playing ace and king hoping the honor drops
+ | Long side suit in dummy, no side entries | Win early tricks in hand, not dummy | Using dummy's entries for minor tricks early
+ | Loser count is exactly right to make contract | Play safely, do not risk contract for overtrick | Taking unnecessary risks to gain an overtrick
+ | Need to establish a suit but it will give opponents a winner | Give them their winner when you still have control | Waiting until you are under pressure to establish the suit
+How Do You Handle a 2-1 or 3-0 Trump Split?
+Most of the time when you draw trumps you expect them to split 2-1 in a seven-trump fit, or 3-2 in an eight-trump fit. These are the most common splits. A 3-0 split in a seven-trump fit (each side has 6.22% probability) or a 4-1 split in an eight-trump fit (28.26% probability) occurs often enough to plan for.
+When you discover a bad split mid-hand, the key question is: do I have enough entries to continue extracting trumps without giving up control of the hand? If yes, continue drawing. If not, you may need to switch to establishing your side suit winners and accept that an opponent will ruff one with a small trump at some point.
+The clearest way to handle a 4-1 trump split: once you discover it, ask whether drawing the fourth trump costs you an entry you need. If drawing that last trump requires winning in the wrong hand, consider leaving it outstanding and playing out your winners, accepting the potential ruff but maintaining better control of the hand.
+What Are the Most Common Declarer Play Mistakes and How Do You Fix Them?
+The most common mistake at every level below expert: not counting losers before playing to trick one. Declarers who count to make their contract before touching a card make far fewer catastrophic errors. Set a personal rule: I will not play to trick one until I have counted my losers in every suit.
+Second most common: forgetting that the defense is counting too. When you take a finesse and it loses, the defender who wins that trick now knows which cards you hold in that suit, because a finesse tells them exactly what you were trying to accomplish. Play as if your opponents are watching everything you do, because they are.
+Third: treating bridge as a series of individual tricks rather than a complete hand. The correct question is never "how do I win this trick?" but "how does winning or losing this trick affect my overall plan?" Every trick connects to the next. For more on the strategic decisions that run through an entire hand, see our card counting in bridge guide and our guide to winning more at bridge.
+    Key Takeaways
+      Plan before trick one: target, winners/losers, danger, line.
+      Count winners in no-trump, losers in a suit contract.
+      Draw trumps by default, but ruff or keep entries first when the hand demands it.
+      Guard your entries; sometimes duck a trick to keep one alive.
+      Finesse only when no safer line exists.
+  Guide← Back to Bridge Strategy Guide
+  Put this into practice: The BridgePlaybook free tools let you apply what you have just read. Work through real deal scenarios with the Bridge Practice Hands, or check your hand assessments instantly with the Opening Bid Calculator.
+Related Guides
+  StrategyFinesse in Bridge
+The 50-50 play that good declarer technique turns into a much higher percentage.
+StrategyCard Counting in Bridge
+How tracking the opponents' cards leads to better declarer decisions.
+StrategyOpening Leads in Bridge
+The opening lead gives declarer the first clue about the layout. Knowing lead conventions helps you read the position.
+  Frequently Asked Questions
+  What does “counting losers” mean in bridge?+It means counting, from your own hand in a suit contract, every card the defenders could win if the suit is played out. If your loser count is higher than the contract allows, you make a plan to eliminate the excess: by ruffing, discarding or finessing.
+Should I always draw trumps first?+No. Drawing trumps is the default, but wait if you need to ruff losers in dummy, if trumps are your only entry to a long suit, or if you need dummy’s trumps to stop a side suit. Decide as part of your plan, not by reflex.
+How do I get better at declarer play quickly?+Plan every hand before trick one, and afterwards study the deals you went down on rather than the ones that made. Playing online against a robot that offers post-hand analysis accelerates this enormously.
+What is a hold-up play?+Refusing to win a trick you could win, usually in no-trump, to cut the defenders’ communications. By ducking the first round or two of their suit you exhaust one defender’s cards in it, so when they win their entry the suit is dead.
+When should I take a finesse?+Only when you have no safer way to the tricks you need. If a guaranteed line exists, take it. A finesse is roughly a coin flip, so never risk the contract on one unnecessarily.
+How many tricks do I need to make my contract?+The contract level plus six. A 3NT or 3-of-a-suit contract needs nine tricks; 4 of a major needs ten; a small slam needs twelve. Counting your target is always step one of the plan.
+      Free download
+      Get our free printable bridge cheat sheets
+      Enter your email to download our 1-page Bidding Cheat Sheet, Scoring Chart and First Online Game Checklist, plus occasional practical bridge tips in plain English. No spam, unsubscribe anytime.
+      Bidding cheat sheetScoring chartOnline game checklist
+        Get the free PDFs
+          Leave this field empty: 
+          Your email address
+          Get the free PDFs →
+        Free. No spam. Unsubscribe anytime.
+      Declarer Play at BridgePlaybook
+        Declarer play is where bidding turns into tricks. Master the planning routine here, then sharpen the surrounding skills: read the opponents through defensive signals, build your count with card counting, and add safety plays in intermediate tips.
+        Browse every guide in the Bridge Strategy Hub, or get into the right contracts first with the Bridge Bidding Hub.
+

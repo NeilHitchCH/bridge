@@ -1,0 +1,198 @@
+
+  Opening Bids in Bridge: What to Open | BridgePlaybook
+      Choose language
+        English
+        Nederlands
+      Deutsch
+        Français
+    Learn Bridge ▼
+      Learn Bridge Hub
+      How to Play Bridge
+      Bridge Rules
+      Bridge Scoring
+      Bridge Terminology
+    Bidding ▼
+      Bidding Hub
+      Opening Bids
+      Stayman Convention
+      Blackwood Convention
+    Strategy ▼
+      Strategy Hub
+      Declarer Play Tips
+      Defensive Signals
+      How to Win More
+    Play Online ▼
+      Online Bridge Hub
+      BBO Review
+      Funbridge Review
+      RealBridge Review
+    Conventions ▼
+      All Conventions
+      Stayman
+      Jacoby Transfers
+      Blackwood
+      Roman Key Card Blackwood
+      Gerber
+      Takeout Doubles
+      Negative Doubles
+      Michaels Cuebid
+    Tools ▼
+      Tools & Resources Hub
+      Opening Bid Calculator
+      Bridge Glossary
+      Practice Hands
+      Scoring Chart
+  Opening bids in one sentence: With about 12–13 or more high-card points, open the bidding: bid your longest suit at the one level, or open 1NT with a balanced 15–17 points.
+        ♠AKJ52
+        ♥K73
+      →
+      1♠You open
+      Open your longest suit
+    A 14-point hand with five spades: count the hand, then open your longest suit at the one level.
+    What an Opening Bid Tells Partner
+    The opening bid is the first call in the auction that isn’t a pass. It does two jobs at once: it announces that you hold a hand worth bidding, and it begins to describe that hand’s strength and shape. Everything partner does next is an answer to the picture you start painting here.
+    Because the opener speaks first, the bid is a promise. A one-of-a-suit opening promises an opening hand and at least a normal-length suit; a 1NT opening promises a balanced hand inside a narrow point range. Learn these promises and partner can trust every word you say.
+    Counting Your Hand
+    Before you can open, you value your hand. The standard method is the high-card point (HCP) count: the same scale used everywhere in bridge bidding.
+      High-Card Point Values
+      Ace
+4 points: the most valuable card in every suit.
+      King
+3 points
+      Queen
+2 points
+      Jack
+1 point: 40 high-card points in the whole deck.
+    Roughly 12–13 high-card points is enough to open at the one level. Long suits add playing strength, so on shapely hands many players use the Rule of 20: open if your high-card points plus the lengths of your two longest suits add up to 20 or more. For a full breakdown of every opening level and how to handle borderline hands, see our guide on how many points to open in bridge.
+    Rule of 20 in action: with ♠ A J 7 4 2, ♥ K Q 6 3, ♦ 8 5, ♣ 9 4 you have 11 HCP: below the usual minimum: but 11 + 5 + 4 = 20, so you open 1♠. The fifth spade and fourth heart are worth the stretch.
+    The One-Level Suit Openings
+    With an opening hand that is not balanced enough for 1NT, you bid a suit. Open your longest suit first; with two five-card suits open the higher-ranking one, and with two four-card suits open the lower.
+      One-Level Suit Openings (12–21 points)
+      1♣
+Clubs, or the "better minor" with no five-card suit. Often just three cards.
+      1♦
+Diamonds: usually four or more.
+      1♥
+Hearts: five or more in the standard five-card-major style.
+      1♠
+Spades: five or more, the highest-ranking suit.
+    Example auction:
+West
+North
+East
+South
+        1♠
+Pass
+2♠
+Pass
+        Pass
+Pass
+West opens 1♠ with five spades. East raises to 2♠ with three-card support and a few points, and the partnership rests in a comfortable spade partscore.
+    Opening 1NT and 2NT
+    A no-trump opening is the most descriptive bid in the game because it nails down both strength and shape in one move. A 1NT opening shows a balanced hand: no void, no singleton, at most one doubleton: with 15–17 high-card points. A 2NT opening shows the same balanced shape with a bigger 20–21 points.
+    Because the range is so tight, partner can take charge immediately. The full response structure: including Stayman and transfers: lives in our guide to responding to 1NT.
+    Strong and Weak Two-Level Openings
+    Opening at the two level says something special. The 2♣ opening is the strong, artificial bid: it shows a powerhouse of about 22+ points (or a hand within a trick or two of game) and forces partner to respond. It is the one opening that is never a contract proposal; it simply says "we may be heading for game or slam."
+    By contrast, 2♦, 2♥ and 2♠ are usually played as weak two-bids: a good six-card suit with only 6–10 points, designed to take up the opponents’ bidding room. Pre-emptive openings at the three and four level push the same idea further: see preemptive bidding.
+    A Worked Example
+    You pick up the hand below as dealer. What do you open?
+      Dealer holds: 16 HCP, balanced
+      ♠AQ6
+      ♥KJ5
+      ♦A1084
+      ♣Q72
+    Count first: two aces (8), one king (3), one queen-jack heart holding and a spade queen and club queen: 16 high-card points in total. The shape is 3-3-4-3, perfectly balanced. With 15–17 and no five-card major, this is a textbook 1NT opening. You describe the whole hand in one bid and hand the steering wheel to partner.
+    When to Open: and When to Pass
+        ✓ Open the bidding when
+          You have 12–13+ high-card points
+          A shapely 11-count passes the Rule of 20
+          You hold a good six-card suit for a weak two
+        ✗ Pass instead when
+          You have a flat 11 points or fewer
+          Your points are soft: quacks (queens and jacks) with no aces
+          Opening would leave you with no sensible rebid
+    Always plan your rebid. Before you open a suit, know what you will say over partner’s likely response. An opening with no comfortable second bid is usually a sign to pass or choose a different first call.
+    Common Opening-Bid Mistakes
+      Opening 1NT with a five-card major. Most partnerships open the major instead, so a five-card spade or heart suit isn’t lost in a no-trump opening.
+      Overvaluing a flat 11-count. Without long suits the Rule of 20 fails: pass and wait for a better hand or a chance to compete later.
+      Opening the wrong suit. Bid your longest suit first; opening a short suit out of order makes your rebid awkward and misleads partner about your shape.
+      Forgetting 2♣ is artificial. A 2♣ opening says "huge hand," not "I have clubs." Reserve it for the genuine powerhouses.
+How Many Points Do You Need to Open the Bidding?
+The standard minimum for a one-level opening is 12 high-card points (HCP). With 12 or more, you open. With 10 or fewer, you pass. Hands with 11 HCP live in a grey area, and two rules help you decide: the Rule of 20 and the quality of your suits.
+The Rule of 20 works like this: add your total HCP to the length of your two longest suits. If the total reaches 20 or more, open the bidding.
+Example: ♠ K J 8 5 4   ♥ Q J 9 6 3   ♦ 7   ♣ Q 8   (9 HCP, 5 spades + 5 hearts = 10 suits). 9 + 10 = 19. Pass.
+Another hand: ♠ A K 9 7 4   ♥ K J 8 6 2   ♦ 4   ♣ 8 3   (11 HCP, 5 + 5 = 10). 11 + 10 = 21. Open 1♠.
+The reason the Rule of 20 works: hands with two long suits have more playing tricks than their HCP suggest. Even with only 11 HCP, you will often find a fit with partner and make a contract that earns a good score. The risk of missing a game by passing is greater than the risk of getting into trouble by opening.
+What Do You Open When You Have Two Five-Card Suits?
+With two five-card suits, always open the higher-ranking suit first. This lets you rebid the lower suit at your next turn, and partner can give preference back to your first suit at the same level rather than going higher.
+Here are the most common two-suited hands and the right opening bid for each:
+      Your two suits
+      Open first
+      Rebid
+       | 5 spades + 5 hearts
+       | 1♠
+       | 2♥ (partner can prefer spades at two level)
+       | 5 spades + 5 clubs or diamonds
+       | 1♠
+       | 2 of the minor suit
+       | 5 hearts + 5 clubs or diamonds
+       | 1♥
+       | 2 of the minor suit
+       | 5 clubs + 5 diamonds
+       | 1♦
+       | 2♣ (partner can prefer diamonds at two level)
+The underlying logic: the higher suit always comes first so that if partner prefers it, they can return to it at the lower level. Bidding the lower suit first would force partner to go to the three level to prefer the higher suit, wasting bidding space and risking getting too high.
+When Do You Open 2 Clubs Instead of One of a Suit?
+The 2♣ opening is artificial and shows a very strong hand. It says nothing about clubs. What it tells partner is: "I have a hand too powerful to open at the one level, and I need you to keep bidding until we reach game."
+The two main types of hand that open 2♣ are:
+  Balanced hands with 22+ HCP. With 20-21 HCP balanced, open 2NT directly. With 22-24 HCP balanced, open 2♣ and rebid 2NT. With 25+ HCP, open 2♣ and rebid 3NT.
+  Very powerful distributional hands with fewer HCP but enormous playing strength. For example: ♠ A K Q J 9 7 4   ♥ A K Q   ♦ 8   ♣ 5 (only 20 HCP but expects to make game singlehanded). These hands also open 2♣.
+After a 2♣ opening, partner’s negative response is 2♦ (also artificial, showing a weak hand with no suit to show naturally). Any other response is positive and shows values. The key thing to know as the 2♣ opener: you are committed to reaching game no matter what. You cannot stop below game after opening 2♣.
+How Does the Rule of 20 Help You Decide on Borderline Opening Hands?
+The Rule of 20 is one of the most practical guidelines in bridge for deciding whether to open with a hand that has fewer than the standard 12 HCP.
+Count your HCP and add the length of your two longest suits. If the total is 20 or more, open. If it is below 20, pass.
+Here is the rule at work on three borderline hands:
+♠ K Q 9 7 4    ♥ A J 8 6 3    ♦ 5    ♣ 7 2    (10 HCP + 5 + 5 = 20) Open 1♠
+♠ A Q 7 5 4    ♥ J 9 6 3    ♦ 8 2    ♣ K 3    (10 HCP + 5 + 4 = 19) Pass
+♠ A J 8 7 3    ♥ K Q 9 6 4    ♦ 7    ♣ 5 2    (11 HCP + 5 + 5 = 21) Open 1♠
+The Rule of 20 captures something real about bridge: long suits produce tricks independently of high-card points. Two five-card suits can generate six or seven playing tricks from combinations that HCP alone would undervalue. When you open on the borderline, you often find a fit with partner and make a useful partial score or even a game. Passing those hands risks missing that opportunity.
+What Should You Never Do When Choosing Your Opening Bid?
+Several common mistakes come up repeatedly in the first bid of the hand. Knowing them in advance saves you from learning them the painful way at the table.
+Do not open 1NT with a singleton or void. A 1NT opening shows a balanced hand: a distribution of 4-3-3-3, 4-4-3-2, or 5-3-3-2. If your hand has a short suit (a void or singleton), it is not balanced and should not be opened in notrump, even if the point count is right.
+Do not open a minor suit looking for a major fit. If you have four spades and four clubs, open 1♠. The entire point of the bidding system is to find major fits efficiently. Opening 1♣ with four spades makes that much harder.
+Do not open 2♣ and then overbid.Remember that your partner’s 2♦ response is weak. If they bid 2♦ and you make a further jump, you might be forcing them to game with nothing. Rebid 2 of your suit (not 3) to show your shape before jumping.
+For a full overview of how opening bids connect to the rest of the auction, see our guide to bridge bidding rules and our bridge bidding point chart, which shows the standard point thresholds at a glance.
+    Key Takeaways
+      Open with about 12–13+ HCP, or a shapely hand that passes the Rule of 20.
+      Bid your longest suit at the one level; open 1NT with a balanced 15–17.
+      2♣ is the strong, forcing opening; 2♦/2♥/2♠ are weak, pre-emptive.
+      Always have a rebid ready before you open a suit.
+      Soft, aceless 11-counts are usually a pass.
+  Guide← Back to Bridge Bidding Guide
+  Related Guides
+  BiddingHow Many Points to Open
+When 12 points is enough and when the Rule of 20 lets you open an 11-count.
+BiddingResponding to 1NT
+What to do after partner opens a balanced 15-17 hand.
+ToolOpening Bid Calculator
+Enter your hand and get the correct opening call instantly.
+  Frequently Asked Questions
+  How many points do you need to open in bridge?+About 12–13 high-card points opens at the one level. On shapely hands the Rule of 20 lets you open an 11-count if your points plus your two longest suit lengths reach 20.
+What is the Rule of 20?+Add your high-card points to the number of cards in your two longest suits. If the total is 20 or more, you have enough shape to open the bidding even with fewer than 12 points.
+Which suit do I open with two long suits?+Open your longest suit first. With two five-card suits, open the higher-ranking one; with two four-card suits, open the lower-ranking one.
+When should I open 1NT?+Open 1NT with a balanced hand: no void or singleton and at most one doubleton: and 15–17 high-card points. With 20–21 balanced, open 2NT instead.
+Is a 2-club opening weak or strong?+A 2♣ opening is strong and artificial, showing roughly 22+ points or a hand close to game on its own. It says nothing about clubs and forces partner to respond.
+Should I open a flat 11-point hand?+Usually no. Without a long suit an 11-count fails the Rule of 20, and soft points such as queens and jacks play poorly. Pass and look to compete later.
+      Free download
+      Get our free printable bridge cheat sheets
+      Enter your email to download our 1-page Bidding Cheat Sheet, Scoring Chart and First Online Game Checklist, plus occasional practical bridge tips in plain English. No spam, unsubscribe anytime.
+      Bidding cheat sheetScoring chartOnline game checklist
+        Get the free PDFs
+          Leave this field empty: 
+          Your email address
+          Get the free PDFs →
+        Free. No spam. Unsubscribe anytime.
+      Opening Bids at BridgePlaybook
+        The opening bid sets the tone for the whole auction. Master point counting and the one-level openings first, then layer on no-trump openings and the two-level bids as your judgement grows.
+        Continue with the full Bridge Bidding Hub, or branch into partnership agreements in the Bridge Conventions Hub.
+

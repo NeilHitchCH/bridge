@@ -1,0 +1,164 @@
+
+  Jacoby Transfer Convention in Bridge | BridgePlaybook
+      Choose language
+        English
+        Nederlands
+      Deutsch
+    Learn Bridge ▼
+      Learn Bridge Hub
+      How to Play Bridge
+      Bridge Rules
+      Bridge Scoring
+      Bridge Terminology
+    Bidding ▼
+      Bidding Hub
+      Opening Bids
+      Stayman Convention
+      Blackwood Convention
+    Strategy ▼
+      Strategy Hub
+      Declarer Play Tips
+      Defensive Signals
+      How to Win More
+    Play Online ▼
+      Online Bridge Hub
+      BBO Review
+      Funbridge Review
+      RealBridge Review
+    Conventions ▼
+      All Conventions
+      Stayman
+      Jacoby Transfers
+      Blackwood
+      Roman Key Card Blackwood
+      Gerber
+      Takeout Doubles
+      Negative Doubles
+      Michaels Cuebid
+    Tools ▼
+      Tools & Resources Hub
+      Opening Bid Calculator
+      Bridge Glossary
+      Practice Hands
+      Scoring Chart
+  Jacoby transfers in one sentence: Over partner’s 1NT, bid 2♦ to show five or more hearts, or 2♥ to show five or more spades; opener must bid the major you named, and your next call shows how strong you are.
+      2♦Transfer
+      →
+      ♥♥♥
+      +
+      2♥Transfer
+      →
+      ♠♠♠
+      Bid the suit below your major
+    You bid the suit one step below your real major; opener completes the transfer.
+    How a Transfer Works
+    After partner opens 1NT, you bid the suit one step below your real major. With hearts you bid 2♦; with spades you bid 2♥. Opener is obliged to “complete” the transfer by bidding your major, whatever they hold.
+    Why go the long way round? Because it makes the 1NT opener declarer. Their strong hand stays hidden, and the opening lead comes up to it rather than through it: often worth a trick. It also gives you a second turn to describe your strength.
+    Example auction:
+West
+North
+East
+South
+        1NT
+Pass
+2♦
+Pass
+        2♥
+Pass
+4♥
+Pass
+        Pass
+Pass
+East transfers with 2♦; West completes with 2♥. With game values and five hearts, East raises to 4♥: played by West, the strong hand.
+    The Two Transfers
+    The rule is simple: name the suit immediately below the one you actually hold.
+      Transfer responses to 1NT
+      2♦
+Five or more hearts. Opener bids 2♥.
+      2♥
+Five or more spades. Opener bids 2♠.
+      2♠
+Minor-suit transfer (optional). A common add-on showing a long minor.
+    Note that 2♣ over 1NT is reserved for Stayman, the convention that hunts for 4-4 major fits. Transfers and Stayman work as a pair.
+    A Worked Example: Transfer in Action
+    Partner opens 1NT and you hold a weak hand with a long major:
+      Responder holds: 6 HCP, five hearts
+      ♠94
+      ♥KJ873
+      ♦Q62
+      ♣75
+    With only 6 points this hand is not worth a game, but it plays far better in hearts than in no-trump: your five-card suit is almost useless without a trump fit. So you bid 2♦, partner dutifully bids 2♥, and you pass.
+    You have landed in a comfortable 2♥ partscore played by the strong hand, instead of struggling in 1NT with a useless long suit. That “weak takeout” is one of the transfer’s greatest gifts.
+    After the Transfer: Responder’s Second Bid
+    Completing the transfer is automatic; your next bid is where you set the level. It falls into three bands.
+    Weak, invitational, or game
+      Responder’s rebid after the transfer
+      Pass
+Weak. Five-card major, fewer than 8 points: happy in the partscore.
+      2NT / 3M
+Invitational (8–9). 2NT offers a choice; raising the major shows six.
+      3NT / 4M
+Game. 3NT offers a choice of games with exactly five; 4M shows six.
+    The super-accept
+    Opener is not always passive. With a maximum 1NT and four-card support, opener can jump the transfer: bidding 3♥ over a 2♦ transfer, say: to announce a fit and a top-of-the-range hand. That extra information often lets responder bid a thin but excellent game.
+    When to Transfer: and When Not To
+        ✓ Transfer when
+          You hold a five-card or longer major
+          You want the strong hand to declare
+          You are weak and want a safe partscore in your suit
+        ✗ Do not transfer when
+          Your majors are only four cards: use Stayman
+          You are balanced with no five-card suit: just raise no-trump
+          Your partnership has not agreed transfers are on
+    Five-five in the majors? Transfer to one major first, then bid the other on the next round. That shows both suits and lets partner pick the better fit.
+    Common Transfer Mistakes to Avoid
+      Transferring with only four cards. Transfers promise a five-card suit. With 4-4 majors, use Stayman instead.
+      Forgetting to complete the transfer. Opener is forced to bid the named major: passing a transfer is a classic disaster.
+      Passing 1NT with a weak five-card major. A transfer to the partscore almost always beats playing 1NT with a long, trump-less suit.
+      Not agreeing super-accepts. If you have not discussed the jump, opener’s 3♥ can be misread: talk it through first.
+How Does the Jacoby Transfer Work in Practice?
+Responder holdsTransfer bidOpener bidsResult
+ | 5+ hearts | 2♦ (Diamonds) | 2♥ (completing the transfer) | Hearts declared by opener
+ | 5+ spades | 2♥ (Hearts) | 2♠ (completing the transfer) | Spades declared by opener
+ | Weak hand, 5 hearts | 2♦ then pass | 2♥ (complete) then pass | Partscore in hearts, lead-side protected
+ | Game-forcing, 5 hearts | 2♦ then 3NT or 4♥ | 2♥ then bids on | Partnership chooses best game
+The key advantage of transfers is that the stronger hand (the 1NT opener) becomes the declarer. This protects the strong hand from the opening lead. The opening leader cannot see opener's cards, so they lead into opener's tenaces and honors rather than through them. This positional advantage wins measurable overtricks over time.
+Jacoby transfers work alongside Stayman to give you a complete set of responses to 1NT. After you have learned both, you will have a clear response to virtually any hand you hold facing a 1NT opener. For the full 1NT bidding picture, see our guide to responding to 1NT.
+What Hands Are Not Suitable for a Jacoby Transfer?
+Transfers apply specifically to five-card or longer major suits in response to a 1NT opening. If you hold a four-card major, you use Stayman instead. If you hold a minor suit (clubs or diamonds) and want to sign off, most partnerships play 2♣ as Stayman (artificial) so you cannot use it naturally. Instead, you pass 1NT with a weak hand and a minor, or bid 3♣ or 3♦ with a long minor and game values.
+Transfers also do not apply after interference. If an opponent bids over 1NT, the partnership's transfer agreements are generally off. Some partnerships have specific agreements for this situation, but at the club level the simpler approach is to play natural bids after interference and reserve transfers for uncontested 1NT auctions.
+For complete information on what to do with different hand types opposite a 1NT opening, see our responding to 1NT article and the broader bridge bidding guide. If you are working on slam investigation, the slam bidding guide covers when and how to move past game.
+    Key Takeaways
+      2♦ shows hearts, 2♥ shows spades: bid the suit below your major.
+      Opener must complete the transfer; the strong hand becomes declarer.
+      Your second bid sets the level: pass (weak), 2NT/3M (invite), 3NT/4M (game).
+      A super-accept jump shows a maximum with four-card support.
+      Transfer with a five-card major; use Stayman with only four.
+  Guide← Back to Bridge Conventions Guide
+  Related Guides
+  ConventionStayman Convention
+The 2 clubs response that asks opener whether they hold a 4-card major suit.
+BiddingJacoby Transfers in Bidding
+How transfers fit into the bidding system alongside Stayman and other 1NT responses.
+BiddingResponding to 1NT
+The full response ladder so you know when to transfer and when to do something else.
+  Frequently Asked Questions
+  Why transfer instead of bidding the major directly?+Transferring makes the 1NT opener the declarer. The strong, concealed hand plays the contract, so the opening lead runs up to its strength rather than through it.
+What does 2♦ mean over 1NT?+A response of 2 diamonds is a transfer showing five or more hearts. It asks opener to bid 2 hearts, after which responder describes the rest of the hand.
+Do you need points to make a transfer?+No. You can transfer with zero points and a five-card major. The transfer only shows the suit; your next bid shows your strength, from a weak pass to a game force.
+What is a super-accept?+With a maximum 1NT and four-card support for responder’s major, opener can jump the transfer: for example 1NT then 3 hearts: to show the fit and a top of the range hand.
+Should I use Stayman or a transfer with a five-card major?+Use a transfer whenever you hold a five-card major; Stayman is for hands whose majors are only four cards long. With five-five in the majors, transfer to one and bid the other next.
+Can you transfer into a minor suit?+Many partnerships add a 2 spades response as a transfer to a minor, but minor-suit transfers are optional and far less common than the two major transfers.
+      Free download
+      Get our free printable bridge cheat sheets
+      Enter your email to download our 1-page Bidding Cheat Sheet, Scoring Chart and First Online Game Checklist, plus occasional practical bridge tips in plain English. No spam, unsubscribe anytime.
+      Bidding cheat sheetScoring chartOnline game checklist
+        Get the free PDFs
+          Leave this field empty: 
+          Your email address
+          Get the free PDFs →
+        Free. No spam. Unsubscribe anytime.
+      Bridge Conventions at BridgePlaybook
+        Jacoby transfers and Stayman are the twin pillars of no-trump bidding: transfer with a five-card major, use Stayman with only four-card majors. Master both and your 1NT auctions transform.
+        Browse every agreement in the Bridge Conventions Hub, or see how conventions fit the wider system in our Bridge Bidding Hub.
+

@@ -1,0 +1,122 @@
+
+    Responses to a Strong 2C Opening Bid - by Bill Treble
+    -->
+    -->
+                        Bidding
+                            Conventions A-Z
+                            Conventions by Category
+                            Bidding Principles
+                            Bidding Systems
+                        Declarer Play
+                        Defense
+                    Articles
+                        Players 
+-->
+                        Reference
+                            Famous Bridge Players 
+                            History of Bridge
+                            Rules of Play
+                            Ethics & Etiquette
+                            Links
+                            Search
+            Responses to a Strong 2C Opening Bid
+                Home /
+                Bidding Conventions /
+                Responses to a Strong 2C Opening Bid
+  Print Page
+Download PDF
+ --->
+        By Bill Treble
+        Platinum Life Master and author of Two Over One: A First Course
+	As you probably know by now, there is no real unanimity on the best way of responding to a 2 opening.  Some like 2 as an artificial negative, others prefer 2 waiting with the cheapest minor as a second negative, and there is a contingent that uses control responses.
+	Doug Fisher and Bob Todd use a framework that I think is quite good.  Here it is for your perusal:
+Response
+Meaning
+   | 2NT, 3, 3, 3 | These are all transfers into six-card or longer suits with a very poor hand otherwise.  The suit cannot be headed by the Ace or the KQ.
+   | 2 | Two or more controls (A=2, K=1), any shape.
+   | 2 | 0-1 controls, 5 or fewer points.  Cannot have a King and a Queen.
+   | 2 | Also 0-1 controls, but a decent 5-count or better.
+	So basically you have control responses to a certain extent, but the 0-1 control hands are distinguished between those that are relatively bereft of face cards and those that have some values.  You also get to show a six-card or longer suit in a very weak hand.
+Examples
+	Let’s take these methods out for a spin in the next few examples.  We’ll start by giving responder this weak but distributional hand:
+Responder
+ 8 5 4
+ 4 2
+ Q 10 9 7 3 2
+ 7 2
+	Partner opens 2 so you’d bid 3, a transfer to diamonds showing a six-card or longer suit.  You’re also showing 0 or 1 control and 5 or fewer high-card points.   Now let’s match this up with a troika of hands for opener:
+Opener 1
+ A K 6 3
+ K Q J
+ A
+ K Q 8 6 3
+	With this collection, opener is going to bid 3 as that will be the only contract that has a chance of making.  No game has any prayer whatsoever on a heart lead.
+Opener 2
+ A K 7
+ A 9 7
+ A J
+ A K 6 5 4
+	Here there is a possible game, but it won’t be in notrump. 5 has reasonable chances as declarer can ruff clubs once trumps are drawn and set up a long-suit winner to discard a spade.
+Opener 3
+ A K J 7 6 2
+ A K 3
+ 4
+ A Q 10
+	This time opener has no fit or even a high card in partner’s long suit, so he rebids 3.  There is some chance that responder’s hand might produce a trick as he has three-card support and two side doubletons, so he should venture 4, which makes if trumps behave or there is at most one loser in the club suit.
+	To wrap up, we’ll look at a 2 opening where responder has a somewhat better hand:	
+     |  |      | North |      | 
+     |  | 983 | 
+     |  | J83 | 
+     | West | 106 | East
+     | AK2 | KQ984 | Q54
+     | A2 |  | K1075
+     | AJ87532 | South | K9
+     | A | J1076 | 10762
+     |  | Q964 | 
+     |  | Q4 | 
+     |  | J53 | 
+     | 
+    West
+    2
+    3
+    4
+    4
+    6
+ |     
+     | 
+    North
+    Pass
+    Pass
+    Pass
+    Pass
+    All Pass
+ | 
+     | 
+    East
+    2
+    3NT
+    4
+    5
+ | 
+     | 
+    South
+    Pass
+    Pass
+    Pass
+    Pass
+	West’s hand is a borderline 2 opening, but with all four aces, a side king and a	                seven-card suit, it’s hard to resist doing it.  Responder’s 2 shows two or more controls, whereupon opener shows his long suit.  Since partner is showing an unbalanced hand and will usually have six or more of his suit, East could raise but we have him bidding 3NT. 
+	Now West repeats his diamonds and since responder has already denied length in a major suit, any new suit would be a cuebid and may show either the Ace or King.  4 is good news for opener, and he knows partner will have at least one other king, which has to be in a minor suit.  He cuebids back with 4 and now when East continues with 5 rather than 5, that’s where his remaining king is.  Opener now goes on to slam, expecting it to have a play.  Since partner has the bonus card of the Q and trumps break evenly, declarer can make all 13 tricks.
+See also
+Strong 2 Opening Bid
+The Standard American method of using a 2 as a strong, artificial opening bid. 
+			    About
+				 Bridgebum began in 1999 and covers a large set of descriptions of bidding conventions, declarer play and defense, and more.
+				Latest Update
+				        Fast Arrival by Danny Kleinman
+				            Fast arrival is the theory that when a forcing bid is available below game, a jump to game denies, but a forcing bid implies, slam interest. 
+			    Contact
+			    See a typo, error or just want to comment?
+		                    Email:      jefftang AT gmail DOT com
+	             © Jeff Tang. All Rights Reserved. Privacy Policy | Terms of Service--->
+			--->
+	

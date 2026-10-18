@@ -1,0 +1,64 @@
+
+Opening Leads in Bridge: What to Lead | BridgePlaybook
+      Choose language
+        English
+        Nederlands
+        Deutsch
+        Français
+Opening lead rule of thumb: Lead top of a sequence (K from KQJ), fourth-best from your longest suit against notrump, and a trump or partner's suit against a suit contract when you have no other clear lead.
+What Makes a Good Opening Lead in Bridge?
+The opening lead is the first card played before dummy goes down. You are making a decision blind -- you can see only your 13 cards and the auction. This makes the opening lead one of the hardest decisions in bridge, and one of the most consequential: studies consistently show the opening lead sets up or destroys the defense on a significant proportion of hands.
+A good opening lead does three things. It attacks the contract by going after a source of tricks for the defense. It gives partner useful information about your holding. And it avoids giving away tricks that the declarer could not have made on their own -- what players call a "free gift."
+The distinction between leads against notrump and leads against suit contracts is fundamental. Against notrump, the goal is usually to establish a long suit before declarer makes their tricks. Against a suit contract, the focus shifts to building fast tricks before declarer's losers disappear on dummy's winners. See our defensive signals guide for how to communicate with partner after the opening lead.
+What Is the Standard Card to Lead from Each Holding?
+Your holdingStandard leadWhy
+ | AKQ, KQJ, QJ10, J109 | Top of the sequence (A, K, Q, or J) | Establishes tricks without risking honours
+ | AKxx or AKxxx | K (or A against suit contracts) | Shows the AK holding to partner
+ | KQxx, QJxx | Top of partial sequence (K or Q) | Attacks without giving a free finesse
+ | Axxx, Kxxx, Qxxx (no sequence) | Fourth-best (4th card from top) | Tells partner how long the suit is via the rule of 11
+ | xxxx or xxxxx (small cards only) | Fourth-best or MUD (middle-up-down) | Shows length, not strength
+ | Doubleton (xx) | Top card (higher of two) | Signals a doubleton, may get a ruff
+ | Singleton | The singleton | Aims for a ruff from partner's lead-back
+These are conventions, not laws. The table above describes what most partnerships use by default. The specific card you lead tells partner something about your holding. When you lead the King, partner knows you hold the Queen underneath (usually). When you lead fourth-best, partner can use the Rule of 11 to count how many cards above your led card the other three hands hold.
+What Is the Rule of 11 and How Do You Use It?
+When partner leads fourth-best against a notrump contract, subtract the card led from 11. The result is the number of cards higher than the led card held by the other three hands combined (dummy, declarer, and you). Since you can see dummy and your own hand, you can often work out exactly how many cards higher than the lead declarer holds.
+Example: Partner leads the 7. 11 minus 7 = 4. You look at dummy and your own hand and count 4 cards higher than the 7. That means declarer has zero cards higher than the 7. You know immediately that partner's 7 is partner's highest card in that suit if it is not covered, and you can adjust your defensive plan accordingly.
+The Rule of 11 only applies when partner is leading fourth-best. If your partnership leads third-and-fifth, use the Rule of 12 instead (11 minus led card + 1). Confirm your lead agreements with partner before the session. For a broader view of how defenders communicate, see our defensive signals guide and our card counting guide.
+What Should You Lead Against a Notrump Contract?
+Against notrump, the default strategy is to lead your longest suit and try to establish tricks in it before declarer makes their contract. The ideal hand for a notrump lead has a five or six card suit headed by a sequence (KQJxx or QJ10xx). You lead the top of that sequence, establish the suit, and when partner gets in, they return the suit to allow you to run the established winners.
+When you have no good sequence in a long suit, lead fourth-best from your longest suit. This is not as good as a sequence lead but it gives partner the most information about your holding. Avoid leading suits the opponents have bid strongly -- you are likely to be leading into declarer's strength.
+The auction often guides the right lead. If partner overcalled or doubled for takeout, lead partner's suit unless you have a clear reason not to. If the opponents have bid two suits strongly, that usually leaves two suits you can attack; pick the one where you have the most strength or length. Our guide on advanced bridge strategy covers how to read the auction for defensive clues.
+What Should You Lead Against a Suit Contract?
+Against a suit contract, the race is faster. Declarer will use their trump suit to ruff losers in dummy, so the defense needs to build fast tricks before those losers disappear. The premium goes to aggressive leads that attack quickly rather than passive leads waiting for tricks to come to you.
+Lead typeWhen to use itRisk level
+ | Top of a sequence (KQJ, QJ10) | Always good when available | Low
+ | Partner's suit | When partner overcalled or doubled | Low to medium
+ | Singleton | When you have a quick entry for the ruff | Medium
+ | Trump lead | When dummy is known to be short in a suit declarer will ruff | Low (passive)
+ | Ace from AKxx | To look at dummy and decide next play | Low
+ | Unsupported Ace (Axxx) | Generally avoid -- gives free trick if King is in wrong hand | High
+The most common mistake against suit contracts is leading an unsupported ace (Axxx). This gives declarer a free trick with the King any time the King is in the right position. Unless you have a very specific reason (partner bid the suit, you expect to be trumped in later), avoid ace-from-nothing leads against suit contracts. Our declarer play guide explains the other side of this coin: how declarers plan around the opening lead.
+    Key Takeaways
+      Lead top of a sequence (K from KQJ, Q from QJ10) whenever you have one.
+      Against notrump, lead fourth-best from your longest suit.
+      Against a suit contract, prefer sequences, partner's suit, or singletons over passive small-card leads.
+      The Rule of 11: subtract the card led from 11 to find how many cards higher than the lead the other three hands hold.
+      Avoid leading unsupported aces against suit contracts.
+      If partner overcalled or doubled, lead their suit unless you have a clear reason not to.
+Frequently Asked Questions
+      What is the standard opening lead in bridge?+The standard lead depends on your holding. With a sequence (KQJ, QJ10), lead the top card. Without a sequence, lead fourth-best from your longest suit against notrump. Against a suit contract, prefer sequences, singletons, or partner's suit.
+      Should you always lead fourth-best?+Fourth-best is the standard lead from an honour-headed suit without a sequence (Kxxx, Qxxx). From a suit with a sequence, lead the top of the sequence instead. From a worthless suit (no honours), lead MUD (middle-up-down) or fourth-best depending on partnership agreement.
+      What is the Rule of 11 in bridge?+Subtract the card led from 11. The result tells you how many cards higher than the led card are held by the three hands other than the leader: dummy, you (defender), and declarer. Seeing dummy and your own hand lets you work out how many declarer holds.
+      Should you lead your singleton against a suit contract?+A singleton lead is excellent when you have a fast entry to the hand (an ace or a quick trick) that lets you win a trick and get a ruff from partner's return. Without that entry, partner has to find you and the ruff may never materialise. Assess your entries before committing to a singleton lead.
+      Is it right to lead trumps against a suit contract?+A trump lead is correct when dummy is known to be short in a side suit that declarer plans to ruff. The auction often reveals this: if opponents bid two suits and settled in a third, a trump lead may cut down ruffs. In general, trump leads are passive and safe but not exciting.
+  Related Strategy Guides
+      Strategy
+      Defensive Signals
+      Once you have led, signaling tells partner what to do next. Learn attitude, count and suit-preference signals.
+      Strategy
+      Declarer Play Tips
+      Understanding how declarer plans the hand helps you choose the most damaging opening lead.
+      Strategy
+      Card Counting in Bridge
+      Counting starts at trick one. The opening lead and dummy reveal the first clues about the unseen hands.
+

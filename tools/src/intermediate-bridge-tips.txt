@@ -1,0 +1,129 @@
+
+  Intermediate Bridge Tips | BridgePlaybook
+      Choose language
+        English
+        Nederlands
+        Deutsch
+        Français
+    Learn Bridge ▼
+      Learn Bridge Hub
+      How to Play Bridge
+      Bridge Rules
+      Bridge Scoring
+      Bridge Terminology
+    Bidding ▼
+      Bidding Hub
+      Opening Bids
+      Stayman Convention
+      Blackwood Convention
+    Strategy ▼
+      Strategy Hub
+      Declarer Play Tips
+      Defensive Signals
+      How to Win More
+    Play Online ▼
+      Online Bridge Hub
+      BBO Review
+      Funbridge Review
+      RealBridge Review
+    Conventions ▼
+      All Conventions
+      Stayman
+      Jacoby Transfers
+      Blackwood
+      Roman Key Card Blackwood
+      Gerber
+      Takeout Doubles
+      Negative Doubles
+      Michaels Cuebid
+    Tools ▼
+      Tools & Resources Hub
+      Opening Bid Calculator
+      Bridge Glossary
+      Practice Hands
+      Scoring Chart
+  The intermediate mindset: stop playing for the best case and start playing for the likely case. Identify the dangerous opponent, take a safety play when you can afford it, and hold up to cut the defenders’ communications: these habits quietly win the hands that beginners give away.
+      DUCKhold-up
+      →
+      SAFEguard the contract
+      Danger hand · safety plays · hold-ups
+    Ducking to cut communications and choosing the safe line: the everyday tools of intermediate card play.
+    Identify the Danger Hand
+    Many contracts come down to keeping one particular opponent off lead: the “danger hand,” the defender who can hurt you (by cashing a suit or leading through your weakness). Once you name the danger hand, your whole line of play organises around it: you finesse into the safe opponent and you hold up to keep the dangerous one from gaining the lead.
+    Ask on every hand: who is the danger hand? If only one defender can damage you, plan to lose tricks to the other one. This one question solves a surprising share of intermediate problems.
+    The Hold-Up Play
+    In no-trump, refusing to win your stopper early can sever the defenders’ link. Suppose they lead a long suit and you hold the ace alone against it:
+      3NT: they lead the suit you hold A x x in
+      ♥A73
+    Duck the first two rounds and win the third. Now if the danger hand has to win an entry later, their partner: the one with the long hearts: has none left to lead. The suit is dead. Hold-ups in a suit contract work the same way to control the timing. The cost is small; the control is large.
+    Safety Plays & Two-Way Finesses
+        Safety plays
+        A safety play sacrifices a possible overtrick to guard against a bad break. With nine cards missing the queen you might cash the ace first: protecting against a singleton queen offside: rather than finessing into disaster. Take the safe line whenever the contract matters more than the overtrick.
+        Two-way finesses
+        Sometimes you can finesse either defender for a missing queen. The clue is the count or the auction: finesse the hand with more cards in the suit, or the hand the bidding marks with length. Let information: not a coin flip: choose the direction.
+    Create Your Own Entries
+    Intermediate declarers stop complaining about missing entries and start manufacturing them. Overtake a high card to reach the long hand, duck a round to keep a low card as a later link, or cash winners in the order that leaves an entry standing. Entry planning is part of your trick-one plan, not an afterthought when you get stuck.
+    Common Intermediate Mistakes
+      Never identifying the danger hand. If you don’t know which opponent is dangerous, you can’t plan to keep them off lead.
+      Winning the stopper too soon. In no-trump, hold up to break the defenders’ communication before you cash out.
+      Finessing for the overtrick. When the contract is safe by another route, take it. Don’t risk the game to gain a trick.
+      Guessing a two-way finesse blind. Use the count and the auction to pick the right defender instead of flipping a mental coin.
+What Skills Define the Intermediate Stage of Bridge?
+An intermediate bridge player understands the basic bidding system, can make most simple contracts as declarer, and defends with reasonable accuracy. What they have not yet mastered: consistently counting the distribution of all four hands, reading their partner's signals with precision, and recognizing when a finesse is inferior to a safety play. Those three skills mark the gap between intermediate and advanced.
+The intermediate stage is where most regular club players stay for years, because it is comfortable. The game is enjoyable, you win some and lose some, and the fundamentals are in place. Moving past it requires deliberate attention to the specific skills that separate 50% scores from 55-60% scores in duplicate bridge. This guide covers those skills.
+If you are just past the beginner stage, our common beginner mistakes guide is the right starting point. Come back to this guide once those fundamentals are solid.
+How Do You Improve Your Opening Lead as a Defender?
+The opening lead is the most powerful single decision in defense, and it is made entirely blind, before dummy appears. Bad opening leads give away contracts that the defense would otherwise beat. Good opening leads set up the killing defensive line before declarer can get organized.
+Against notrump contracts, lead fourth-highest from your longest and strongest suit, unless the auction has suggested a different approach. The exception: if your suit is weak and the auction suggests partner has a suit, lead partner's suit instead. Against suit contracts, leading a short suit (doubleton or singleton) for a potential ruff is effective when you hold trump control (two or more trumps) that will allow you to ruff before trumps are drawn.
+The most common opening lead error at the intermediate level: leading from a broken honor holding when a safe or passive lead would be better. Leading away from A-J-x-x at trick one gives declarer an unnecessary chance to score tricks cheaply. When you are unsure about your opening lead, a trump lead or a lead from a sequence (K-Q-J, Q-J-10) is usually safe. See our defensive signals guide for how to communicate what you have to partner after the lead.
+When Is the Right Time to Cover an Opponent's Honor?
+Covering an honor with an honor (playing your king when declarer leads the queen, for example) is correct when your cover might promote tricks in your partner's hand. If partner could hold a jack or ten behind the card you are covering, playing your king might force dummy's ace and establish partner's jack. That is the right reason to cover.
+The rule: cover only the last honor in a sequence. If declarer leads the queen from Q-J-x, and you hold the king, do not cover the queen. Wait for the jack. If you cover the queen, declarer may be able to finesse against your partner for the ten. Covering the jack leaves declarer with no finessing position remaining.
+When should you never cover? When dummy has a long running suit that will provide all the tricks declarer needs regardless of what you do. Covering a honor in that situation promotes nothing in partner's hand and does not prevent declarer from making the contract. The cover only makes sense when it might create a trick that would not otherwise exist.
+Intermediate Skill Progression: What to Master in What Order
+PrioritySkillTime to developScore impact
+ | 1 | Count trumps every hand | 2-4 weeks | +2-3%
+ | 2 | Read partner's attitude signal on opening lead | 4-6 weeks | +1-2%
+ | 3 | Apply the Rule of Eleven on every notrump defense | 2-3 weeks | +1%
+ | 4 | Plan as declarer before playing to trick one | Ongoing habit | +2-3%
+ | 5 | Count HCP from auction to locate missing honors | 6-12 weeks | +2%
+ | 6 | Use safety plays when contract is makeable | 3-6 months | +1-2%
+How Do You Handle a Hand That Does Not Fit Your System?
+Every bidding system has edge cases: hands with unusual distribution, extreme point counts, or combinations of suits that do not fall neatly into any standard bid. Intermediate players often panic on these hands and either over-bid (trying to show everything at once) or under-bid (describing only part of the hand and hoping partner guesses).
+The right approach: when your hand does not fit a standard bid, describe your shape first and your strength second. Partner needs to know what suits you have before they can evaluate strength. A hand with five spades and five diamonds should show both suits if possible, in the right order (higher-ranking first, allowing preference at a lower level). If you cannot show both suits, show the longer one and rebid it or show the other at the next opportunity.
+On hands where no bid accurately describes your holding, choose the bid that creates the fewest problems for partner. A slight under-description of strength is usually preferable to distorting your distribution, because partner can adjust for a hand that is slightly stronger than shown, but cannot adjust for a hand with different shape than shown. Our common bidding mistakes guide covers the most frequent misfires in bidding difficult hands.
+    Key Takeaways
+      Name the danger hand on every deal and plan around it.
+      Hold up in no-trump to cut the defenders’ communications.
+      Take the safety play when the contract outweighs the overtrick.
+      Resolve two-way finesses with the count, not a guess.
+      Create entries deliberately as part of the plan.
+  Guide← Back to Bridge Strategy Guide
+  Put this into practice: The BridgePlaybook free tools let you apply what you have just read. Work through real deal scenarios with the Bridge Practice Hands, or check your hand assessments instantly with the Opening Bid Calculator.
+Related Guides
+  StrategyDeclarer Play Tips
+The planning framework that all intermediate players need to master.
+StrategyAdvanced Bridge Strategy
+The next step once intermediate technique feels comfortable.
+BiddingBridge Bidding Hub
+Bidding accuracy is the other side of the improvement coin for intermediate players.
+  Frequently Asked Questions
+  What is the danger hand in bridge?+The danger hand is the defender who can damage your contract if they gain the lead: by cashing a long suit or leading through your weak holding. Naming it lets you organise the play to lose tricks only to the other, safe defender.
+What is a hold-up play and why does it work?+A hold-up is refusing to win a trick you could win, usually in no-trump, to cut the defenders’ link. By ducking until one defender is out of the suit, you ensure that when the other wins a later entry they cannot reach the established cards.
+What is a safety play?+A safety play gives up a possible overtrick to protect against a bad break. For example, cashing the ace before finessing for a queen guards against a singleton offside. You take it whenever making the contract matters more than an extra trick.
+How do I decide which way to take a two-way finesse?+Use information. Count the suit from earlier play, or read the auction: a player who bid or preempted is more likely to hold length. Finesse the hand the evidence marks with the missing honour rather than guessing.
+How do I create entries to dummy or hand?+Plan early. Overtake an honour to reach the long hand, duck a round to keep a low card as a later link, or cash your winners in the order that leaves an entry standing. Entry management belongs in your trick-one plan.
+Am I an intermediate player yet?+If you plan every hand, read basic signals and count the trump suit without effort, you are ready for intermediate technique. These tips: the danger hand, hold-ups, safety plays: are the natural next layer above the fundamentals.
+      Free download
+      Get our free printable bridge cheat sheets
+      Enter your email to download our 1-page Bidding Cheat Sheet, Scoring Chart and First Online Game Checklist, plus occasional practical bridge tips in plain English. No spam, unsubscribe anytime.
+      Bidding cheat sheetScoring chartOnline game checklist
+        Get the free PDFs
+          Leave this field empty: 
+          Your email address
+          Get the free PDFs →
+        Free. No spam. Unsubscribe anytime.
+      Intermediate Play at BridgePlaybook
+        Intermediate technique is risk management: protect the contract, control the lead, and let the odds work for you. Solidify the basics in declarer play tips, then step up to advanced strategy when these feel routine.
+        The full path from beginner to expert lives in the Bridge Strategy Hub: and better bidding sets up better play in the Bridge Bidding Hub.
+

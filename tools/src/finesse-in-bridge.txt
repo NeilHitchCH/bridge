@@ -1,0 +1,178 @@
+
+  What Is a Finesse in Bridge? | BridgePlaybook
+      Choose language
+        English
+        Nederlands
+        Deutsch
+        Français
+    Learn Bridge ▼
+      Learn Bridge Hub
+      How to Play Bridge
+      Bridge Rules
+      Bridge Scoring
+      Bridge Terminology
+    Bidding ▼
+      Bidding Hub
+      Opening Bids
+      Stayman Convention
+      Blackwood Convention
+    Strategy ▼
+      Strategy Hub
+      Declarer Play Tips
+      Defensive Signals
+      How to Win More
+    Play Online ▼
+      Online Bridge Hub
+      BBO Review
+      Funbridge Review
+      RealBridge Review
+    Conventions ▼
+      All Conventions
+      Stayman
+      Jacoby Transfers
+      Blackwood
+      Roman Key Card Blackwood
+      Gerber
+      Takeout Doubles
+      Negative Doubles
+      Michaels Cuebid
+    Tools ▼
+      Tools & Resources Hub
+      Opening Bid Calculator
+      Bridge Glossary
+      Practice Hands
+      Scoring Chart
+  What is a finesse in bridge? A finesse is a card-play technique where you lead toward a high card and play it, hoping the missing higher honour is sitting on your right (so it cannot beat your card). The simplest example: holding A Q in dummy, you lead from your hand and play the Q. If the King is on your left, the Q wins. A basic finesse works 50% of the time.
+    Why the Finesse Matters
+    Bridge hands are often decided not by the cards you hold, but by how you play the ones you have. The finesse is the technique that lets you win extra tricks from a holding that looks like a loser on the surface. A hand with one too many losers can often be fixed by one well-executed finesse. Get the direction wrong, or take the finesse when a safer line was available, and the contract that should have made goes down.
+    If you are coming to the technique for the first time, do not worry. The logic is simple and repeatable. Once you have seen the basic idea, you will start spotting finesse positions without thinking about it. The harder skill is knowing when to use one, and that comes later in this guide.
+    For the broader context of how finesses fit into the full process of planning a hand, see Declarer Play Tips.
+    How a Simple Finesse Works
+    The word finesse comes from the idea of being fine, or precise. You are trying to win a trick with a card that could be beaten, by placing that card in a situation where it cannot be beaten because the higher card is on the wrong side.
+    Here is the classic example. You are declarer in a no-trump contract. In the suit you are interested in, the cards are:
+      The basic finesse position
+      Dummy (North):A Q 5
+      Your hand (South):7 4 2
+      You are missing the King. If the King is on your left (West), your Queen is protected. If it is on your right (East), your Queen is sitting under it and will lose.
+    To take the finesse, you lead low from your hand (South) toward dummy. When the card comes around to dummy, you play the Queen rather than the Ace. You are hoping the King is on your left. If West holds the King, West is stuck: playing the King gives you both the Ace and Queen as winners; not playing it means the Queen wins for free, and then you come back to cash the Ace. Either way you score two tricks in this suit.
+    If East holds the King, East plays it on your Queen and the trick is lost. The Ace remains as one winner in the suit. The finesse failed.
+    The golden rule of the finesse: always lead toward the card you want to protect, not from it. Leading the Queen from dummy into East's King guarantees a loss. Leading toward the Queen from your hand gives you a 50% chance of a free trick.
+    The mechanics in three steps
+      How to take a finesse
+      1
+Identify your tenace. A tenace is a holding like A Q or K J where you hold two honours with a gap in between. The missing card is what you are finessing against.
+      2
+Lead from the other hand. To finesse the Q in dummy, lead from your hand. You need to come to the tenace from the far side, putting the opposition under pressure before the card is played.
+      3
+Play the lower honour. When the lead comes to the tenace hand, play the lower of the two cards. The higher card (the Ace) is held back as a sure winner regardless of what the opponent does.
+    Common Finesse Positions You Will See Every Session
+    The A Q combination is the easiest to spot, but finesses appear in many different forms. Here are the most common positions and how to handle each one.
+        K Q x opposite small cards
+        You are missing the Ace. Lead toward K Q from the other hand. If Ace is on the left, the King or Queen wins. If on the right, it takes the first trick. You score one trick if the Ace is on your left, zero tricks from this holding if it is on the right. 50%
+        A J 10 opposite small cards
+        A double finesse against K and Q. Lead toward the J 10 and play the 10. If it holds, return and play the J. If East holds either or both honours, you lose the first finesse but the second may succeed. 75% for one
+        K J x opposite small cards
+        You are missing A and Q. If you can guess who holds the Q, finesse against it. Lead toward K J and play the J hoping West holds the Q. If right, you make two tricks; if wrong, East wins the Q and you still have the K. 50%
+        Q J x opposite A x x
+        Lead the Q toward the Ace or lead toward Q J. You are hoping the King is on your right so the Q becomes a winner once the Ace and King collide. This situation often comes up in no-trump, where you need the suit to run. 50%
+    All these positions have the same basic logic: lead through the danger hand, toward the tenace, and play the lower honour. The missing card either sits where you need it (finesse works) or it does not (finesse fails and you lose the trick).
+    Types of Finesse in Bridge
+    The simple finesse
+    One missing honour, one finesse attempt. Lead toward the tenace and play the lower card. Works 50% of the time. The A Q vs K example above is the textbook simple finesse. After the finesse, you know where the missing honour is and can plan the rest of the hand accordingly.
+    The repeated finesse
+    You have enough entries to try the same finesse more than once. If you hold K J 9 in dummy and small cards in hand, you lead toward the 9 first. If West plays low, the 9 wins. Cross back to hand and lead toward the J. Then, if still alive, finesse the K. Each finesse has a 50% chance, and if both honours are on the right you win all three tricks. The key is having entries to reach your hand twice.
+      Repeated finesse example
+      Dummy:K J 9
+      Your hand:7 4 2
+      You need two entries to repeat the finesse. Play low from hand, play the 9 from dummy. If it holds, cross to hand in another suit and lead toward the J. If Q is with West and A is also with West, you can win all three tricks from this holding.
+    The double finesse
+    Two missing honours, and you are finessing for one of them. The classic position is A J 10 opposite small cards where both K and Q are missing. Lead toward the J 10 and play the 10. If the 10 loses to the Q or K, you still have the J to finesse through the other honour. The probability of winning at least one trick this way is about 75%, because both honours need to be on your left for the double finesse to fail completely.
+    The two-way finesse
+    Sometimes the missing honour could be on either side, and you can choose which way to finesse. A common position is A J opposite K 10. You can play from either end to pick up the Q, but you have to guess which direction. This is where the auction and the play up to that point give you vital clues. If one opponent has opened the bidding, the missing honours are more likely to sit with that player. Use any information you have before committing.
+    The ruffing finesse
+    In a suit contract, you can combine a finesse with the ability to ruff if the finesse loses. If you hold A Q J in dummy and are void in the suit in your hand, you can lead the Q from dummy. If it is covered by the King, you ruff and dummy's J J is now established. If it is not covered, the Q wins and you repeat with the J. This is more powerful than a straight finesse because you win even when the King is on the wrong side by ruffing instead of losing the trick.
+    When Should You Take a Finesse?
+    The finesse is a 50-50 play when you have no information. That means if you have a safer line available, you should take it instead. Many new players take finesses out of habit rather than necessity, and it costs them contracts they could have made.
+      Take the finesse when...
+      Yes
+You have no other way to the tricks you need. If making the contract requires the finesse and there is no alternative, take it. A 50% shot is better than a guaranteed set.
+      Yes
+You can afford to lose it. If the contract is safe regardless, finessing for an overtrick in matchpoints is completely rational. The risk is nil because you make either way.
+      Yes
+The evidence points the right way. If the bidding or the opening lead tells you where the missing card is, a finesse against it is better than 50-50. Always listen to the auction first.
+      Avoid the finesse when...
+      No
+A safer line guarantees the contract. If you can make your contract by playing safe without the finesse, do not risk a 50-50 play. The point of playing bridge is making the contract, not testing your luck.
+      No
+The finesse loses to a more dangerous hand. In no-trump especially, think about which opponent you want on lead. If the finesse loses to the opponent who will then run a dangerous suit, look for another line.
+      No
+An endplay is available. If you can strip the opponents' exit cards and throw them in, they will be forced to lead into your tenace for free. The endplay makes the finesse 100% rather than 50%. It takes more planning but is worth it.
+    The most common finesse mistake made by improving players is taking a finesse at trick one before reading the hand. Always count your winners and losers first. The finesse may not be needed at all, or the correct moment to take it may be later in the play, not immediately.
+    Using the Auction and the Play to Improve Your Odds
+    A finesse is only 50-50 when you have zero information. Bridge is an information game, and a thoughtful declarer finishes most sessions with a hit rate well above 50% on their finesses because they use every clue available.
+    Clues from the bidding
+    If West opened the bidding with 1NT (showing 15 to 17 points) and you are in 3NT against them, you know West has the bulk of the missing high cards. Every missing honour is more likely to be with West than East. Finesse against West at every opportunity. This simple inference alone can make a marginal hand comfortable.
+    If West opened a weak two bid showing a weak hand, missing honours are more likely to sit with East. Adjust your finesses accordingly.
+    Clues from the opening lead
+    The opening lead tells you something about the leader's hand. A fourth-best lead in a suit gives you information about how many cards the leader holds. A lead from an honour (a queen or jack) tells you the leader has or does not have the card above it. An experienced declarer processes this information constantly, updating their picture of both opponents' hands with every card played.
+    Counting as the play develops
+    By the time you reach trick eight or nine, a declarer who has been counting knows roughly how many cards each opponent holds in each suit. If you have counted East as having started with four clubs and have seen three clubs played, East has exactly one club remaining. A finesse position that was 50-50 at trick one may be 100% by trick nine because the location of the missing card is now known.
+    This is why card counting in bridge is such a powerful skill. The finesse is only a guess when you have no information. When you do have information, it stops being a guess.
+    The Safety Play: When to Reject the Finesse
+    A safety play is a line that sacrifices a potential extra trick in order to guarantee the contract regardless of how the opponents' cards lie. It is often the correct alternative to a finesse when you simply need to make your contract rather than maximise your score.
+    An example of the safety play
+    You are in 6NT and need five tricks from a suit where you hold A K J 9 2 in hand opposite Q 8 4 in dummy. The finesse line: cash the Ace and then finesse the J. This wins if the 10 is on the right, and gives five tricks if the suit breaks 3-2. The safety play: cash the Ace and then low to the Q. This works on any 3-2 break and on the specific 4-1 break where East holds 10 x x x. The safety play gives up some probability of an overtrick but makes the slam on a wider range of distributions.
+    In a team game (IMP scoring), you always prefer the safety play. In pairs (matchpoint scoring), the decision is more nuanced because overtricks matter. This is one of the central strategic differences between the two formats. See the Bridge Scoring Chart for the scoring implications.
+    Practising Finesses
+    The fastest way to improve at finesses is to play regularly and pay attention to every finesse you take. After each hand, ask yourself: was the finesse necessary? Did I take it in the right direction? Was there information I missed that would have pointed me the right way?
+    Online bridge platforms give you the advantage of immediate feedback. On Bridge Base Online (BBO) and Funbridge, the computer shows you all four hands after the board, so you can see immediately whether the finesse would have worked and whether the card was where you expected it to be. Playing online for even an hour a week with this kind of review will build your finesse instincts quickly. See our BBO review or our guide to the best bridge apps to find a platform that suits you.
+    Put this into practice: The BridgePlaybook free tools let you apply what you have just read. Work through real deal scenarios with the Bridge Practice Hands, or check your hand assessments instantly with the Opening Bid Calculator.
+Common Finesse Positions and Their Success Probability
+PositionCards heldFinesseSuccess %
+ | Simple finesse | A-Q vs K (in opponents' hands) | Lead toward Q; if LHO has K, the Q wins | 50%
+ | Double finesse | A-Q-10 vs K-J | Lead toward Q-10 twice; need either honor onside | 75%
+ | Ruffing finesse | A-Q-J in dummy; void in hand | Lead Q, discard if not covered, ruff if covered | 50% but gains a discard
+ | Two-way finesse | A-J-10 in one hand, K-9-x in other | Guess which opponent holds Q | 50% (use inferences)
+ | Finesse against J | A-K-10 vs J | Lead toward 10; wins 50% of the time | 50%
+ | Drop vs finesse | A-K-Q-9 vs J-x or J alone | With 9 cards in suit, play for drop (52%) | 52% drop wins
+The 8-ever-9-never rule: with 8 cards in a suit missing the queen, always finesse. With 9 cards missing the queen, play for the drop (the queen falls under the ace or king). The mathematics slightly favor the drop with 9 cards because the chance of it being doubleton in either opponent's hand is higher than 50%. For the card play principles that determine when to finesse versus when to play for the drop, see our declarer play guide.
+When Should You Avoid Taking a Finesse Even If It Might Succeed?
+The finesse is a tool, not a reflex. There are specific situations where a 50% finesse is the wrong play even when it could work. The most important: when you have enough tricks without the finesse and taking it risks giving the opponents a damaging lead. If you need 9 tricks and can win 10 without finessing, do not finesse. You gain nothing from the overtrick and risk everything if it loses.
+Safety plays beat finesses in the same way. A safety play might guarantee making your contract while a finesse gives you a chance at an extra trick but risks going down. In rubber bridge and in contracts with significant bonuses (slams, games), the safety play is almost always correct. In duplicate bridge where the overtrick has matchpoint value, the calculation is closer, but the principle still applies when the finesse risks the contract.
+The practical decision point: ask yourself what happens if the finesse loses. If the answer is "I lose one trick but still make the contract," the finesse is fine. If the answer is "I go down," consider whether there is a safer line. A successful finesse rarely makes up for a lost contract in bridge scoring, whether rubber or duplicate. Our card counting guide covers how to use the auction and early play to improve finesse decisions from 50/50 to better odds.
+    Common Questions
+    Finesse in Bridge: FAQs
+        What is a finesse in bridge?+
+        A finesse is a card-play technique where you lead toward a high card and play it, hoping the missing higher honour sits in a favourable position. The classic example is holding A Q and leading toward it: if the King is on your left, the Queen wins. A basic finesse works 50% of the time when you have no information about the opponents' cards.
+        How does a simple finesse work in bridge?+
+        Lead from the hand that does NOT contain the tenace (the gap cards), toward the hand that does. With A Q in dummy, lead from your hand. Play the Q from dummy. If the King is on the left, the Q wins and the A scores on the next round. If the King is on the right, East beats the Q and your A remains as one winner. That is the full mechanics of a simple finesse.
+        What is a double finesse in bridge?+
+        A double finesse is when you are missing two honours and need at least one to be on the right side. For example, A J 10 opposite small cards: you lead toward the J 10, play the 10, and if it loses to the Q or K, you still have the J to try again. A double finesse for one of two cards succeeds about 75% of the time, because the only losing scenario is when both missing honours are on your right.
+        What is the difference between a finesse and a ruff in bridge?+
+        A ruff is when a player wins a trick by playing a trump on a suit they have no cards in (void). It is certain to win when you have the void and a trump available. A finesse is a technique in any suit where you lead toward an honour hoping the missing higher card is on the wrong side. Ruffs are guaranteed; finesses are a calculated risk.
+        When should you not take a finesse in bridge?+
+        Avoid a finesse when a safer line guarantees your contract, when the finesse losing would put the dangerous opponent on lead to run a deadly suit, or when an endplay or squeeze would give you the same trick for free. The finesse is a 50-50 play; only take it when there is no better option or when the evidence strongly suggests it will work.
+        What is a two-way finesse in bridge?+
+        A two-way finesse is when the missing honour could be on either side and you can choose which way to finesse based on the available evidence. With A J opposite K 10, you can finesse against the Q from either end. Use clues from the auction (who opened, what was the opening bid) and the play so far to decide which side is more likely to hold the missing card.
+        Does a finesse always work 50% of the time?+
+        A simple finesse is 50-50 only when you have no information. In practice, you almost always have some clues: who opened the bidding, what was the opening lead, how many cards each opponent has shown in other suits. A player who reads these signals carefully will make their finesses work more often than half the time because they are making an informed guess, not a random one.
+      Free download
+      Get our free printable bridge cheat sheets
+      Enter your email to download our 1-page Bidding Cheat Sheet, Scoring Chart and First Online Game Checklist, plus occasional practical bridge tips in plain English. No spam, unsubscribe anytime.
+      Bidding cheat sheetScoring chartOnline game checklist
+        Get the free PDFs
+          Leave this field empty: 
+          Your email address
+          Get the free PDFs →
+        Free. No spam. Unsubscribe anytime.
+    Related Bridge Strategy Guides
+      StrategyDeclarer Play Tips
+The four-step planning process that tells you when to finesse and when to look for a safer line.
+      StrategyCard Counting in Bridge
+How counting the opponents' cards turns a 50-50 finesse into a near-certain play by the critical trick.
+      BiddingBridge Slam Bidding
+Declarer skill starts before trick one: understanding slam contracts helps you plan the finesse correctly.
+      Card Play at BridgePlaybook
+      The finesse is one piece of a larger card-play toolkit. Browse the strategy hub for guides on declarer play, defensive signals, card counting and memory techniques, all written for real club players rather than textbook theory.
+      Explore all strategy guides →
+

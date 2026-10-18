@@ -1,0 +1,102 @@
+
+    Attitude Signals in Bridge Defense - How to Signal to Partner
+    -->
+    -->
+                        Bidding
+                            Conventions A-Z
+                            Conventions by Category
+                            Bidding Principles
+                            Bidding Systems
+                        Declarer Play
+                        Defense
+                    Articles
+                        Players 
+-->
+                        Reference
+                            Famous Bridge Players 
+                            History of Bridge
+                            Rules of Play
+                            Ethics & Etiquette
+                            Links
+                            Search
+            Attitude Signals
+                Home /
+                Defense /
+                Attitude Signals
+  Print Page
+Download PDF
+ --->
+An attitude signal is the most common signal in bridge. A high spot card encourages the lead of a suit, whereas a low spot card discourages.
+Attitude signals are used when following suit to partner's lead, or when making the first discard in a suit. Of the three types of defensive signals, attitude signals have the highest priority:
+Attitude
+Count
+Suit-preference
+By default, a signal is for attitude unless the situation clearly warrants a count signal or suit-preference signal.
+Example: Following Suit
+Against South's 5 contract, partner leads the K:
+  |  |      | Dummy |      | 
+  |  | AK76 | 
+  |  | Q43 | 
+  |  | 963 | You
+  |  | A32 | JT98
+  |  |  | 8752
+  |  |  | Q82
+  |  |  | 64
+Which card do you follow suit with?
+Assuming that partner is leading from AK, the correct card is the 8. Since you hold the Q, you want to give partner an attitude signal indicating that it's safe to continue leading diamonds. The full deal:
+  |  |      | Dummy |      | 
+  |  | AK76 | 
+  |  | Q43 | 
+  | Partner | 963 | You
+  | 432 | A32 | JT98
+  | J96 |  | 8752
+  | AK54 | Declarer | Q82
+  | 875 | Q5 | 64
+  |  | AKT | 
+  |  | JT7 | 
+  |  | KQJT9 | 
+The defense must take its first three tricks in diamonds to defeat the contract. If you play the 2 at trick one instead, partner would read this as discouraging. He may well cash his two top diamonds before switching suits, thereby enabling declarer to make his contract.
+Example: Discarding
+This is an example of discarding to show attitude in another suit. Against South's 3NT contract, partner leads the Q:
+  |  |      | Dummy |      | 
+  |  | K5 | 
+  |  | Q43 | 
+  |  | 963 | You
+  |  | KQJT9 | AQJ2
+  |  |  | 8752
+  |  |  | 872
+  |  |  | 64
+You follow suit with the 2 (discouraging) and declarer wins the A. Declarer now leads a club to dummy's K, continues with the Q, and then the J. What do you discard?
+The objective is to advertise your spade strength to partner. Discarding a diamond would discourage diamonds, but wouldn't tell partner anything about your major suits. Discarding the 2 would discourage spades due to the diminutive size of the card. 
+The only suit that's left is hearts. Discarding the 2 is an attitude signal that discourages partner from switching to hearts if he gains the lead. Having seen your 2 at trick one, partner should know that you're not interested in diamonds either, and that a spade switch is implied.
+The full deal:
+  |  |      | Dummy |      | 
+  |  | K5 | 
+  |  | Q43 | 
+  | Partner | 963 | You
+  | T94 | KQJT9 | AQJ2
+  | J96 |  | 8752
+  | QJT5 | Declarer | 872
+  | A87 | 8763 | 64
+  |  | AKT | 
+  |  | AK4 | 
+  |  | 532 | 
+Once partner wins the A, he can switch to the T to defeat the contract.
+See also
+Count Signals
+Signals used to show the number of cards held in a given suit.
+Sequence Signals
+Signals used to show an honor sequence.
+Suit-Preference Signals
+Signals used to suggest the lead of another specific suit. 
+			    About
+				 Bridgebum began in 1999 and covers a large set of descriptions of bidding conventions, declarer play and defense, and more.
+				Latest Update
+				        Fast Arrival by Danny Kleinman
+				            Fast arrival is the theory that when a forcing bid is available below game, a jump to game denies, but a forcing bid implies, slam interest. 
+			    Contact
+			    See a typo, error or just want to comment?
+		                    Email:      jefftang AT gmail DOT com
+	             © Jeff Tang. All Rights Reserved. Privacy Policy | Terms of Service--->
+			--->
+	

@@ -1,0 +1,109 @@
+
+  Law of Total Tricks in Bridge: How High Should You Bid? | BridgePlaybook
+      Choose language
+        English
+        Nederlands
+        Deutsch
+        Français
+    Learn Bridge ▼
+      Learn Bridge Hub
+      Bridge Rules
+      Bridge Convention Card
+    Bidding ▼
+      Bidding Hub
+      Preemptive Bidding
+      Overcalls in Bridge
+    Strategy ▼
+      Strategy Hub
+      Law of Total Tricks
+      Losing Trick Count
+    Play Online ▼
+      Online Bridge Hub
+      BBO Review
+      Funbridge Review
+    Conventions ▼
+      All Conventions
+      Takeout Doubles
+      Negative Doubles
+    Tools ▼
+      Tools & Resources Hub
+      Opening Bid Calculator
+      Bridge Glossary
+      Practice Hands
+      Scoring Chart
+  The law of total tricks in one sentence: Add up the number of trump cards each side holds in its own best suit, and that number is roughly how many total tricks are available in the deal, which tells you how high it is safe to compete.
+    The Basic Idea
+    In a competitive auction, both sides are usually bidding a different suit, each with its own fit. The law of total tricks says that if you add together the number of tricks your side can take in its suit and the number of tricks the opponents can take in theirs, that total is approximately equal to the total number of trump cards both sides hold, combined across both fits.
+    Put more simply: if your side has an 8-card spade fit and the opponents have a 9-card heart fit, the law suggests around 17 total tricks are available across the two possible contracts. That number tells you how far it is safe to push the auction.
+    Why "law" is a loose word: it is really a guideline, not a mathematical law. Ron Klinger and other writers use it because it works often enough to guide a decision quickly at the table, not because it is exact on every hand.
+    The 2-3-4 Rule: How High to Compete
+      Trump fit length and safe competitive level
+      8 trumps
+Usually safe to compete to the 2-level.
+      9 trumps
+Usually safe to compete to the 3-level.
+      10 trumps
+Usually safe to compete to the 4-level.
+    This shortcut, sometimes called the 2-3-4 rule, is the practical form of the law that most players actually use at the table. You rarely know the opponents' exact trump length, so you count your own fit and use it as a rough guide for how far to push.
+    A Worked Example
+    Your side has an 8-card spade fit. The opponents have bid hearts twice, suggesting a 9-card heart fit of their own.
+    Example auction:
+West
+North
+East
+South
+        1♥
+1♠
+2♥
+2♠
+        3♥
+?
+South must decide whether to bid 3♠. Combined trumps: 8 (spades) + 9 (hearts) = 17 total tricks expected, which supports both sides competing to the 3-level: South's 3♠ is a reasonable save or competitive bid, not a wild guess.
+    Without the law, South would be guessing blind. With it, the trump count gives a concrete number to reason from: 17 total tricks means both 3♥ and 3♠ are plausible, and going one level higher than that starts to push past what the cards support.
+    Limitations: When the Law Breaks Down
+      The law works best when
+High card points are split fairly evenly
+Both sides have a genuine trump fit
+The auction is a real competitive part-score battle
+      The law is less reliable when
+One side holds most of the high cards
+A hand has extreme shape (very long or very short suits)
+You are deciding whether to double for penalty rather than compete
+    Studies of large numbers of bridge deals have shown the total-tricks relationship holds closely only some of the time and can be off by a trick or two on others. Treat it as a strong starting estimate you adjust with judgement, not as a formula to follow blindly.
+    The Law and Sacrifice Bidding
+    One of the most practical uses of the law is deciding whether to sacrifice: bidding on past the level where you expect to make your contract, accepting a penalty that costs less than letting the opponents make theirs. If the total-tricks count suggests the opponents can make a game and your side has a big enough fit to keep the penalty cheap, a sacrifice can be the winning action even though you know you will go down.
+    This overlaps closely with preemptive bidding, where a long trump suit is used to make the opponents' decisions harder. Both tools rely on the same underlying truth: trump length, not high card points, drives how high a competitive auction should go.
+    Key Takeaways
+      The law of total tricks links combined trump length to the total tricks available in a competitive auction.
+      Use the 2-3-4 rule: 8 trumps for the 2-level, 9 for the 3-level, 10 for the 4-level.
+      It is a guideline, most reliable when points are evenly split and both sides have a real fit.
+      It helps judge sacrifice bids, not penalty double decisions.
+      Use it alongside judgement and losing trick count, not as a strict formula.
+  Guide← Back to Bridge Strategy Guide
+  Related Guides
+  StrategyLosing Trick Count
+A trump-length method for judging bidding level once a fit is confirmed.
+BiddingPreemptive Bidding
+Using long suits to eat the opponents' bidding room before they find their fit.
+ConventionTakeout Doubles
+The other core tool for competing once the opponents have opened.
+  Frequently Asked Questions
+  What is the law of total tricks in bridge?+The law of total tricks says that in a competitive auction, the number of tricks available is roughly equal to the total number of trump cards both sides hold in their respective best suits. It is used as a guideline for how high to bid, not a guarantee.
+How do you use the law of total tricks to bid?+Count your combined trump length with partner. With an 8-card fit, it is usually safe to compete to the 2-level. With a 9-card fit, compete to the 3-level. With a 10-card fit, compete to the 4-level. This is often called the 2-3-4 rule.
+Is the law of total tricks always accurate?+No. It is a guideline, not a law, and it works best when high card points are fairly evenly split between the two sides and both sides have found a fit. When points are concentrated in one hand or one side has extreme shape, the total can be off by a trick or more.
+When should I not use the law of total tricks?+Avoid relying on it when one side has most of the high card points, when a hand is very balanced with no clear fit, or when you are deciding whether to double for penalty rather than how high to compete.
+What is a sacrifice in bridge and how does it relate to the law?+A sacrifice is a deliberate bid past the point where you expect to make your contract, taking a penalty that costs less than letting the opponents make theirs. The law of total tricks helps you judge whether a sacrifice is likely to be cheap enough to be worthwhile.
+Who developed the law of total tricks?+French bridge theorist Jean-Rene Vernes first described the relationship in the 1950s, and it was popularized more widely decades later through books and articles that turned it into a practical bidding guideline.
+      Free download
+      Get our free printable bridge cheat sheets
+      Enter your email to download our 1-page Bidding Cheat Sheet, Scoring Chart and First Online Game Checklist, plus occasional practical bridge tips in plain English. No spam, unsubscribe anytime.
+      Bidding cheat sheetScoring chartOnline game checklist
+        Get the free PDFs
+          Leave this field empty: 
+          Your email address
+          Get the free PDFs →
+        Free. No spam. Unsubscribe anytime.
+      Competitive Auctions at BridgePlaybook
+        The law of total tricks pairs naturally with losing trick count and preemptive bidding as tools for judging exactly how far a contested auction should go.
+        Continue improving in the Bridge Strategy Hub, or explore the Bridge Bidding Hub for the full bidding picture.
+

@@ -1,0 +1,416 @@
+
+  Bridge Bidding Cheat Sheet: Free Printable PDF for Beginners
+      Choose language
+        English
+        Nederlands
+      Deutsch
+        Français
+    Learn Bridge ▼
+      Learn Bridge Hub
+      How to Play Bridge
+      Bridge Rules
+      Bridge Scoring
+      Bridge Terminology
+    Bidding ▼
+      Bidding Hub
+      Opening Bids
+      Stayman Convention
+      Blackwood Convention
+    Strategy ▼
+      Strategy Hub
+      Declarer Play Tips
+      Defensive Signals
+      How to Win More
+    Play Online ▼
+      Online Bridge Hub
+      BBO Review
+      Funbridge Review
+      RealBridge Review
+    Conventions ▼
+      All Conventions
+      Stayman
+      Jacoby Transfers
+      Blackwood
+      Roman Key Card Blackwood
+      Gerber
+      Takeout Doubles
+      Negative Doubles
+      Michaels Cuebid
+    Tools ▼
+      Tools & Resources Hub
+      Opening Bid Calculator
+      Bridge Glossary
+      Practice Hands
+      Scoring Chart
+  Bridge bidding cheat sheet at a glance: In Standard American bridge, you need at least 13 High Card Points to open the bidding at the one level. You and your partner need a combined 25 points for game in 3NT, 4♥, or 4♠, and 33 combined points for a small slam. The four conventions every beginner needs are Stayman, Jacoby Transfers, Blackwood, and Gerber.
+    PDF
+      Free Printable Bridge Bidding Cheat Sheet (PDF)
+      One page that prints on US Letter or A4. Opening bids, responses, responses to 1NT, Stayman, Jacoby Transfers, Blackwood, Gerber, and the points you need for game and slam. The page is free to read, and the printable PDF is free with your email.
+        Download the free PDF
+        Print this page
+    Bridge Cheat Sheet for Beginners: 7 Opening and Response Rules
+    New to bridge? These seven rules cover most of the hands you will pick up. They are the Standard American opening rules, and they are the heart of any beginner bridge bidding cheat sheet.
+      Count your High Card Points: Ace = 4, King = 3, Queen = 2, Jack = 1.
+      Open with 13 or more HCP. With 11–12, open only if the Rule of 20 says yes.
+      Open a five-card major first. 1♥ or 1♠ always shows five or more cards.
+      Open 1NT with 15–17 HCP and a balanced hand (no singleton, no void).
+      No five-card major and not a 1NT hand? Open your longer minor: 1♣ with three cards in each minor, 1♦ with four in each.
+      Open 2♣ with 22 or more HCP. It is artificial and forcing.
+      When partner opens, respond with 6+ HCP, look for an eight-card major fit first, and bid game when your side has 25 combined points.
+    Quick-Reference Table: Every Key Bidding Number on One Page
+    This table puts every number you need for Standard American bidding in one place: a one-page contract bridge cheat sheet to keep next to the card table. Prefer paper? Download the printable PDF version, which also includes the responses to 1NT and the Stayman answers.
+      Opening & Responding
+      Open 1-level
+13 HCP: or 11–12 with a long suit (Rule of 20)
+      Open 1NT
+15–17 HCP: balanced only; no singletons or voids
+      Open 2NT
+20–21 HCP: balanced
+      Open 2♣
+22+ HCP: artificial and forcing; any shape
+      Weak two
+6–11 HCP: good 6-card suit
+      Respond
+6 HCP: never pass with 6+ HCP
+      Single raise
+6–9 HCP: with 3+ card support
+      Limit raise
+10–12 HCP: invitational, with 3+ card support
+      Jacoby 2NT
+13+ HCP: with 4+ card support, game forcing
+      Jump to game
+Under 10 HCP: with 5+ card support, preemptive
+      Conventions
+      Stayman
+2♣ over 1NT: 8+ HCP, must have a 4-card major
+      Transfers
+2♦/2♥ over 1NT: any HCP, must have a 5-card major
+      Blackwood
+4NT in suit auction: asks for aces before slam
+      Gerber
+4♣ over NT opening: asks for aces after notrump
+      Game & Slam Targets (Combined HCP)
+      Partscore
+18–24 combined: no game bonus
+      Game
+25+ combined: 3NT / 4♥ / 4♠
+      Minor game
+28–29 combined: 5♣ / 5♦ (usually avoided if 3NT makes)
+      Small slam
+33+ combined: check aces with Blackwood/Gerber
+      Grand slam
+36–37 combined: all four aces needed
+      Defensive Bidding
+      1-level overcall
+10 HCP: good 5-card suit
+      Takeout double
+12 HCP: short in their suit; support for unbid suits
+    Point thresholds are based on Standard American Yellow Card (SAYC) guidelines as published by the American Contract Bridge League and consistent with the framework of the World Bridge Federation. Individual partnerships may agree small variations. If your club plays SAYC, you can use this section as a simple SAYC cheat sheet.
+    Contract Bridge Basics: A 30-Second Rules Cheat Sheet
+    Contract bridge is played by four people in two partnerships, North–South against East–West, and each player receives 13 cards. The auction decides the contract: how many tricks your side promises to win, and which suit, if any, is trumps.
+      Contract = 6 + the level you bid. 1♠ promises 7 tricks, 3NT promises 9, 4♥ promises 10.
+      Suit ranking: ♣ (lowest), ♦, ♥, ♠, then notrump (highest). Every bid must be higher than the one before it.
+      The auction ends when a bid is followed by three passes in a row.
+      Declarer is the player on the winning side who first named the final suit (or notrump). Their partner becomes dummy and lays their cards face up.
+      Game bonuses come from 3NT, 4♥, 4♠, 5♣ and 5♦. That is why the point targets on this cheat sheet matter.
+    For the full auction rules, see bridge bidding rules. For all the rules of play, read the bridge rules guide, and for points and bonuses, use the bridge scoring chart.
+          A♠♠A♠
+          K♥♥K♥
+          Q♦♦Q♦
+          J♣♣J♣
+        →
+        A=4K=3 Q=2 J=1
+      Count your High Card Points first. Every bidding decision starts here.
+    High Card Points are the currency of bidding: Ace = 4, King = 3, Queen = 2, Jack = 1. The full deck contains exactly 40 HCP.
+    How Do You Count Your Points in Bridge?
+    Before you can bid anything, you need to know what your hand is worth. Bridge uses a system called High Card Points, or HCP for short. It was popularised in the 1920s and is still the foundation of every bidding system in the world today.
+      High Card Points (HCP)
+      A = 4
+Ace: the highest-value card in the HCP scale
+      K = 3
+King
+      Q = 2
+Queen
+      J = 1
+Jack
+    The full deck contains exactly 40 High Card Points, so an average hand holds 10. If you pick up a hand with 13 or more HCP, you have an above-average hand and enough to open the bidding.
+    Distribution points come into play once you and your partner have found a trump suit:
+        +3
+        Void: 0 cards in a suit
+        +2
+        Singleton: 1 card in a suit
+        +1
+        Doubleton: 2 cards in a suit
+    Important: Do not add distribution points before you have found a fit with partner. A singleton is only an asset once you know your partner holds support for your long suit.
+    How Many Points Do You Need to Open the Bidding?
+    The general rule is 13 High Card Points to open at the one level. A hand of 12 points can be opened if it has a good long suit or strong distribution. The Rule of 20 is a useful shortcut for borderline hands: add your HCP to the length of your two longest suits. If the total is 20 or more, open.
+      Standard American Opening Bids
+      Pass
+0–12
+No good opening
+      1♣/1♦
+13–21
+3+ cards in suit (convenient minor)
+      1♥/1♠
+13–21
+5+ cards in suit (always a real suit)
+      1NT
+15–17
+Balanced: 4-3-3-3, 4-4-3-2, or 5-3-3-2
+      2♣
+22+
+Artificial, forcing; any shape
+      2♦/2♥/2♠
+6–11
+Weak two-bid; good 6-card suit
+      2NT
+20–21
+Balanced
+      3-level
+5–10
+7-card suit; preemptive
+      4-level
+4–9
+8-card suit; preemptive
+    Standard American is a 5-card major system, which means an opening bid of 1♥ or 1♠ always promises at least five cards. So always open a five-card major if you have one. With two five-card suits, open the higher-ranking one. With no five-card suit, open your longer minor. If your minors are equal length, open 1♣.
+    The 1NT opening is special. It is a very precise bid: exactly 15–17 points, no singletons, no voids. If your hand has a singleton anywhere, open a suit instead, even if you have 15 points.
+    For a deeper look at opening one-bids, visit the full guide to opening bids in bridge.
+    SAYC and 5-Card Major Cheat Sheet: The Core Agreements
+    Standard American Yellow Card (SAYC) is the standard bidding system published by the American Contract Bridge League (ACBL), and it is the system this cheat sheet follows. It is a 5-card major system. If a partner or club asks “do you play SAYC?”, these are the agreements you are signing up for:
+      5-card majors: 1♥ and 1♠ promise five or more cards, so partner can raise with three-card support.
+      Strong 1NT: 15–17 HCP and a balanced hand.
+      Strong 2♣: 22+ HCP, artificial and forcing.
+      Weak two-bids: 2♦, 2♥ and 2♠ show a good six-card suit and 6–11 HCP.
+      Core conventions: Stayman, Jacoby Transfers, Jacoby 2NT, Blackwood, Gerber over notrump openings, and takeout doubles.
+    SAYC or 2 Over 1? 2 Over 1 Game Force also uses 5-card majors, but a new suit at the two level in response to a major opening (for example 1♠ – 2♣) commits the partnership to game. Learn SAYC first; most players add 2 Over 1 later.
+    For the full system, read the guide to Standard American bidding (SAYC), and for why five-card majors work, see five-card majors in bridge.
+    What Should You Bid When Your Partner Opens?
+    The first question is simple: do you have 6 points? If not, pass. If you do, you must respond. Leaving partner in a one-level opening with a six-point hand is a mistake that can cost the partnership a game.
+    Responding to partner’s 1♥ or 1♠ opening:
+      Responses to a Major-Suit Opening
+      6–9
+3+ support
+Single raise (1♥ to 2♥)
+      10–12
+3+ support
+Limit raise (1♥ to 3♥): invitational
+      13+
+4+ support
+Jacoby 2NT (game forcing)
+      13+
+Exactly 3 support
+Bid a new suit first (forcing), then support partner
+      0–9
+5+ support
+Jump to game (1♥ to 4♥): weak and preemptive
+      6+
+New 4-card suit
+Bid it at the 1-level (forcing)
+      6–10
+No fit, no suit
+1NT response
+      10–12
+Balanced, no fit
+New suit first, then 2NT (invitational). A direct 2NT is Jacoby 2NT.
+      13+
+Balanced, no fit
+3NT
+    Responding to partner’s 1♣ or 1♦ opening:
+    With a four-card major, always respond in your major at the one level. This is called “bidding up the line” and it keeps the bidding low while searching for the best fit.
+    Responding to partner’s 1NT opening:
+    This is where Stayman and Jacoby Transfers live. See the conventions section below.
+    The golden rule of responding: Always try to find a major suit fit first. If you and partner together hold eight or more cards in hearts or spades, that major suit game (4♥ or 4♠) is almost always better than 3NT.
+    Bridge Conventions Cheat Sheet: When to Use Stayman, Jacoby Transfers, Blackwood and Gerber
+    These four conventions are the ones every beginner needs to know, and together they form the core of any bridge bidding conventions cheat sheet. Each has a specific trigger. Using them at the wrong time is as costly as not using them at all.
+    Stayman Convention Cheat Sheet
+    When: Partner opens 1NT. You have 8 or more points and at least one four-card major (hearts or spades).
+    The bid: 2♣ (artificial: it says nothing about clubs; it asks “do you have a four-card major?”)
+      Stayman Responses
+      2♦
+No four-card major
+      2♥
+Four or more hearts
+      2♠
+Four or more spades (denies four hearts; with both majors, bid 2♥ first)
+    Important: Do not use Stayman with fewer than 8 points. With 0–7 points and a long major, use Jacoby Transfers instead. Using Stayman with a weak hand can leave you stranded in a 2♠ contract on a four-three fit, which is usually worse than staying in 1NT.
+    Those three answers are your whole Stayman convention cheat sheet. For a full treatment, see the Stayman convention guide.
+    Jacoby Transfer Cheat Sheet
+    When: Partner opens 1NT. You have five or more cards in hearts or spades: at any point count from 0 upward.
+      Jacoby Transfer Bids
+      2♦
+Partner bids 2♥
+You have five or more hearts
+      2♥
+Partner bids 2♠
+You have five or more spades
+    Why make partner declare? Because the 1NT opener holds the stronger hand. If partner plays the contract, their strong hand is hidden from the opponents, which is a tactical advantage.
+    After the transfer: with a weak hand (0–7 points), pass. With an invitational hand (8–9 points), bid 2NT. With a game-forcing hand (10+ points), bid 3NT or raise to game in the major.
+    Keep those follow-ups in mind and you have a simple Jacoby transfer cheat sheet. Learn more at the Jacoby Transfers guide.
+    Blackwood Convention Cheat Sheet
+    When: You are in a forcing auction and want to check how many aces partner holds before bidding slam. Use it after a trump suit has been agreed.
+    The bid: 4NT
+      Blackwood Responses (standard)
+      5♣
+0 or 4 aces
+      5♦
+1 ace
+      5♥
+2 aces
+      5♠
+3 aces
+    When not to use Blackwood: Do not use it when you have a void in a suit, because partner’s ace in that suit is useless to you. Do not use it when you are missing two aces and will be forced to stop at the five level, above game. Use Blackwood only when you expect the answer to confirm a slam.
+    Full details at the Blackwood convention guide.
+    Gerber Convention Cheat Sheet
+    When: Partner opens 1NT or 2NT and you want to ask for aces directly.
+    The bid: 4♣ (in direct response to a notrump opening)
+      Gerber Responses
+      4♦
+0 or 4 aces
+      4♥
+1 ace
+      4♠
+2 aces
+      4NT
+3 aces
+    The rule is simple: Gerber is for notrump auctions; Blackwood is for suit auctions. They are not interchangeable.
+    What Do Opener’s Rebids Mean?
+    Opener’s second bid is the moment the picture of the hand becomes clearer. Responder now knows whether opener has a minimum, an intermediate, or a maximum opening.
+    After 1♥ by opener and 1♠ by responder:
+      Opener’s Rebid Options
+      2♥
+Minimum opener (12–15 HCP), 6+ hearts
+      1NT
+Balanced, no spade fit, 12–14 HCP
+      2♠
+Four-card spade support, any opener strength
+      2♣/2♦
+New suit, 4+ cards, forcing for one round
+      2NT
+Balanced, 18–19 HCP
+      3♥
+Invitational (15–17 HCP), 6+ hearts
+      4♥
+Powerful hand, sets game immediately
+    A note on reverses: If opener bids a higher-ranking suit at the two level than the suit opened (for example: 1♦ – 1♠ – 2♥), that is called a reverse. It promises at least 16 HCP and is forcing. Responder cannot pass a reverse.
+    How Many Points Do You Need for Game or Slam in Bridge?
+    These thresholds are the most-used numbers in all of bridge. You will refer to them at every table.
+      Game and Slam Point Thresholds
+      Partscore
+18–24
+7–9 tricks needed. No game bonus.
+      3NT
+25+
+9 tricks. Preferred when no 8-card major fit.
+      4♥/4♠
+25–26
+10 tricks. Need at least 8-card trump fit.
+      5♣/5♦
+28–29
+11 tricks. Usually skipped in favour of 3NT.
+      Small slam
+33+
+12 tricks. Check for aces first.
+      Grand slam
+36–37
+All 13 tricks. Need all four aces.
+    These are partnership totals. If you open 1NT (15–17 HCP) and partner bids 3NT, they are showing 10–12 HCP. Together you hold 25–29 points: solid game territory.
+    For an explanation of why these contracts earn bonuses and how scoring works, see the guide to bridge scoring.
+Slam Bidding Shortcuts: Which Convention to Use
+SituationUseAsk for
+ | Enough points, no void, need ace count | Blackwood 4NT | Number of aces partner holds
+ | Trump suit agreed, need ace + king of trump count | Roman Key Card Blackwood (RKCB) | Aces + king of trumps (5 "key cards")
+ | Have a void; need first-round control info | Cuebidding | Which aces (or voids) partner holds by suit
+ | Partner opened 1NT or 2NT, need an ace count | Gerber 4♣ | Number of aces partner holds
+Detailed guides: Blackwood, Roman Key Card Blackwood, Gerber.
+    What Do You Bid When the Opponents Open First?
+    Defensive bidding: bidding after the opponents have already opened: follows its own rules. You are no longer just describing your hand to partner; you are also competing for the contract or making life difficult for the opponents.
+      Defensive Bidding Actions
+      1-level overcall
+10–16 HCP
+Good 5+ card suit
+      2-level overcall
+12–16 HCP
+Strong 5+ card suit; higher risk
+      1NT overcall
+15–18 HCP
+Balanced, stopper in their suit
+      Jump overcall
+5–10 HCP
+6+ card suit; preemptive
+      Takeout double
+12+ HCP
+3-card support in all unbid suits
+    The takeout double is the most important tool in defensive bidding. It says nothing about the suit the opponents opened. It says: I have a good hand, I am short in their suit, and I want you to pick the best contract for our side. Partner of the doubler must bid their best suit unless they are very strong (12+ HCP), in which case they can pass for penalties.
+    Worked Example: From the Deal to the Final Contract
+    Here is a real hand, walked through exactly as it would be bid at a club table.
+          North (dealer): 14 HCP
+          ♠AQ84
+          ♥KJ5
+          ♦A92
+          ♣763
+          South: 13 HCP
+          ♠K763
+          ♥Q84
+          ♦K65
+          ♣AJ4
+      The bidding:
+        North
+East
+South
+West
+        1♣
+Pass
+1♠
+Pass
+        2♠
+Pass
+4♠
+Pass
+        Pass
+      North has 14 HCP, no five-card major and three cards in each minor, so opens the convenient minor: 1♣.
+      South has 13 HCP and four spades. The first job as responder is to bid four-card majors up the line: South responds 1♠.
+      North now knows South has four spades. North also has four spades. An eight-card fit has been found. With 14 HCP and four-card support, North raises to 2♠: a single raise showing 12–15 HCP.
+      South adds up: North showed 12–15 HCP with the raise. South has 13. Together they hold 25–28 points. That is game territory. South bids 4♠ directly.
+    The final contract is 4♠ played by South, who bid spades first. The partnership holds a combined 27 HCP and a solid eight-card spade fit. This is exactly the kind of hand a cheat sheet is built to help you recognise.
+    Where Should You Go Next?
+    A cheat sheet gives you the framework; the game fills in the detail. Once opening bids and simple responses feel natural, learn the responses to 1NT in full, because that auction has more moving parts than any other. If you play at a duplicate club, you will soon meet Roman Key Card Blackwood, the version of Blackwood that counts the king of trumps as a fifth “ace.”
+    For deeper guides on every part of the auction, visit the bridge bidding hub. Still learning the fundamentals? The guide to how to play bridge covers everything from the deal to the score.
+    Key Takeaways
+      The Standard American High Card Point scale is: Ace = 4, King = 3, Queen = 2, Jack = 1. The deck contains 40 HCP in total.
+      Open the bidding at the one level with 13 or more HCP. With 11 or 12, apply the Rule of 20.
+      Open 1NT with exactly 15–17 HCP and a balanced hand. No singletons, no voids.
+      You need 25 combined HCP for a game contract in notrump or a major suit. Slam requires 33 combined HCP.
+      Always bid a five-card major when you have one. Always bid a four-card major in response to partner before leaving the auction in a minor.
+      Stayman asks for a four-card major after a 1NT opening. Jacoby Transfers show a five-card major. Use Stayman with 8+ HCP; use transfers at any point count.
+      Blackwood (4NT) asks for aces in a suit auction. Gerber (4♣) asks for aces after a notrump opening. They are not the same bid.
+      A takeout double over an opponent’s opening bid shows 12+ HCP and asks partner to pick the best suit.
+  Guide← Back to Bridge Bidding Guide
+  Related Guides
+BiddingOpening Bids Guide
+The detailed explanation behind every opening on the cheat sheet.
+BiddingResponding to 1NT
+The full response ladder after a 1NT opening, with Stayman and transfers.
+ToolOpening Bid Calculator
+Enter your hand and check your opening call against the standard guidelines.
+  Frequently Asked Questions
+  How many points do you need to open the bidding in bridge?+In Standard American bridge, you need at least 13 High Card Points to open the bidding at the one level. You may open a hand of 11 or 12 points if your hand passes the Rule of 20: count your HCP and add the length of your two longest suits. If the total is 20 or more, opening is justified. The rule exists to prevent players from opening very weak hands while giving them the flexibility to open distributional hands with slightly fewer high cards.
+How many points do you need for game in bridge?+You and your partner need a combined total of approximately 25 High Card Points to bid and make a game contract. In practice, 3NT and 4♥ or 4♠ are the most commonly bid games and both require around 25 combined points with an appropriate fit. Minor-suit games (5♣ or 5♦) require 28–29 combined points and are rarely bid unless a notrump game is unavailable. A small slam requires 33 combined points, and a grand slam requires 36–37 combined points plus all four aces.
+What is the difference between Stayman and Jacoby Transfers in bridge?+Stayman and Jacoby Transfers are both used when partner opens 1NT, but they serve different purposes. Stayman (the 2♣ bid) asks whether partner has a four-card major suit, and requires 8 or more HCP to use. Jacoby Transfers (2♦ to show hearts, 2♥ to show spades) show a five-card major in your own hand and can be used at any point count, even with a weak hand you want to rescue from 1NT. Stayman searches for a four-four fit; transfers guarantee a five-card suit.
+What is a limit raise in bridge and when should you use it?+A limit raise is when you raise partner’s opening major suit bid by two levels, for example from 1♥ to 3♥. It shows 10–12 High Card Points and at least three-card support for partner’s suit. The word “limit” describes the fact that it is not forcing: opener can pass with a minimum hand. It is the right bid when you have a fit and a hand strong enough to invite game, but not quite enough to bid game directly. With 13 or more points and four-card support, use Jacoby 2NT instead. Be careful not to jump straight to game (1♥ to 4♥) with a strong hand: in Standard American that jump shows a weak hand with five or more trumps.
+Why do you open 1♣ or 1♦ with only three cards in the suit?+In Standard American, if your hand is not strong enough for 1NT (15–17 balanced) and you have no five-card major, you must open a minor suit even if your minor suits are short. This is called opening a “convenient minor” or “prepared minor.” It simply tells partner you have an opening hand without promising a long minor. The auction is designed to continue from there, with both players looking for a major suit fit or notrump. Opening 1♣ with a three-card suit is not a mistake; it is the correct Standard American opening with a balanced 13-point hand and no five-card major.
+Is there a free printable bridge bidding cheat sheet PDF?+Yes. Download the free one-page bridge bidding cheat sheet PDF; just enter your email and it downloads instantly. It covers Standard American (SAYC) opening bids, responses, responses to 1NT, Stayman, Jacoby Transfers, Blackwood, Gerber and the combined points you need for game and slam, and it prints on US Letter or A4 paper. You can also print this whole page with Ctrl+P (Windows) or Cmd+P (Mac).
+What is SAYC in bridge?+SAYC stands for Standard American Yellow Card, the standard bidding system published by the American Contract Bridge League (ACBL). It uses 5-card majors, a 15–17 point 1NT opening, a strong artificial 2♣ opening, weak two-bids, and a small set of conventions: Stayman, Jacoby Transfers, Jacoby 2NT, Blackwood and Gerber. This cheat sheet follows SAYC, so you can use it as a SAYC cheat sheet at the club or online.
+What does a 5-card major system mean in bridge?+In a 5-card major system, an opening bid of 1♥ or 1♠ promises at least five cards in that suit. Hands without a five-card major open 1NT (15–17 HCP, balanced) or a minor suit. Because partner knows you hold five, three-card support is enough to raise, which makes an eight-card major fit easy to find. Standard American and 2 Over 1 are both 5-card major systems.
+      Free download
+      Get our free printable bridge cheat sheets
+      Enter your email to download our 1-page Bidding Cheat Sheet, Scoring Chart and First Online Game Checklist, plus occasional practical bridge tips in plain English. No spam, unsubscribe anytime.
+      Bidding cheat sheetScoring chartOnline game checklist
+        Get the free PDFs
+          Leave this field empty: 
+          Your email address
+          Get the free PDFs →
+        Free. No spam. Unsubscribe anytime.
+      Download the Free Printable Bridge Bidding Cheat Sheet
+        Print it. Bookmark it. Use it freely. The one-page PDF version fits on a single sheet of US Letter or A4 and follows Standard American (SAYC), the most widely played system at beginner and intermediate club games.
+        Go deeper on any line in the Bridge Bidding Hub, or browse the full library of agreements in the Bridge Conventions Hub.
+

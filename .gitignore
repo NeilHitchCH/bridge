@@ -1,0 +1,6 @@
+node_modules/
+bin/
+sources/
+screenshots/
+*.log
+data/rooms.json

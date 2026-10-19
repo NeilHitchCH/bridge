@@ -88,6 +88,8 @@ function chooseCard(board, me) {
   if (config.engine === 'sim' && DD.isReady() && !(board.tricks.length === 0 && board.trick.length === 0)) {
     try { const r = simulateCard(board, me, legal, h); card = r.card; if (r.samples > 1) m.set(key + ':info', r); } catch (e) { if (process.env.BRIDGE_DEBUG) throw e; card = h; }
   }
+  // hard guarantee: whatever an engine returns, only a legal card ever leaves this function
+  if (!legal.includes(card)) { console.error('play engine returned an illegal card', card, 'legal', legal); card = legal.includes(h) ? h : lowest(legal); }
   m.set(key, card);
   return card;
 }

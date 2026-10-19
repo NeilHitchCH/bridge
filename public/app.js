@@ -475,7 +475,10 @@
     el.className = 'trick show';
     const prevKeys = st.prevTrick;
     const winner = b.trickComplete ? trickWinner(b.trick, b.contract.strain) : null;
-    el.innerHTML = b.trick.map((t) => cardHTML(t.card, `t-${rel(t.seat)} ${prevKeys.includes(t.card) ? '' : 'enter'} ${winner === t.seat ? 'win' : ''}`)).join('');
+    const led = b.trick.length ? b.trick[0].card[0] : null;
+    // a card of another suit means that player has no cards left in the suit led: say so on the card
+    const tag = (t) => (t.card[0] === led ? '' : `<span class="void-tag">${t.card[0] === b.contract.strain ? 'ruff · ' : ''}no ${SYM[led]}</span>`);
+    el.innerHTML = b.trick.map((t) => cardHTML(t.card, `t-${rel(t.seat)} ${prevKeys.includes(t.card) ? '' : 'enter'} ${winner === t.seat ? 'win' : ''}`).replace(/<\/div>$/, tag(t) + '</div>')).join('');
     st.prevTrick = b.trick.map((t) => t.card);
   }
   function animateCollect(last) {

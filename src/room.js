@@ -175,6 +175,8 @@ class RoomManager {
       tricks: b.tricks.map((t) => ({ leader: t.leader, cards: t.cards, winner: t.winner })),
       result: b.result, text: G.resultText(b), nsScore,
     });
+    const rv = revokesIn(b.original, b.tricks);
+    if (rv.length) { room.boardLog[room.boardLog.length - 1].revokes = rv; console.error('REVOKE on table', room.code, 'board', b.number, rv); }
     if (room.boardLog.length > 50) room.boardLog.splice(0, room.boardLog.length - 50);
   }
 
@@ -206,8 +208,15 @@ class RoomManager {
       try {
         const a = G.botAction(b);
         if (a && a.type === 'call') G.applyCall(b, a.actor, a.value);
-        else if (a) G.applyCard(b, a.actor, a.value);
-      } catch (e) { console.error('bot error', e); }
+        else if (a) G.applyCard(b, a.actor, a.value); // validated: follow suit is enforced for every seat
+      } catch (e) {
+        console.error('bot error', e);
+        // never stall: fall back to a plain legal action
+        try {
+          if (b.phase === 'auction') G.applyCall(b, b.turn, 'P');
+          else if (b.phase === 'play' && !b.trickComplete) { const legal = E.legalCards(b.hands[b.turn], b.trick); G.applyCard(b, G.controllerOf(b, b.turn), legal[legal.length - 1]); }
+        } catch (e2) { console.error('bot fallback failed', e2); }
+      }
       this.afterAction(room);
     }, delay);
   }
@@ -297,7 +306,21 @@ class RoomManager {
   }
 }
 
+// follow-suit audit of a finished board against the original deal
+function revokesIn(original, tricks) {
+  const hands = JSON.parse(JSON.stringify(original || {}));
+  const out = [];
+  (tricks || []).forEach((t, i) => {
+    const led = t.cards[0].card[0];
+    for (const tc of t.cards) {
+      const h = hands[tc.seat] || [];
+      if (tc.card[0] !== led && h.some((c) => c[0] === led)) out.push({ trick: i + 1, seat: tc.seat, card: tc.card, held: h.filter((c) => c[0] === led) });
+      if (h.includes(tc.card)) h.splice(h.indexOf(tc.card), 1);
+    }
+  });
+  return out;
+}
 function botName(s) { return { N: 'North', E: 'East', S: 'South', W: 'West' }[s] + ' (computer)'; }
 function clean(n) { return String(n || '').replace(/[<>&"'`]/g, '').trim().slice(0, 20); }
 
-module.exports = { RoomManager };
+module.exports = { RoomManager, revokesIn };

@@ -280,3 +280,5 @@ input{font-size:16px}
 .rv-play td,.rv-play th{text-align:center}
 .rv-play td.win{background:#fbeec4;font-weight:800}
 .rv-play td.lead{text-decoration:underline}
+
+.trick .card .void-tag{position:absolute;left:2px;right:2px;bottom:2px;font-size:9px;font-weight:800;text-align:center;background:#fff3cd;color:#6b4e00;border-radius:4px;line-height:1.3}

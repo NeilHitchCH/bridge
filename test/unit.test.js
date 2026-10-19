@@ -536,3 +536,17 @@ test('solver: real positions where the classic engine failed to cash an ace (fix
     }
   } finally { Object.assign(P.config, save); }
 });
+test('follow suit is enforced for every source of a card, and the history audit flags revokes', () => {
+  const b = position({
+    hands: { N: '5432.5432.54.432', E: '876.876.876.8765', S: 'AKQ.AKQ.A32.AKQJ', W: 'JT9.JT9.KQJT9.T9' },
+    contract: '3N', declarer: 'S', trick: [['W', 'DK']],
+  });
+  // North (dummy, run by South) holds diamonds: a club is refused whoever sends it
+  assert.throws(() => G.applyCard(b, 'S', 'C4'), /follow suit/);
+  assert.throws(() => G.applyCard(b, 'N', 'D5'), /Not your turn/);
+  G.applyCard(b, 'S', 'D5');
+  const { revokesIn } = require('../src/room');
+  const orig = { N: ['D2', 'C3'], E: ['D5', 'C4'], S: ['DQ', 'C5'], W: ['D7', 'C6'] };
+  assert.deepEqual(revokesIn(orig, [{ cards: [{ seat: 'S', card: 'DQ' }, { seat: 'W', card: 'D7' }, { seat: 'N', card: 'C3' }, { seat: 'E', card: 'D5' }] }]).map((r) => r.seat), ['N']);
+  assert.deepEqual(revokesIn({ N: ['C3', 'C2'], E: ['D5', 'C4'], S: ['DQ', 'C5'], W: ['D7', 'C6'] }, [{ cards: [{ seat: 'S', card: 'DQ' }, { seat: 'W', card: 'D7' }, { seat: 'N', card: 'C3' }, { seat: 'E', card: 'D5' }] }]), []);
+});

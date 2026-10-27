@@ -11,6 +11,7 @@ const out = __dirname + '/../screenshots/';
   await ctx.addInitScript(() => { localStorage.setItem('bridge.reveal', '1'); });
   const page = await ctx.newPage();
   page.on('pageerror', (e) => console.error('PAGE ERROR', e.message));
+  await page.addInitScript(() => localStorage.setItem('bridge.introSeen', '1'));
   await page.goto(base + '/');
   await page.fill('#nameInput', 'Neil');
   await page.waitForFunction(() => document.querySelectorAll('#sysSel option').length > 3);

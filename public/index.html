@@ -52,6 +52,7 @@
           <div class="row"><input id="codeInput" maxlength="5" autocapitalize="characters" autocomplete="off" placeholder="ABCDE"><button id="joinBtn" class="btn">Join</button></div>
         </div>
       </div>
+      <button id="learnBtn" class="btn ghost">New to bridge? How the game works</button>
       <p class="fine">Empty seats are filled by computer players who bid in the chosen system. You can change systems between boards from the table menu.</p>
     </div>
   </section>
@@ -64,6 +65,7 @@
         <label class="field"><span>Your name</span><input id="spName" maxlength="20" autocomplete="nickname" placeholder="Your name"></label>
         <div id="spSeats" class="seat-grid"></div>
       </div>
+      <button id="spLearn" class="btn ghost">New to bridge? How the game works</button>
       <button id="spBack" class="btn ghost">Back</button>
     </div>
   </section>
@@ -98,6 +100,17 @@
     <div class="hand-area" id="handArea"></div>
     <div class="bidbox" id="bidbox"></div>
   </section>
+
+  <!-- Beginner intro -->
+  <div class="intro-wrap" id="introWrap" role="dialog" aria-modal="true" aria-labelledby="introTitle">
+    <div class="intro">
+      <div class="intro-top"><span class="intro-step" id="introStep"></span><button class="btn intro-skip" id="introSkip">Skip</button></div>
+      <div class="intro-body" id="introBody"></div>
+      <div class="intro-dots" id="introDots"></div>
+      <label class="intro-chk"><input type="checkbox" id="introNever"> Don't show this again</label>
+      <div class="intro-nav"><button class="btn" id="introBack">Back</button><button class="btn primary" id="introNext">Next</button></div>
+    </div>
+  </div>
 
   <!-- Overlays -->
   <div class="sheet-wrap" id="sheetWrap"><div class="sheet" id="sheet"></div></div>

@@ -8,6 +8,7 @@ const { startServer } = require('../server');
   const ctx = await browser.newContext({ ...devices['iPhone 13'] });
   const page = await ctx.newPage();
   page.on('pageerror', (e) => { console.error('PAGE ERROR', e.message); process.exit(1); });
+  await page.addInitScript(() => localStorage.setItem('bridge.introSeen', '1'));
   await page.goto(base + '/');
   await page.fill('#nameInput', 'Neil');
   await page.tap('#partnerSeg [data-v="bot"]');

@@ -626,6 +626,7 @@
       <button class="btn" data-a="tips">Learning tips: ${store.tips ? 'On' : 'Off'}</button>
       ${st.view.practiceAvailable ? `<button class="btn" data-a="practice">Show partner's hand (practice): ${store.practice ? 'On' : 'Off'}</button>` : `<button class="btn" disabled>Show partner's hand: only with a computer partner</button>`}
       <button class="btn" data-a="review" ${st.view.historyCount ? '' : 'disabled'}>Hand review (last ${Math.min(50, st.view.historyCount || 0)} boards)</button>
+      <button class="btn" data-a="learn">How bridge works (beginner guide)</button>
       <button class="btn" data-a="seats">Seats &amp; players</button>
       <button class="btn danger" data-a="leave">Leave table</button>
     </div>`, (el) => {
@@ -636,6 +637,7 @@
         if (a === 'last') openLastTrick();
         if (a === 'score') openScore();
         if (a === 'seats') openSeats();
+        if (a === 'learn') { closeSheet(); openIntro(); }
         if (a === 'system') openSystem();
         if (a === 'card') openSystemCard();
         if (a === 'practice') { store.practice = !store.practice; send({ t: 'practice', on: store.practice }); toast(store.practice ? "Partner's hand shown (practice)" : "Partner's hand hidden"); closeSheet(); }
@@ -754,6 +756,68 @@
     for (const [id, dummy] of [['handArea', false], ['dummyArea', true]]) { const h = $(id).querySelector('.hand'); if (h) sizeHand(h, h.children.length, dummy); }
   });
 
+
+  // ---------------------------------------------------------------- beginner intro
+  const INTRO_KEY = 'bridge.introSeen';
+  const R = (x) => `<span class="red">${x}</span>`;
+  const INTRO = [
+    ['Welcome to bridge', `<p>Bridge is a card game for <b>4 players in 2 teams</b>. Partners sit opposite each other:</p>
+      <ul><li><b>North &amp; South</b> are one team.</li><li><b>East &amp; West</b> are the other team.</li></ul>
+      <p>A normal 52-card deck is dealt out, so <b>everyone gets 13 cards</b>. Each deal is called a <b>board</b>.</p>
+      <p>Every board has two parts: first the <b>bidding</b> (an auction), then the <b>play</b> (13 tricks).</p>
+      <p>This quick guide takes about a minute. Tap <b>Skip</b> any time.</p>`],
+    ['Bidding: what a bid means', `<p>In the auction, each team says how many tricks it thinks it can win, and which suit should be <b>trumps</b> (or NT = no trumps).</p>
+      <p>A bid is a <b>number + a suit</b>. The number is tricks <b>above 6</b>:</p>
+      <div class="ex"><b>1${R('♥')}</b> = "we'll win 7 tricks with hearts as trumps"<br><b>3NT</b> = "we'll win 9 tricks with no trumps"<br><b>7♠</b> = all 13 tricks (a grand slam!)</div>
+      <p>Suits rank from low to high:<br><b>♣ Clubs &lt; ${R('♦')} Diamonds &lt; ${R('♥')} Hearts &lt; ♠ Spades &lt; NT</b></p>`],
+    ['Bidding: how the auction runs', `<ul>
+      <li>The dealer calls first, then everyone in turn, going clockwise.</li>
+      <li>Each new bid must be <b>higher</b> than the last one: a bigger number, or the same number in a higher suit (1${R('♥')} can be followed by 1♠, but 1♠ can only be followed by 1NT or a 2-level bid).</li>
+      <li><b>Pass</b> = "I don't want to bid now."</li>
+      <li><b>Double</b> = "I think the opponents' bid will fail" (it raises the stakes). Partners can't double each other.</li>
+      <li>The auction ends after <b>3 passes in a row</b>. The last bid becomes the <b>contract</b>.</li>
+    </ul>
+    <p>The <b>declarer</b> is the player on the winning team who <b>first named that suit</b> (or NT). Declarer's partner becomes the <b>dummy</b>.</p>
+    <p>Tip: the bid box and learning tips in this app suggest sensible bids for you.</p>`],
+    ['Play: tricks', `<ul>
+      <li>The player to the <b>left of declarer</b> leads the first card.</li>
+      <li>Then the <b>dummy's cards are laid face up</b> for everyone to see. Declarer plays both their own hand and dummy's; the dummy player just watches.</li>
+      <li>Each player in turn plays one card. You <b>must follow suit</b> (play the suit that was led) if you can.</li>
+      <li>If you can't follow, play any card: throw away a low card (a <b>discard</b>) or play a trump to try to win.</li>
+      <li>The <b>highest card of the suit led</b> wins the trick, unless someone played a trump, then the <b>highest trump</b> wins.</li>
+      <li>Whoever wins the trick <b>leads to the next one</b>. 13 tricks in all.</li>
+    </ul>
+    <div class="ex">Ace is high, then K, Q, J, 10 … down to 2.</div>`],
+    ['Scoring basics', `<ul>
+      <li>If declarer's team wins at least the tricks they bid, they <b>make the contract</b> and score points.</li>
+      <li>If they fall short, they <b>go down</b> and the defenders score for each missing trick.</li>
+      <li>Small contracts give a <b>part score</b>. Bigger ones give a <b>game</b> bonus, worth much more:<br><b>3NT, 4${R('♥')}, 4♠, 5♣, 5${R('♦')}</b> (or higher).</li>
+      <li>Bidding 6 (12 tricks) or 7 (all 13) is a <b>slam</b>, worth a big bonus.</li>
+    </ul>
+    <p>That's it! Don't worry about getting everything right; just have fun. You can reopen this guide any time from the home screen or the table menu (⋯).</p>`],
+  ];
+  let introI = 0;
+  function introSeen() { try { return localStorage.getItem(INTRO_KEY) === '1'; } catch (e) { return false; } }
+  function renderIntro() {
+    const [title, body] = INTRO[introI];
+    $('introBody').innerHTML = `<h2 id="introTitle">${title}</h2>${body}`;
+    $('introBody').scrollTop = 0;
+    $('introStep').textContent = `Step ${introI + 1} of ${INTRO.length}`;
+    $('introDots').innerHTML = INTRO.map((_, i) => `<i class="${i === introI ? 'on' : ''}"></i>`).join('');
+    $('introBack').disabled = introI === 0;
+    $('introNext').textContent = introI === INTRO.length - 1 ? 'Start playing' : 'Next';
+  }
+  function openIntro() { introI = 0; $('introNever').checked = introSeen(); renderIntro(); $('introWrap').classList.add('show'); }
+  function closeIntro() {
+    try { if ($('introNever').checked) localStorage.setItem(INTRO_KEY, '1'); else localStorage.removeItem(INTRO_KEY); } catch (e) {}
+    $('introWrap').classList.remove('show');
+  }
+  $('introSkip').onclick = closeIntro;
+  $('introBack').onclick = () => { if (introI > 0) { introI--; renderIntro(); } };
+  $('introNext').onclick = () => { if (introI < INTRO.length - 1) { introI++; renderIntro(); } else closeIntro(); };
+  $('learnBtn').onclick = openIntro;
+  $('spLearn').onclick = openIntro;
+
   // ---------------------------------------------------------------- boot
   initHome();
   const params = new URLSearchParams(location.search);
@@ -763,5 +827,6 @@
   render();
   connect();
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(() => {});
+  if (!introSeen()) openIntro();
   window.__bridge = st; // for automated tests
 })();

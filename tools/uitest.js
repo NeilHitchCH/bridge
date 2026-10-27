@@ -9,6 +9,16 @@ const { startServer } = require('../server');
   const page = await ctx.newPage();
   page.on('pageerror', (e) => { console.error('PAGE ERROR', e.message); process.exit(1); });
   await page.goto(base + '/');
+  // Beginner intro: shown on first visit, Next/Back work, Skip + "don't show again" persists.
+  await page.waitForSelector('#introWrap.show');
+  await page.tap('#introNext'); await page.tap('#introNext'); await page.tap('#introBack');
+  if (!(await page.textContent('#introStep')).includes('2 of 5')) throw new Error('intro nav broken');
+  await page.check('#introNever'); await page.tap('#introSkip');
+  await page.reload();
+  await page.waitForTimeout(300);
+  if (await page.isVisible('#introWrap')) throw new Error('intro shown again after opt-out');
+  await page.tap('#learnBtn'); await page.waitForSelector('#introWrap.show'); await page.tap('#introSkip');
+  console.log('intro: ok');
   await page.fill('#nameInput', 'Neil');
   await page.tap('#partnerSeg [data-v="bot"]');
   await page.tap('#createBtn');
